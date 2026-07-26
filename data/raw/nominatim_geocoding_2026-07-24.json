@@ -1,0 +1,962 @@
+[
+  {
+    "row_number": 0,
+    "coworking_name": "Venture X Lisboa",
+    "query_address": "Avenida da Liberdade 224, 1250-148 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:35.412756+00:00",
+    "result": {
+      "place_id": 296733761,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 10598930527,
+      "lat": "38.7224782",
+      "lon": "-9.1468965",
+      "category": "place",
+      "type": "house",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "place",
+      "name": "",
+      "display_name": "224, Avenida da Liberdade, Coração de Jesus, Santo António, Madalena, Lisboa, 1250-148, Portugal",
+      "address": {
+        "house_number": "224",
+        "road": "Avenida da Liberdade",
+        "neighbourhood": "Coração de Jesus",
+        "suburb": "Santo António",
+        "village": "Madalena",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1250-148",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7224282",
+        "38.7225282",
+        "-9.1469465",
+        "-9.1468465"
+      ]
+    }
+  },
+  {
+    "row_number": 1,
+    "coworking_name": "The Fyve",
+    "query_address": "Avenida Marechal Gomes da Costa 27 A/B, 1800-255 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:37.652864+00:00",
+    "result": {
+      "place_id": 296661710,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 738228921,
+      "lat": "38.7584265",
+      "lon": "-9.1120448",
+      "category": "highway",
+      "type": "primary",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Avenida Marechal Gomes da Costa",
+      "display_name": "Avenida Marechal Gomes da Costa, Marvila, Lisboa, 1800-255, Portugal",
+      "address": {
+        "road": "Avenida Marechal Gomes da Costa",
+        "village": "Marvila",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1800-255",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7583246",
+        "38.7585283",
+        "-9.1123826",
+        "-9.1117071"
+      ]
+    }
+  },
+  {
+    "row_number": 2,
+    "coworking_name": "Kübe Coworking",
+    "query_address": "Rua do Centro Cultural 27A, 1700-106 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:39.500798+00:00",
+    "result": {
+      "place_id": 297553741,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 172215137,
+      "lat": "38.7562928",
+      "lon": "-9.1419905",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Rua do Centro Cultural",
+      "display_name": "Rua do Centro Cultural, São João de Brito, Campo Grande, Alvalade, Lisboa, 1700-106, Portugal",
+      "address": {
+        "road": "Rua do Centro Cultural",
+        "neighbourhood": "São João de Brito",
+        "suburb": "Campo Grande",
+        "village": "Alvalade",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1700-106",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7558560",
+        "38.7570332",
+        "-9.1433096",
+        "-9.1410981"
+      ]
+    }
+  },
+  {
+    "row_number": 3,
+    "coworking_name": "Business Networking Lounge",
+    "query_address": "Rua Mário Gomes Páscoa 8C, 1600-824 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:41.034947+00:00",
+    "result": {
+      "place_id": 298016368,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 376767572,
+      "lat": "38.7518526",
+      "lon": "-9.1717533",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Rua Mário Gomes Páscoa",
+      "display_name": "Rua Mário Gomes Páscoa, São Domingos de Benfica, Lisboa, 1600-223, Portugal",
+      "address": {
+        "road": "Rua Mário Gomes Páscoa",
+        "village": "São Domingos de Benfica",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1600-223",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7512383",
+        "38.7524669",
+        "-9.1717585",
+        "-9.1717482"
+      ]
+    }
+  },
+  {
+    "row_number": 4,
+    "coworking_name": "The Liz",
+    "query_address": "Rua Maria 36A, 1170-217 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:42.979315+00:00",
+    "result": {
+      "place_id": 297164671,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 33236970,
+      "lat": "38.7238056",
+      "lon": "-9.1332034",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Rua Maria",
+      "display_name": "Rua Maria, Bairro Andrade, Arroios, Lisboa, 1170-212, Portugal",
+      "address": {
+        "road": "Rua Maria",
+        "neighbourhood": "Bairro Andrade",
+        "village": "Arroios",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1170-212",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7234335",
+        "38.7241755",
+        "-9.1332457",
+        "-9.1331459"
+      ]
+    }
+  },
+  {
+    "row_number": 5,
+    "coworking_name": "Heden Rossio",
+    "query_address": "Largo do Duque de Cadaval 17, 1200-160 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:45.643446+00:00",
+    "result": null
+  },
+  {
+    "row_number": 6,
+    "coworking_name": "Heden Santa Apolónia",
+    "query_address": "Terminal de Cruzeiros de Lisboa, Rua Jardim do Tabaco, 1100-651 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:47.186813+00:00",
+    "result": null
+  },
+  {
+    "row_number": 7,
+    "coworking_name": "Heden Chiado",
+    "query_address": "Largo Rafael Bordalo Pinheiro 29, 1200-369 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:48.451059+00:00",
+    "result": {
+      "place_id": 297033924,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 6396669672,
+      "lat": "38.7117433",
+      "lon": "-9.1416358",
+      "category": "office",
+      "type": "coworking",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "office",
+      "name": "Heden Chiado",
+      "display_name": "Heden Chiado, 29, Largo Rafael Bordalo Pinheiro, Sacramento, Santa Maria Maior, Madalena, Lisboa, 1200-369, Portugal",
+      "address": {
+        "office": "Heden Chiado",
+        "house_number": "29",
+        "road": "Largo Rafael Bordalo Pinheiro",
+        "neighbourhood": "Sacramento",
+        "suburb": "Santa Maria Maior",
+        "village": "Madalena",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1200-369",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7116933",
+        "38.7117933",
+        "-9.1416858",
+        "-9.1415858"
+      ]
+    }
+  },
+  {
+    "row_number": 8,
+    "coworking_name": "Heden Alvalade",
+    "query_address": "Rua do Centro Cultural 45, 1700-111 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:50.352156+00:00",
+    "result": {
+      "place_id": 295091598,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 172215137,
+      "lat": "38.7562928",
+      "lon": "-9.1419905",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Rua do Centro Cultural",
+      "display_name": "Rua do Centro Cultural, São João de Brito, Campo Grande, Alvalade, Lisboa, 1700-106, Portugal",
+      "address": {
+        "road": "Rua do Centro Cultural",
+        "neighbourhood": "São João de Brito",
+        "suburb": "Campo Grande",
+        "village": "Alvalade",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1700-106",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7558560",
+        "38.7570332",
+        "-9.1433096",
+        "-9.1410981"
+      ]
+    }
+  },
+  {
+    "row_number": 9,
+    "coworking_name": "Heden Intendente",
+    "query_address": "Rua Maria 10, 1170-014 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:52.049966+00:00",
+    "result": {
+      "place_id": 296698027,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1112533499,
+      "lat": "38.7220872",
+      "lon": "-9.1335676",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Rua Maria",
+      "display_name": "Rua Maria, Bairro Andrade, Arroios, Lisboa, 1170-016, Portugal",
+      "address": {
+        "road": "Rua Maria",
+        "neighbourhood": "Bairro Andrade",
+        "village": "Arroios",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1170-016",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7216578",
+        "38.7225194",
+        "-9.1338069",
+        "-9.1333357"
+      ]
+    }
+  },
+  {
+    "row_number": 10,
+    "coworking_name": "Heden Trindade",
+    "query_address": "Rua Nova da Trindade 3, 1200-301 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:53.526525+00:00",
+    "result": {
+      "place_id": 296697862,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 336745040,
+      "lat": "38.7116787",
+      "lon": "-9.1422776",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Rua Nova da Trindade",
+      "display_name": "Rua Nova da Trindade, Sacramento, Santa Maria Maior, Madalena, Lisboa, 1200-049, Portugal",
+      "address": {
+        "road": "Rua Nova da Trindade",
+        "neighbourhood": "Sacramento",
+        "suburb": "Santa Maria Maior",
+        "village": "Madalena",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1200-049",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7115885",
+        "38.7117484",
+        "-9.1422916",
+        "-9.1422186"
+      ]
+    }
+  },
+  {
+    "row_number": 11,
+    "coworking_name": "Avila Spaces Avenida da República",
+    "query_address": "Avenida da República 6, 1050-191 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:55.081800+00:00",
+    "result": {
+      "place_id": 297081546,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13282831857,
+      "lat": "38.7348821",
+      "lon": "-9.1447434",
+      "category": "office",
+      "type": "coworking",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "office",
+      "name": "Avila Spaces",
+      "display_name": "Avila Spaces, 6, Avenida da República, Saldanha, Arroios, Lisboa, 1050-191, Portugal",
+      "address": {
+        "office": "Avila Spaces",
+        "house_number": "6",
+        "road": "Avenida da República",
+        "neighbourhood": "Saldanha",
+        "village": "Arroios",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1050-191",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7348321",
+        "38.7349321",
+        "-9.1447934",
+        "-9.1446934"
+      ]
+    }
+  },
+  {
+    "row_number": 12,
+    "coworking_name": "Avila Spaces Atrium Saldanha",
+    "query_address": "Praça Duque de Saldanha 1, 1050-094 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:56.470402+00:00",
+    "result": {
+      "place_id": 293635023,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 97280706,
+      "lat": "38.7328543",
+      "lon": "-9.1446989",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.2328416436185146,
+      "addresstype": "shop",
+      "name": "Atrium Saldanha",
+      "display_name": "Atrium Saldanha, 1, Praça Duque de Saldanha, Saldanha, Arroios, Lisboa, 1050-094, Portugal",
+      "address": {
+        "shop": "Atrium Saldanha",
+        "house_number": "1",
+        "road": "Praça Duque de Saldanha",
+        "neighbourhood": "Saldanha",
+        "village": "Arroios",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1050-094",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7324356",
+        "38.7332445",
+        "-9.1452347",
+        "-9.1441537"
+      ]
+    }
+  },
+  {
+    "row_number": 13,
+    "coworking_name": "Avila Spaces Parque das Nações",
+    "query_address": "Avenida Dom João II 52, 1990-096 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:58.335438+00:00",
+    "result": {
+      "place_id": 297307294,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11882321570,
+      "lat": "38.7714021",
+      "lon": "-9.0971082",
+      "category": "office",
+      "type": "coworking",
+      "place_rank": 30,
+      "importance": 5.572823681997433e-05,
+      "addresstype": "office",
+      "name": "Avila Spaces",
+      "display_name": "Avila Spaces, 52, Avenida Dom João II, Quinta das Laranjeiras, Parque das Nações, Lisboa, 1990-096, Portugal",
+      "address": {
+        "office": "Avila Spaces",
+        "house_number": "52",
+        "road": "Avenida Dom João II",
+        "neighbourhood": "Quinta das Laranjeiras",
+        "suburb": "Parque das Nações",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1990-096",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7713521",
+        "38.7714521",
+        "-9.0971582",
+        "-9.0970582"
+      ]
+    }
+  },
+  {
+    "row_number": 14,
+    "coworking_name": "IDEA Spaces São Sebastião",
+    "query_address": "Avenida António Augusto de Aguiar 122C, 1050-046 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:03:59.875180+00:00",
+    "result": {
+      "place_id": 293655546,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 328150735,
+      "lat": "38.7344748",
+      "lon": "-9.1539884",
+      "category": "highway",
+      "type": "primary",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Avenida António Augusto de Aguiar",
+      "display_name": "Avenida António Augusto de Aguiar, São Sebastião da Pedreira, Campo Pequeno, Avenidas Novas, Lisboa, 1069-413, Portugal",
+      "address": {
+        "road": "Avenida António Augusto de Aguiar",
+        "neighbourhood": "São Sebastião da Pedreira",
+        "suburb": "Campo Pequeno",
+        "city_district": "Avenidas Novas",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1069-413",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7343420",
+        "38.7346077",
+        "-9.1541055",
+        "-9.1538713"
+      ]
+    }
+  },
+  {
+    "row_number": 15,
+    "coworking_name": "Spaces Oriente",
+    "query_address": "Avenida Aquilino Ribeiro Machado 8, 1800-399 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:01.309853+00:00",
+    "result": {
+      "place_id": 298162041,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11777096574,
+      "lat": "38.7692178",
+      "lon": "-9.1001017",
+      "category": "office",
+      "type": "coworking",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "office",
+      "name": "Spaces",
+      "display_name": "Spaces, 8, Avenida Aquilino Ribeiro Machado, Bairro Oriente, Parque das Nações, Lisboa, 1800-399, Portugal",
+      "address": {
+        "office": "Spaces",
+        "house_number": "8",
+        "road": "Avenida Aquilino Ribeiro Machado",
+        "neighbourhood": "Bairro Oriente",
+        "suburb": "Parque das Nações",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1800-399",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7691678",
+        "38.7692678",
+        "-9.1001517",
+        "-9.1000517"
+      ]
+    }
+  },
+  {
+    "row_number": 16,
+    "coworking_name": "Spaces Mar Vermelho Building",
+    "query_address": "Avenida Dom João II 50, 1990-095 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:02.835348+00:00",
+    "result": {
+      "place_id": 298218878,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 97156995,
+      "lat": "38.7691601",
+      "lon": "-9.0976491",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Avenida Dom João II",
+      "display_name": "Avenida Dom João II, Quinta das Laranjeiras, Parque das Nações, Lisboa, 1990-095, Portugal",
+      "address": {
+        "road": "Avenida Dom João II",
+        "neighbourhood": "Quinta das Laranjeiras",
+        "suburb": "Parque das Nações",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1990-095",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7691195",
+        "38.7692007",
+        "-9.0976929",
+        "-9.0976054"
+      ]
+    }
+  },
+  {
+    "row_number": 17,
+    "coworking_name": "Spaces Avenida da República 50",
+    "query_address": "Avenida da República 50, 1050-196 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:04.484556+00:00",
+    "result": {
+      "place_id": 298176391,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 426263270,
+      "lat": "38.7405904",
+      "lon": "-9.1460442",
+      "category": "building",
+      "type": "office",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "50, Avenida da República, Campo Pequeno, Avenidas Novas, Lisboa, 1050-196, Portugal",
+      "address": {
+        "house_number": "50",
+        "road": "Avenida da República",
+        "suburb": "Campo Pequeno",
+        "city_district": "Avenidas Novas",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1050-196",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7404694",
+        "38.7407061",
+        "-9.1461590",
+        "-9.1459390"
+      ]
+    }
+  },
+  {
+    "row_number": 18,
+    "coworking_name": "Spaces Torres de Lisboa",
+    "query_address": "Rua Tomás da Fonseca, Torre G, 1600-209 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:06.104080+00:00",
+    "result": null
+  },
+  {
+    "row_number": 19,
+    "coworking_name": "Spaces Laranjeiras Palace",
+    "query_address": "Estrada das Laranjeiras 191-193, 1600-134 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:07.660084+00:00",
+    "result": {
+      "place_id": 294950899,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 571162615,
+      "lat": "38.7441954",
+      "lon": "-9.1680312",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Estrada das Laranjeiras",
+      "display_name": "Estrada das Laranjeiras, São Domingos de Benfica, Lisboa, 1600-134, Portugal",
+      "address": {
+        "road": "Estrada das Laranjeiras",
+        "village": "São Domingos de Benfica",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1600-134",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7438479",
+        "38.7445365",
+        "-9.1684465",
+        "-9.1676210"
+      ]
+    }
+  },
+  {
+    "row_number": 20,
+    "coworking_name": "Spaces Marquês de Pombal 14",
+    "query_address": "Praça Marquês de Pombal 14, 1250-162 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:09.092722+00:00",
+    "result": {
+      "place_id": 296765736,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 96638901,
+      "lat": "38.7260512",
+      "lon": "-9.1492473",
+      "category": "building",
+      "type": "yes",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "13, 14, Praça Marquês de Pombal, Coração de Jesus, Santo António, Madalena, Lisboa, 1250-162, Portugal",
+      "address": {
+        "house_number": "13, 14",
+        "road": "Praça Marquês de Pombal",
+        "neighbourhood": "Coração de Jesus",
+        "suburb": "Santo António",
+        "village": "Madalena",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1250-162",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7256708",
+        "38.7264461",
+        "-9.1493847",
+        "-9.1487970"
+      ]
+    }
+  },
+  {
+    "row_number": 21,
+    "coworking_name": "Spaces Rua Mouzinho da Silveira",
+    "query_address": "Rua Mouzinho da Silveira 32, 1250-167 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:10.525972+00:00",
+    "result": {
+      "place_id": 294965617,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 97038705,
+      "lat": "38.7232439",
+      "lon": "-9.1505323",
+      "category": "building",
+      "type": "yes",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "32, Rua Mouzinho da Silveira, São Mamede, Santo António, Madalena, Lisboa, 1250-166, Portugal",
+      "address": {
+        "house_number": "32",
+        "road": "Rua Mouzinho da Silveira",
+        "neighbourhood": "São Mamede",
+        "suburb": "Santo António",
+        "village": "Madalena",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1250-166",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7231425",
+        "38.7233371",
+        "-9.1506566",
+        "-9.1504071"
+      ]
+    }
+  },
+  {
+    "row_number": 22,
+    "coworking_name": "Spaces Braamcamp 52",
+    "query_address": "Rua Braamcamp 52, 1250-051 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:12.368338+00:00",
+    "result": {
+      "place_id": 294082047,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11892515109,
+      "lat": "38.7224270",
+      "lon": "-9.1520008",
+      "category": "tourism",
+      "type": "hostel",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "tourism",
+      "name": "Liberty hostel",
+      "display_name": "Liberty hostel, 52, Rua Braamcamp, São Mamede, Santo António, Madalena, Lisboa, 1250-052, Portugal",
+      "address": {
+        "tourism": "Liberty hostel",
+        "house_number": "52",
+        "road": "Rua Braamcamp",
+        "neighbourhood": "São Mamede",
+        "suburb": "Santo António",
+        "village": "Madalena",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1250-052",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7223770",
+        "38.7224770",
+        "-9.1520508",
+        "-9.1519508"
+      ]
+    }
+  },
+  {
+    "row_number": 23,
+    "coworking_name": "Spaces Avenida da Liberdade 110",
+    "query_address": "Avenida da Liberdade 110, 1269-046 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:14.316122+00:00",
+    "result": {
+      "place_id": 297457922,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 98544544,
+      "lat": "38.7189671",
+      "lon": "-9.1437679",
+      "category": "building",
+      "type": "retail",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "110, Avenida da Liberdade, São José, Santo António, Madalena, Lisboa, 1250-146, Portugal",
+      "address": {
+        "house_number": "110",
+        "road": "Avenida da Liberdade",
+        "neighbourhood": "São José",
+        "suburb": "Santo António",
+        "village": "Madalena",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1250-146",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7187882",
+        "38.7191357",
+        "-9.1439518",
+        "-9.1435840"
+      ]
+    }
+  },
+  {
+    "row_number": 24,
+    "coworking_name": "Spaces Chiado",
+    "query_address": "Rua Ivens 42, 1200-227 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:15.746944+00:00",
+    "result": {
+      "place_id": 295548096,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 6076381411,
+      "lat": "38.7101897",
+      "lon": "-9.1403374",
+      "category": "place",
+      "type": "house",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "place",
+      "name": "",
+      "display_name": "42, Rua Ivens, Chiado, Santa Maria Maior, Madalena, Lisboa, 1200-445, Portugal",
+      "address": {
+        "house_number": "42",
+        "road": "Rua Ivens",
+        "neighbourhood": "Chiado",
+        "suburb": "Santa Maria Maior",
+        "village": "Madalena",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1200-445",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7101397",
+        "38.7102397",
+        "-9.1403874",
+        "-9.1402874"
+      ]
+    }
+  },
+  {
+    "row_number": 25,
+    "coworking_name": "Spaces Alcântara",
+    "query_address": "Rua das Fontaínhas 82-86, 1300-257 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:17.221343+00:00",
+    "result": {
+      "place_id": 295832851,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 23745636,
+      "lat": "38.7058060",
+      "lon": "-9.1755690",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341483100633246,
+      "addresstype": "road",
+      "name": "Rua das Fontaínhas",
+      "display_name": "Rua das Fontaínhas, Alcântara, Lisboa, 1300-023, Portugal",
+      "address": {
+        "road": "Rua das Fontaínhas",
+        "village": "Alcântara",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1300-023",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7046399",
+        "38.7062936",
+        "-9.1767593",
+        "-9.1740832"
+      ]
+    }
+  },
+  {
+    "row_number": 26,
+    "coworking_name": "Spaces Dom João V",
+    "query_address": "Rua Dom João V 30, 1250-091 Lisboa",
+    "request_timestamp_utc": "2026-07-24T23:04:18.922399+00:00",
+    "result": {
+      "place_id": 297089990,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11593949393,
+      "lat": "38.7209086",
+      "lon": "-9.1607872",
+      "category": "place",
+      "type": "house",
+      "place_rank": 30,
+      "importance": 8.149767299911524e-05,
+      "addresstype": "place",
+      "name": "",
+      "display_name": "30, Rua Dom João V, Amoreiras, Santa Isabel, Campo de Ourique, Lisboa, 1250-089, Portugal",
+      "address": {
+        "house_number": "30",
+        "road": "Rua Dom João V",
+        "neighbourhood": "Amoreiras",
+        "suburb": "Santa Isabel",
+        "village": "Campo de Ourique",
+        "city": "Lisboa",
+        "county": "Lisboa",
+        "ISO3166-2-lvl6": "PT-11",
+        "postcode": "1250-089",
+        "country": "Portugal",
+        "country_code": "pt"
+      },
+      "boundingbox": [
+        "38.7208586",
+        "38.7209586",
+        "-9.1608372",
+        "-9.1607372"
+      ]
+    }
+  }
+]

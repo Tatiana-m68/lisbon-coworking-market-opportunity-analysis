@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-07-25T23:01:38.255998+00:00",
+  "dataset": "data/processed/coworking_locations.csv",
+  "row_count": 54,
+  "column_count": 21,
+  "verified_active_count": 48,
+  "pending_verification_count": 0,
+  "parishes_represented": 15,
+  "missingness": {
+    "collection_date": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "source_url": 0,
+    "coworking_name": 1,
+    "parish": 0,
+    "active_status": 0,
+    "verification_status": 0,
+    "coworking_id": 0
+  },
+  "duplicate_id_count": 0,
+  "potential_duplicate_row_count": 0,
+  "invalid_latitude_count": 0,
+  "invalid_longitude_count": 0,
+  "invalid_statuses": [],
+  "invalid_parishes": [],
+  "missing_required_columns": [],
+  "checks_passed": true,
+  "important_caveat": "This is a candidate inventory. Only rows with verification_status=verified_official_site are currently confirmed active."
+}

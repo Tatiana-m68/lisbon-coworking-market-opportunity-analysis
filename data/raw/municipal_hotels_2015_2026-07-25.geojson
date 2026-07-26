@@ -1,0 +1,3853 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14946699847412,
+          38.7422694186075
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303301011001",
+        "NOME": "VipGrand",
+        "MORADA": "Av. 5 de Outubro,197",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "054",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 1,
+        "GlobalID": "22af6a26-3e79-419e-b8d0-1307f3c9dfae"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15557482644885,
+          38.726587031727
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001304004001",
+        "NOME": "Tiara Park",
+        "MORADA": "Rua Castilho, 149",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1099",
+        "COD_POST_3": "034",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 2,
+        "GlobalID": "1f5bff60-71d6-417c-ad48-50b88a1de8ed"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14500850790376,
+          38.7185791312732
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4501204005001",
+        "NOME": "Sofitel Lisbon Liberdade",
+        "MORADA": "Av. da Liberdade, 127",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1269",
+        "COD_POST_3": "038",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 3,
+        "GlobalID": "7561dd69-bf69-4795-b801-b5bca592d85f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14720190457004,
+          38.7315187219383
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5000704004001",
+        "NOME": "Sheraton ",
+        "MORADA": "Rua Latino Coelho, 1",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1069",
+        "COD_POST_3": "025",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 4,
+        "GlobalID": "2f82fffa-7875-49ce-b971-497203e0df99"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15075081677928,
+          38.732139619511
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5000801007001",
+        "NOME": "Real Palácio",
+        "MORADA": "Rua Tomás Ribeiro, 115",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "228",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 5,
+        "GlobalID": "ded30b31-85cd-4d93-853d-ba73984f3428"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.09113413103353,
+          38.7747359387975
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3308501020001",
+        "NOME": "Myriad",
+        "MORADA": "Cais das Naus, Lote2.21.01  Parque das Nações",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "118",
+        "COD_POST_4": "1990",
+        "COD_POST_3": "173",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 6,
+        "GlobalID": "bca075e3-0d47-49af-9055-e48015e7a429"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1429060018796,
+          38.7123550713093
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2700404001001",
+        "NOME": "Mercy",
+        "MORADA": "Rua da Misericórdia, 76",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "273",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 7,
+        "GlobalID": "6148bcb6-323f-4d16-b7c0-9c9adb71a6f7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15533588536306,
+          38.7255686684522
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001306004001",
+        "NOME": "Four Seasons Ritz",
+        "MORADA": "Rua Rodrigo da Fonseca, 88",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1099",
+        "COD_POST_3": "039",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 8,
+        "GlobalID": "a8706e04-a013-432f-aeae-3d75c61ec479"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14887605613752,
+          38.7201286156305
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401009016001",
+        "NOME": "Eurostars das Letras",
+        "MORADA": "Rua Castilho, 6-12",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "069",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 9,
+        "GlobalID": "eaf31629-3fe5-4760-8b9e-49b17a1b2cf9"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1603400898921,
+          38.7248193535144
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1002604001001",
+        "NOME": "Dom Pedro",
+        "MORADA": "Av. Eng. Duarte Pacheco, 24",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "111",
+        "COD_POST_4": "1070",
+        "COD_POST_3": "109",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 10,
+        "GlobalID": "16ea8e6f-bf64-426b-ac6f-08e6b6ba9acc"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15039463566743,
+          38.7199833520888
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601407021001",
+        "NOME": "CS Vintage Lisboa Hotel",
+        "MORADA": "Rua Rodrigo da Fonseca, 2",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "191",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 11,
+        "GlobalID": "74767730-d51f-466b-8900-2c70ff9d6f5b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16658019928402,
+          38.7387876765008
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1003104005001",
+        "NOME": "Corinthia Hotel Lisbon",
+        "MORADA": "Av. Columbano Bordalo Pinheiro, 105",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "111",
+        "COD_POST_4": "1099",
+        "COD_POST_3": "031",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 12,
+        "GlobalID": "96166729-4d15-43cb-a8f6-4365b508817f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14327782086388,
+          38.7102837031847
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1501112001001",
+        "NOME": "Bairro Alto",
+        "MORADA": "Pç. Luís de Camões, 2",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "116",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "243",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 13,
+        "GlobalID": "11151e2a-3559-494b-8edc-adc8e435b644"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14122482099503,
+          38.7147725306072
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100403045001",
+        "NOME": "AvenidaPalace",
+        "MORADA": "Rua 1º de Dezembro, 123",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "359",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 14,
+        "GlobalID": "22b06649-0423-49e4-a861-ff4f37318356"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.21073121870546,
+          38.693324596268
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3202221002001",
+        "NOME": "AltisBelem ",
+        "MORADA": "Doca do Bom Sucesso",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "108",
+        "COD_POST_4": "1400",
+        "COD_POST_3": "038",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 15,
+        "GlobalID": "014d3dc0-30d5-47d7-8e32-10b56a32d04a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14077778607198,
+          38.715082932973
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100405005001",
+        "NOME": "Altis Avenida ",
+        "MORADA": "Rua 1º de Dezembro, 120",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "360",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 16,
+        "GlobalID": "19ee2ef7-9220-4224-8238-eafff0a8470a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14713458033107,
+          38.7332259211545
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5000605003001",
+        "NOME": "Zenit",
+        "MORADA": "Av. 5 de Outubro, 11",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "047",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 17,
+        "GlobalID": "1e7c6a91-d4f1-45c0-a880-e0e65bb092b5"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15921711404029,
+          38.7063737504373
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3701701032001",
+        "NOME": "York House",
+        "MORADA": "Rua das Janelas Verdes, 32",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "113",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "691",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 18,
+        "GlobalID": "0a5eee16-042b-4bf7-b99c-5315543f96ce"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14468501109521,
+          38.7271151020223
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1400103001001",
+        "NOME": "3K Madrid",
+        "MORADA": "Rua Conde Redondo, 24",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "106",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 19,
+        "GlobalID": "4219bb6d-1a6b-4ac1-a9b3-f0694b4a0455"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15270480523581,
+          38.7245211823077
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401002003001",
+        "NOME": "Vip Diplomatico",
+        "MORADA": "Rua Castilho, 74",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "071",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 20,
+        "GlobalID": "ea7f7d3d-678d-4dc0-9a93-4d52f6d7a0bf"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15043707567471,
+          38.7409138125617
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303302084001",
+        "NOME": "3K Barcelona",
+        "MORADA": "Rua Laura Alves, 10",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "138",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 21,
+        "GlobalID": "dd63d2d9-59c6-499f-b75b-8de79aa95a9a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14467584917764,
+          38.732234912642
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4403401005001",
+        "NOME": "Vip Executive Saldanha ",
+        "MORADA": "Rua FerFalseLopes, 25 ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "132",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 22,
+        "GlobalID": "aaca0b41-766f-4aff-a40e-aee938c87a84"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.09796980549247,
+          38.7731242814971
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3307712001001",
+        "NOME": "Vip Executive Arts",
+        "MORADA": "Av. D. João II ¿ Lote 1.18 1C",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "118",
+        "COD_POST_4": "1998",
+        "COD_POST_3": "028",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 23,
+        "GlobalID": "e2fe30d6-b3dc-47cc-bf83-6bf2fae3a16f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15074122816193,
+          38.7471827827077
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2304302060001",
+        "NOME": "Villa Rica",
+        "MORADA": "Av. 5 de Outubro, 295",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1600",
+        "COD_POST_3": "035",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 24,
+        "GlobalID": "891d7a5e-7364-4ddd-a8ce-8a6c7e3f6fd6"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14832267326122,
+          38.7405256374988
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303402022001",
+        "NOME": "Turim Iberia",
+        "MORADA": "Av. 5 de Outubro, 160",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "062",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 25,
+        "GlobalID": "127833d0-0e13-486a-aac8-38f649397905"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14882231352733,
+          38.7292344774739
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001603048001",
+        "NOME": "Turim Europa",
+        "MORADA": "Rua São Sebastião da Pedreira, 19",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "206",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 26,
+        "GlobalID": "6be54984-d3e3-4f74-814c-d5d5724608d8"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14967025937513,
+          38.7235835608959
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401003015001",
+        "NOME": "Turim Av. da Liberdade Hotel",
+        "MORADA": "Rua Duque de Palmela, 20",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1269",
+        "COD_POST_3": "170",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 27,
+        "GlobalID": "122699e3-470f-4c80-bde5-c4008d678076"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13744097149123,
+          38.7352825972268
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4400401060001",
+        "NOME": "Turim Alameda",
+        "MORADA": "Av. Rovisco Pais, 34",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "046",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 28,
+        "GlobalID": "4098e2a6-83ba-4727-84b9-7ecc352ceae7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13505191546784,
+          38.7293331866021
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4403101040001",
+        "NOME": "Tsar Hotel",
+        "MORADA": "Av. Almirante Reis, 103",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "013",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 29,
+        "GlobalID": "a8fb949c-6dbd-45aa-800c-25f8b472e4d0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.09816496089467,
+          38.7693128748979
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3307716002001",
+        "NOME": "ATryp Oriente",
+        "MORADA": "Av. Dom Joao II lote 1.1602.B",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "118",
+        "COD_POST_4": "1990",
+        "COD_POST_3": "083",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 30,
+        "GlobalID": "aa4575bf-4635-4b96-a3a0-953352fea180"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.09834177449544,
+          38.7665473737141
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3308511003001",
+        "NOME": "Tivoli Oriente",
+        "MORADA": "Av. Dom João II, Lt. 1.16.02 B - Parque das Naçoes.",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "118",
+        "COD_POST_4": "1990",
+        "COD_POST_3": "083",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 31,
+        "GlobalID": "5e28b126-393a-416b-8ebb-490d5d15129e"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14747153659753,
+          38.7203706940106
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401009038001",
+        "NOME": "Tivoli Jardim",
+        "MORADA": "Rua Júlio César Machado, 7/9",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "135",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 32,
+        "GlobalID": "3a3f625c-ec3c-4046-a5e1-057be0a4a718"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16009411230272,
+          38.7455174922676
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303906001001",
+        "NOME": "Sana Metropolitan Park",
+        "MORADA": "Rua Soeiro Pereira Gomes, Parcela 2",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1600",
+        "COD_POST_3": "198",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 33,
+        "GlobalID": "3e11c3a4-b674-4162-ab01-44949fc32c02"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16239980197277,
+          38.7370380603532
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1003105102001",
+        "NOME": "Sana Malhoa Park",
+        "MORADA": "Av. José Malhoa, 8",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "111",
+        "COD_POST_4": "1099",
+        "COD_POST_3": "089",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 34,
+        "GlobalID": "23bf5dba-8a83-4a16-bef7-ef77ad9c52de"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14838188840812,
+          38.7273563648259
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1400201006001",
+        "NOME": "Sana Lisboa Excellence Concept Hotel",
+        "MORADA": "Av. Fontes Pereira de Melo, 8",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1069",
+        "COD_POST_3": "310",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 35,
+        "GlobalID": "dcd12f1f-de56-4187-a40f-6c16ddc1b844"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15040772412111,
+          38.7335623881112
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001503005001",
+        "NOME": "RealParque",
+        "MORADA": "Av. Luís Bívar, 67",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1069",
+        "COD_POST_3": "146",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 36,
+        "GlobalID": "15ab42ab-efbf-439c-b97c-2b8cc1943add"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14741252267324,
+          38.7173075716128
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4500605025001",
+        "NOME": "Príncipe Real",
+        "MORADA": "Rua da Alegria, 53",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "006",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 37,
+        "GlobalID": "1a5f294e-d346-43fe-8117-af8194f17af1"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.09751482137747,
+          38.7648931095153
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3308514003001",
+        "NOME": "Olissipo Oriente",
+        "MORADA": "Av. D. João II, Lt. 1.03.2.2, Parque das Naçoes",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "118",
+        "COD_POST_4": "1990",
+        "COD_POST_3": "083",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 38,
+        "GlobalID": "3f8227ff-eaa3-49ff-834c-291cb1c8f484"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15168698078124,
+          38.7365814857997
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303501001001",
+        "NOME": "Olissipo Marquês Sá",
+        "MORADA": "Av. Miguel Bombarda, 130",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "167",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 39,
+        "GlobalID": "21ac5e80-c516-4a04-b566-e2e60b08df67"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13238426223046,
+          38.7146790569273
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5300603016001",
+        "NOME": "Olissipo Castelo",
+        "MORADA": "Rua Costa do Castelo, 126",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "179",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 40,
+        "GlobalID": "e3a87e7e-88fd-40f8-9b6e-b4df7c08c4d7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16158281117131,
+          38.7362390930853
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1003109003001",
+        "NOME": "Novotel",
+        "MORADA": "Av. José Malhoa 1-1A",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "111",
+        "COD_POST_4": "1099",
+        "COD_POST_3": "051",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 41,
+        "GlobalID": "f1b8086a-04e3-4d08-a337-0aec703caa8c"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14457739921238,
+          38.7203814033466
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4501201052001",
+        "NOME": "NH Liberdade",
+        "MORADA": "Av. da Liberdade, 180 B",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "146",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 42,
+        "GlobalID": "05acf9de-afdc-4292-a856-13a38f931e14"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14063403766021,
+          38.7293897826707
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4403601030001",
+        "NOME": "Neya Lisboa Hotel",
+        "MORADA": "Rua D. Estefânia, 71-77",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "132",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 43,
+        "GlobalID": "82f46354-133c-41bb-9c1e-71359fa95ed2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13716341452634,
+          38.7148379937222
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100307003001",
+        "NOME": "Mundial",
+        "MORADA": "Praça Martim Moniz, nº 2",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "341",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 44,
+        "GlobalID": "09ead659-7324-43c3-8100-65826917bb17"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16612181055408,
+          38.7376305545869
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1003108050001",
+        "NOME": "Mercure ",
+        "MORADA": "Av. José Malhoa, 23",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "111",
+        "COD_POST_4": "1099",
+        "COD_POST_3": "051",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 45,
+        "GlobalID": "cd2c51a7-1c38-4f47-81c2-45bc49ab653f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14920869689732,
+          38.7232471016063
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401003012001",
+        "NOME": "Marquês Pombal",
+        "MORADA": "Av. da Liberdade, 243",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "143",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 46,
+        "GlobalID": "53029a8a-555c-4f8b-aa09-19ba56731c8c"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14327103678687,
+          38.7070468375173
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4901016006001",
+        "NOME": "LX Boutique Hotel",
+        "MORADA": "Rua do Alecrim, 12",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "116",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "017",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 47,
+        "GlobalID": "f389a757-4f3f-4952-a86c-d84b8e53ee56"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14559210112301,
+          38.7187037845216
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4500601003001",
+        "NOME": "Lisboa Plaza",
+        "MORADA": "Tv. do Salitre, 7",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1269",
+        "COD_POST_3": "066",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 48,
+        "GlobalID": "96904150-a92c-414f-b2c7-b71891948c41"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14137711238516,
+          38.7122268854023
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2700405041001",
+        "NOME": "Lisboa Carmo Hotel",
+        "MORADA": "Rua da Oliveira ao Carmo, 1,2,3 / Largo do Carmo",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "307",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 49,
+        "GlobalID": "e5a50ec8-005c-412c-863c-ea2adb729ce4"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16375314449101,
+          38.7469399060999
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3905614024001",
+        "NOME": "Lisboa Marriott",
+        "MORADA": "Av. dos Combatentes, 45",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "123",
+        "COD_POST_4": "1600",
+        "COD_POST_3": "042",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 50,
+        "GlobalID": "b792c57d-1fac-4560-9231-3e4231d92789"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14628298013668,
+          38.7222494759717
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401107020001",
+        "NOME": "Lisboa",
+        "MORADA": "Rua Barata Salgueiro, 5",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1169",
+        "COD_POST_3": "066",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 51,
+        "GlobalID": "ce12ccb7-3657-45ad-bf66-d2f09a579afe"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.2049129941036,
+          38.6986546436446
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3202706018001",
+        "NOME": "Jeronimo 8",
+        "MORADA": "Rua dos Jerónimos, 8",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "108",
+        "COD_POST_4": "1400",
+        "COD_POST_3": "211",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 52,
+        "GlobalID": "8f3e6bb5-2da0-4cc0-9ea1-e29d80a2ae46"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13843559875022,
+          38.7129585451863
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4800103006001",
+        "NOME": "Internacional Design Hotel",
+        "MORADA": "Rua da Betesga, 3 ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "090",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 53,
+        "GlobalID": "2038fe47-77cd-413d-ba31-87b529727b7f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14520349981258,
+          38.7231997343064
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401104018001",
+        "NOME": "Inspira Santa Marta",
+        "MORADA": "Rua de Santa Marta, 48",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "297",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 54,
+        "GlobalID": "0d0f1d44-878f-4889-a188-3555f3fc65bc"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13936084372993,
+          38.7109732303403
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4800108009001",
+        "NOME": "Hoteldo Chiado",
+        "MORADA": "Rua Nova do Almada, 114",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "290",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 55,
+        "GlobalID": "ccfb284c-6b22-46e3-8ca7-5f59bc6d070a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15964034091333,
+          38.7172635009297
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3001301021001",
+        "NOME": "Hotelda Estrela",
+        "MORADA": "Rua Saraiva de Carvalho, 35",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "110",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "242",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 56,
+        "GlobalID": "60c38476-5e21-449f-964b-51ec6d9d9be7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1414130629628,
+          38.7382905729145
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4302301002001",
+        "NOME": "Holiday Inn Lisboa",
+        "MORADA": "Av. António José de Almeida, 28 A",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "104",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "044",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 57,
+        "GlobalID": "fda6e3ae-0b7d-4492-9fa9-608024fc5548"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14984892440368,
+          38.7412146703792
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303303024001",
+        "NOME": "Holiday Inn Continental",
+        "MORADA": "Rua Laura Alves, 9",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1069",
+        "COD_POST_3": "169",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 58,
+        "GlobalID": "ba02d672-32cb-4e07-aaa2-6b68c9b1a86a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14871801642789,
+          38.7287100949883
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001603090001",
+        "NOME": "HF Fenix Urban",
+        "MORADA": "Av. António Augusto Aguiar, 12",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "016",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 59,
+        "GlobalID": "da891a9c-31f2-4b45-92c9-e091b7f9db07"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15132045826388,
+          38.7247700915125
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401002039001",
+        "NOME": "HF Fenix",
+        "MORADA": "Pç. Marquês de Pombal, 8",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1269",
+        "COD_POST_3": "133",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 60,
+        "GlobalID": "0992aeec-ee95-403f-8403-1ed64895216e"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1426019041896,
+          38.7176777700257
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4501103050001",
+        "NOME": "Heritage",
+        "MORADA": "Avenida da Liberdade, 28",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "145",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 61,
+        "GlobalID": "e9dda7a8-4249-4951-9a6b-5f72691fa1fd"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14378220603129,
+          38.7314070530878
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4403402001001",
+        "NOME": "Fontana Park Hotel",
+        "MORADA": "Rua Engº Vieira da Silva, 2",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "105",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 62,
+        "GlobalID": "36ae71f8-d27a-4063-bd2e-2a435fe1b8de"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15006705871087,
+          38.7241716000836
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401003006001",
+        "NOME": "Florida",
+        "MORADA": "Rua Duque de Palmela, 34",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "098",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 63,
+        "GlobalID": "5663bbeb-2d8d-42e8-a280-e44733ef8d14"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14559994700872,
+          38.7215485249195
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401107006001",
+        "NOME": "Britânia",
+        "MORADA": "Rua Rodrigues Sampaio, 17",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "278",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 64,
+        "GlobalID": "9c94eaa0-19c6-4137-9c06-12f9ce59054e"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14988546786944,
+          38.723959292852
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401003017001",
+        "NOME": "Aviz",
+        "MORADA": "Rua Duque de Palmela, 32",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "098",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 65,
+        "GlobalID": "b9a66a3d-b888-4152-a431-5056eb4e71c9"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14740421774844,
+          38.7285175173529
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4403505001001",
+        "NOME": "AC",
+        "MORADA": "Lg. do Andaluz, 13 B",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "121",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 66,
+        "GlobalID": "8a054ac3-6424-4bc7-9b58-ed7a401d9610"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15049437920669,
+          38.7348300798958
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001702005001",
+        "NOME": "Alif Avenida",
+        "MORADA": "Av. Duque de Ávila, 189",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "082",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 67,
+        "GlobalID": "cd1d6165-416c-494c-9c26-4c7d9b11507c"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15981825764526,
+          38.7375572875875
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1003105103001",
+        "NOME": "Açores",
+        "MORADA": "Av. Columbano Bordalo Pinheiro, 3",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "111",
+        "COD_POST_4": "1070",
+        "COD_POST_3": "060",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 68,
+        "GlobalID": "2d3ec2a5-ca16-4f7b-ab20-2b08aecc9c52"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 69,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15016691453953,
+          38.7430132998381
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303301019001",
+        "NOME": "Vip Zurique",
+        "MORADA": "Rua Ivone Silva, 18",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "124",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 69,
+        "GlobalID": "0e7fc033-80c9-4fb8-8c48-dcec54a22e9c"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 70,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14743064618412,
+          38.721388881859
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401009062001",
+        "NOME": "Vip Veneza",
+        "MORADA": "Av. da Liberdade, 189",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "141",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 70,
+        "GlobalID": "019dda27-7e31-43ef-8941-24b4e4a27dcf"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14816006651672,
+          38.7427364581928
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2304403004001",
+        "NOME": "Vip Berna",
+        "MORADA": "Av. António Serpa, 13",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1169",
+        "COD_POST_3": "199",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 71,
+        "GlobalID": "7cb95a52-dabd-47dd-806c-c1bea89aeaf8"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15618088294012,
+          38.7273582843289
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001304023001",
+        "NOME": "Sana Rex Classic",
+        "MORADA": "Rua Castilho, 169",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1070",
+        "COD_POST_3": "051",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 72,
+        "GlobalID": "3dc8b4f2-d3a2-49ab-b98e-cba5bbc90cb8"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 73,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15089829858935,
+          38.7347399237888
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001702003001",
+        "NOME": "Sana Reno Classic",
+        "MORADA": "Av. Duque de Ávila, 195/197",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "082",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 73,
+        "GlobalID": "7ac4f862-0f23-4bf9-ac1c-402250d2edb6"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 74,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15044388490457,
+          38.7369497779294
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303502021001",
+        "NOME": "Sana Executive Classic",
+        "MORADA": "Av. Conde de Valbom, 56",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "069",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 74,
+        "GlobalID": "96505f13-682b-472e-bdcc-1f6bf958101a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14800797904416,
+          38.7272771851077
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1400202023001",
+        "NOME": "Sana Capitol Classic  ",
+        "MORADA": "Rua Eça de Queirós, 24",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "096",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 75,
+        "GlobalID": "690fa994-be42-4176-8002-f6aa625c2904"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 76,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15109381511432,
+          38.7348139742927
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001702002001",
+        "NOME": "PríncipeLisboa",
+        "MORADA": "Av. Duque d`Ávila, 201",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "082",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 76,
+        "GlobalID": "56503c04-c3fa-47eb-b9d4-536a7076ff8e"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 77,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15084315460732,
+          38.7225845459657
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401005010001",
+        "NOME": "Nacional",
+        "MORADA": "Rua Castilho, 34",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "070",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 77,
+        "GlobalID": "b0656c2a-878c-4976-a212-659cb6eb09c2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 78,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14999835915121,
+          38.7289400269593
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001605016001",
+        "NOME": "Miraparque",
+        "MORADA": "Av. Sidónio Pais, 12",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "214",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 78,
+        "GlobalID": "764e2d74-a2e6-47c3-b599-b5c358e5c457"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13985370890216,
+          38.7132803457435
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100410010001",
+        "NOME": "Metrópole",
+        "MORADA": "Pç. Dom Pedro IV, 30",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "200",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 79,
+        "GlobalID": "69c1088b-b7da-4168-9dd0-31de6494f1d7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 80,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13673057478139,
+          38.7137348009779
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100308014001",
+        "NOME": "Lisboa Tejo",
+        "MORADA": "Rua dos Condes de Monsanto, 2",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "159",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 80,
+        "GlobalID": "4b5ed874-4601-41d6-8af8-4a7fb9392e6b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 81,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14939699635728,
+          38.7213144866314
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401010001001",
+        "NOME": "Jorge V",
+        "MORADA": "Rua Mouzinho da Silveira, 3",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "165",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 81,
+        "GlobalID": "b46545bd-53f3-43ed-956b-81cd95fc8b4b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 82,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15017124531753,
+          38.7374131175441
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303502028001",
+        "NOME": "Itália",
+        "MORADA": "Avenida Visconde Valmor, 67",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "239",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 82,
+        "GlobalID": "97935bd0-a575-4c72-bea6-a4140e90f460"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 83,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14192145102315,
+          38.7108647285896
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2700309002001",
+        "NOME": "Hotel Borges",
+        "MORADA": "Rua Garrett, 108 ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "205",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 83,
+        "GlobalID": "e276fc75-552b-47f1-afb7-f394c0415efc"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 84,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15163777017168,
+          38.7249722070018
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401002007001",
+        "NOME": "HF Fenix Garden ",
+        "MORADA": "Rua Joaquim Antonio Aguiar, 3",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "010",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 84,
+        "GlobalID": "d3ee4929-5578-477c-8709-63a8c20a4b20"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 85,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14047091258778,
+          38.7153825496097
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100405011001",
+        "NOME": "GatRossio ",
+        "MORADA": "Rua Jardim do Regedor, nº 27-35",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "193",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 85,
+        "GlobalID": "3280802b-f8ac-498a-936c-b63874f61fea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 86,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15217634611712,
+          38.723180791863
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601401053001",
+        "NOME": "Flamingo Lisboa",
+        "MORADA": "Rua Castilho, 41",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "068",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 86,
+        "GlobalID": "2e1e9fdb-f7b0-4bcf-9858-4b3ba71b580c"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 88,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14799449623006,
+          38.7248335880548
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1400206009001",
+        "NOME": "Excelsior",
+        "MORADA": "Rua Rodrigues Sampaio, 172",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "282",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 88,
+        "GlobalID": "39689a9a-d11b-44e0-8541-2527450aa411"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 89,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15124832983476,
+          38.7239921614285
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401002036001",
+        "NOME": "Evidencia Astoria Creative Hotel",
+        "MORADA": "Rua Braancamp, 10",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "050",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 89,
+        "GlobalID": "38c92efd-8f9f-48f3-a652-21b19ce62c89"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 90,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14619960030865,
+          38.7269123653708
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1400209035001",
+        "NOME": "Embaixador",
+        "MORADA": "Av. Duque de Loulé, 73",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "088",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 90,
+        "GlobalID": "64d20e12-5f33-415a-80d5-0684d84c9b29"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 91,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14897193961598,
+          38.7279454220599
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001605028001",
+        "NOME": "EduardoVII",
+        "MORADA": "Av. Fontes Pereira de Melo, 5",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1069",
+        "COD_POST_3": "114",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 91,
+        "GlobalID": "4b7b0dfe-8fd7-42b0-97b5-c5f9e9cbfc9f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 92,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.148057939747,
+          38.7252015279685
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1400206024001",
+        "NOME": "Dom Carlos Park",
+        "MORADA": "Av. Duque de Loulé, 121",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "089",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 92,
+        "GlobalID": "0fd7e830-011f-480c-bc99-1453d378252b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 93,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14739571878754,
+          38.7235933593576
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401103009001",
+        "NOME": "Dom Carlos Liberty",
+        "MORADA": "Rua Alexandre Herculano, 13",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "005",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 93,
+        "GlobalID": "5a3232a1-0bd9-41b5-a5e6-587a50e872d8"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 94,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14922657426979,
+          38.7279236335294
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001605029001",
+        "NOME": "Central Park ",
+        "MORADA": "Av. Sidónio Pais, 4",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "214",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 94,
+        "GlobalID": "89e853bd-9d3c-4dd0-94c4-2afa3c5d9d3d"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 96,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15274645203071,
+          38.7183237733161
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601303009001",
+        "NOME": "CasadeSãoMamede",
+        "MORADA": "Rua da Escola Politécnica, 159",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "100",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 96,
+        "GlobalID": "f19123d9-56fa-4b28-bce9-bc5943d76fb3"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 97,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14692152689513,
+          38.7173176996586
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4500605018001",
+        "NOME": "Botânico",
+        "MORADA": "Rua da Mãe D¿Água,16/20",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "156",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 97,
+        "GlobalID": "6d1c9dd7-760a-4352-b3b6-f1da0da2c504"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 98,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14948750162218,
+          38.7282424079475
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001605002001",
+        "NOME": "AvenidaPark",
+        "MORADA": "Av. Sidónio Pais, 6",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "214",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 98,
+        "GlobalID": "895194a9-1dfa-44ec-b0e8-2258febc71f9"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 99,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14705432933517,
+          38.7307254098244
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5000803017001",
+        "NOME": "AmericanDiamonds",
+        "MORADA": "Rua Tomás Ribeiro, 47",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "226",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 99,
+        "GlobalID": "71ad22a9-ebf0-4051-af89-2c10fc3c2c7d"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 100,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15494695616753,
+          38.7229273909957
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601102003001",
+        "NOME": "Amazónia",
+        "MORADA": "Travessa da Fábrica dos Pentes, 12 a 20",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "106",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 100,
+        "GlobalID": "b51734f0-1a9f-4618-8468-0e8b094819fc"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 101,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14322454897091,
+          38.7420999831847
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4300601073001",
+        "NOME": "Alif ",
+        "MORADA": "Campo Pequeno, 51",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "104",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "081",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 101,
+        "GlobalID": "a820b65b-9e46-435c-a64e-28913cc70a57"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 102,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14322432079881,
+          38.715952841097
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4501304006001",
+        "NOME": "Suiço Atlântico",
+        "MORADA": "Rua da Glória, 9",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "114",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 102,
+        "GlobalID": "878ba360-a574-4f8c-9125-28e152537d93"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 103,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13985384724272,
+          38.731817304721
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4401503020001",
+        "NOME": "São Pedro",
+        "MORADA": "Rua Pascoal de Melo, 130",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "237",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 103,
+        "GlobalID": "765af9f3-66a7-4885-9dac-a03f69672570"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 104,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13735234460362,
+          38.7283167714345
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4402803005001",
+        "NOME": "pax",
+        "MORADA": "Rua José Estêvão, 20  ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "202",
+        "COD_ACT_ECON": "40101",
+        "DESC_ACT_ECON": "Hotel de 1 estrela",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 104,
+        "GlobalID": "45f02554-e4d3-4d18-8bba-e45146e6fb7b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 105,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14097222551692,
+          38.7264043095185
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2401301018001",
+        "NOME": "Princesa Hotel & Tea",
+        "MORADA": "Rua Gomes Freire, 130",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "180",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 105,
+        "GlobalID": "84d4d3a7-1863-4d1b-be7b-b0a772596999"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 106,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15182855886328,
+          38.7314923108585
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001407028001",
+        "NOME": "Nazareth",
+        "MORADA": "Av. António Augusto de Aguiar, 25¿4º e 5º",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "012",
+        "COD_ACT_ECON": "40403",
+        "DESC_ACT_ECON": "Pensões 1ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 106,
+        "GlobalID": "51cb4009-52b3-4399-b11a-b2b6f838f527"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 107,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.136631204043,
+          38.7280695004349
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4402901004001",
+        "NOME": "Luxe",
+        "MORADA": "Rua Passos Manuel, 28",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "260",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 107,
+        "GlobalID": "e01564ed-b6a8-43d4-83a9-0763b63f9f96"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 108,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14239229938605,
+          38.7319948106523
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4403402029001",
+        "NOME": "Ibis Saldanha",
+        "MORADA": "Av. Casal Ribeiro, 23",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "090",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 108,
+        "GlobalID": "4918a833-fd7a-47cd-81e4-b74a2c1c073a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 109,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15017923762861,
+          38.7201621861431
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601407019001",
+        "NOME": "Ibis Liberdade",
+        "MORADA": "Rua Barata Salgueiro, 53",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "043",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 109,
+        "GlobalID": "281c6ca6-1719-4146-ab23-c8c94c9d6f2f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 110,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16280258229168,
+          38.7371807771847
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1003105011001",
+        "NOME": "Ibis José Malhoa",
+        "MORADA": "Av. José Malhoa, 10",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "111",
+        "COD_POST_4": "1070",
+        "COD_POST_3": "158",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 110,
+        "GlobalID": "4e17a0d1-0b77-4b30-93d1-f19b8b271826"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 111,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13760598033083,
+          38.7108733077125
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4800207009001",
+        "NOME": "Hotel Duas Nações",
+        "MORADA": "Rua da Vitória 41 - Lisboa",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "618",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 111,
+        "GlobalID": "9ce9bce0-411f-4cec-8be9-c00045dd579f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 112,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13507161103047,
+          38.7315108082158
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4401901006001",
+        "NOME": "Hotel do Chile",
+        "MORADA": "Rua Antonio Pedro, 40",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "039",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 112,
+        "GlobalID": "ed2cede3-4662-4282-8afa-c77d1495cf4e"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 113,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14688255438486,
+          38.7106392540942
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2801502013001",
+        "NOME": "EvidenciaSanta Catarina",
+        "MORADA": "Rua Dr. Luis de Almeida e Albuquerque,6",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "116",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "154",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 113,
+        "GlobalID": "78eabfa3-0777-4e01-942c-073b20c036e1"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 114,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14602134042029,
+          38.721596331352
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401107017001",
+        "NOME": "D SanchoI",
+        "MORADA": "Av. da Liberdade, 202 - 2º ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "147",
+        "COD_ACT_ECON": "40403",
+        "DESC_ACT_ECON": "Pensões 1ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 114,
+        "GlobalID": "ef1b2f40-49b7-4a88-b387-229766d87ca6"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 115,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13923220857453,
+          38.7319041569311
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4401503015001",
+        "NOME": "Delta",
+        "MORADA": "Rua Ilha do Pico, 3",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "169",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 115,
+        "GlobalID": "6ebe7bcb-036f-49d1-a23f-db00b17ed1d6"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 116,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.12828257260947,
+          38.7371474641202
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4102901029001",
+        "NOME": "D Afonso Henriques ",
+        "MORADA": "Rua Cristovão Falcão, 8",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "119",
+        "COD_POST_4": "1900",
+        "COD_POST_3": "172",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 116,
+        "GlobalID": "fe15c296-af07-4e82-bf3c-2b0ab32734c0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 117,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13483849372266,
+          38.7425149420644
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4301203010001",
+        "NOME": "AfrinLisboa",
+        "MORADA": "Av. João XXI, 6 - 2º",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "104",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "301",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 117,
+        "GlobalID": "d5ea589b-0895-439f-b3db-4a657f851b5b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 118,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14459088831469,
+          38.7287830073525
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4403504006001",
+        "NOME": "Alicante",
+        "MORADA": "Av. Duque de Loulé, 20",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "090",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 118,
+        "GlobalID": "881aac42-7fdb-402d-ba07-517e5a044e60"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 119,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14038783459368,
+          38.7137190677239
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100408002001",
+        "NOME": "Americano",
+        "MORADA": "Rua 1º de Dezembro,73",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1200",
+        "COD_POST_3": "358",
+        "COD_ACT_ECON": "40102",
+        "DESC_ACT_ECON": "Hotel de 2 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 119,
+        "GlobalID": "21788aa4-9bc9-4021-8b3a-e02c28b516ec"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 120,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14490123468577,
+          38.717465465229
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4501205007001",
+        "NOME": "Alegria",
+        "MORADA": "Praça da Alegria, 12 r/c esqº,1º,2º e3º esq.",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "004",
+        "COD_ACT_ECON": "40101",
+        "DESC_ACT_ECON": "Hotel de 1 estrela",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 120,
+        "GlobalID": "6787c101-280c-4062-ad75-df7d42d9b964"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 121,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14739601792654,
+          38.7386955052911
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2303701037001",
+        "NOME": "Capital",
+        "MORADA": "Avenida Elias Garcia, 87",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "097",
+        "COD_ACT_ECON": "40101",
+        "DESC_ACT_ECON": "Hotel de 1 estrela",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 121,
+        "GlobalID": "fc3b3fc5-6297-4a42-b1f2-de0266bb97a6"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 122,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14645937152924,
+          38.7352960883139
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2305004023001",
+        "NOME": "PátriaHotel",
+        "MORADA": "Av. Duque D`Ávila, 42, 4º, 5º e 6º andares",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "126",
+        "COD_ACT_ECON": "40101",
+        "DESC_ACT_ECON": "Hotel de 1 estrela",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 122,
+        "GlobalID": "9e9069ec-16d6-4c17-8704-bbc4081a962b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 123,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14207623254323,
+          38.7152867833086
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100403014001",
+        "NOME": "AVipEden",
+        "MORADA": "Pç. dos Restauradores, 24",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "187",
+        "COD_ACT_ECON": "40204",
+        "DESC_ACT_ECON": "Hotéis Apartamentos 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 123,
+        "GlobalID": "782d3374-79dd-46a2-9b86-274987bf6b8a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 124,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14921821275114,
+          38.7322360723939
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5000702005001",
+        "NOME": "TurimLisboa",
+        "MORADA": "Rua Filipe Folque, 20",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "113",
+        "COD_ACT_ECON": "40204",
+        "DESC_ACT_ECON": "Hotéis Apartamentos 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 124,
+        "GlobalID": "5dc1952c-21fb-4a24-b37f-c07fc2cea6e3"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 125,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14498634556737,
+          38.7279279483472
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1400103023001",
+        "NOME": "Suites Marquês",
+        "MORADA": "Av. Duque de Loulé, 45",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "086",
+        "COD_ACT_ECON": "40204",
+        "DESC_ACT_ECON": "Hotéis Apartamentos 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 125,
+        "GlobalID": "30c455f3-e449-46eb-870e-47ead1572347"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 126,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15265807487473,
+          38.7225749772448
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601401011001",
+        "NOME": "Clarion Suites",
+        "MORADA": "Rua Rodrigo da Fonseca, 44",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "193",
+        "COD_ACT_ECON": "40204",
+        "DESC_ACT_ECON": "Hotéis Apartamentos 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 126,
+        "GlobalID": "c1d8cde7-9b31-4c8f-b633-10d6a526a773"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 127,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15035714986892,
+          38.7208456767504
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601405022001",
+        "NOME": "Altis Suites",
+        "MORADA": "Rua Castilho, 13",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "066",
+        "COD_ACT_ECON": "40204",
+        "DESC_ACT_ECON": "Hotéis Apartamentos 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 127,
+        "GlobalID": "013d7a74-98b4-45c9-a7e6-f3b95609198e"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 128,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15067493249397,
+          38.7205277818664
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601405004001",
+        "NOME": "Altis Prime",
+        "MORADA": "Rua Rodrigo da Fonseca, 4",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "191",
+        "COD_ACT_ECON": "40204",
+        "DESC_ACT_ECON": "Hotéis Apartamentos 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 128,
+        "GlobalID": "264bf5e7-fbde-4110-b28a-8c2d54c2b2df"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 135,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13014446847806,
+          38.76124190814
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4202302025001",
+        "NOME": "Terminus",
+        "MORADA": "Av. Almirante Gago Coutinho, 153 ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "103",
+        "COD_POST_4": "1700",
+        "COD_POST_3": "029",
+        "COD_ACT_ECON": "40403",
+        "DESC_ACT_ECON": "Pensões 1ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 135,
+        "GlobalID": "f61616b7-3968-4a83-9144-a53db8d77471"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 136,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14404946470979,
+          38.717152506498
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4501209016001",
+        "NOME": "Roma",
+        "MORADA": "Travessa da Glória, 22 A-1º",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "118",
+        "COD_ACT_ECON": "40403",
+        "DESC_ACT_ECON": "Pensões 1ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 136,
+        "GlobalID": "06140d52-6535-4d57-9e46-8724fd1113ae"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 137,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1341799872969,
+          38.7309891943574
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4401903058001",
+        "NOME": "O Paradouro",
+        "MORADA": "Av. Almirante Reis, 106-7º ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "022",
+        "COD_ACT_ECON": "40403",
+        "DESC_ACT_ECON": "Pensões 1ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 137,
+        "GlobalID": "c840cb63-97ad-4d94-a1cf-68a6eb493193"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 138,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14767619887038,
+          38.7355532215153
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2302303022001",
+        "NOME": "Imperador",
+        "MORADA": "Av. 5 de Outubro, 55 ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "048",
+        "COD_ACT_ECON": "40403",
+        "DESC_ACT_ECON": "Pensões 1ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 138,
+        "GlobalID": "1af0a5ea-23b2-4153-8e74-c1caae2c89e7"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 139,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13410452881301,
+          38.742023234985
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4301204020001",
+        "NOME": "LardoAreeiro",
+        "MORADA": "Praça Francisco Sá Carneiro, 4",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "104",
+        "COD_POST_4": "1000",
+        "COD_POST_3": "159",
+        "COD_ACT_ECON": "40401",
+        "DESC_ACT_ECON": "Pensões 3ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 139,
+        "GlobalID": "39219695-7fcc-470b-8cda-39b61bd1e46f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 140,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14991533056442,
+          38.7300578772273
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001603002001",
+        "NOME": "Horizonte",
+        "MORADA": "Av. António Augusto de Aguiar, 42",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "017",
+        "COD_ACT_ECON": "40401",
+        "DESC_ACT_ECON": "Pensões 3ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 140,
+        "GlobalID": "af4f0e41-03d3-4d02-b537-9ee36452c087"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 141,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13781021770056,
+          38.7288116206155
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4402702091001",
+        "NOME": "D Joao",
+        "MORADA": "Rua José Estêvão, 43",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "200",
+        "COD_ACT_ECON": "40401",
+        "DESC_ACT_ECON": "Pensões 3ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 141,
+        "GlobalID": "92cc50e0-c697-4bee-9d83-0d1aba5c78d6"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 142,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15256580531863,
+          38.7234723155663
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601401054001",
+        "NOME": "Castilho",
+        "MORADA": "Rua Castilho, 57-4º E ",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "068",
+        "COD_ACT_ECON": "40401",
+        "DESC_ACT_ECON": "Pensões 3ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 142,
+        "GlobalID": "27b6a11b-dcae-499a-99be-d0d5e17eb637"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 143,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14380659888451,
+          38.7272797780865
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4402502015001",
+        "NOME": "Caravela",
+        "MORADA": "Rua Ferreira Lapa, 38",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "105",
+        "COD_POST_4": "1150",
+        "COD_POST_3": "159",
+        "COD_ACT_ECON": "40401",
+        "DESC_ACT_ECON": "Pensões 3ª categoria",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 143,
+        "GlobalID": "8f5dd511-2942-4a9a-ad9d-9a22150abfa4"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 146,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16342285911387,
+          38.7076719833772
+        ]
+      },
+      "properties": {
+        "COD_SIG": "2601303053001",
+        "NOME": "Olissippo Lapa Palace",
+        "MORADA": "Rua do Pau de Bandeira, 4-4B",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "113",
+        "COD_POST_4": "1249",
+        "COD_POST_3": "021",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 146,
+        "GlobalID": "11ba045b-ca7d-445e-bbc1-668f1f23517d"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 147,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1472691281977,
+          38.7210097154578
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401009030001",
+        "NOME": "Tivoli",
+        "MORADA": "Avenida da Liberdade, 179-185",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1269",
+        "COD_POST_3": "050",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 147,
+        "GlobalID": "489c19a8-2a85-4999-ad99-3b6e7ec8a0ca"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 148,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13573138318245,
+          38.7093655848303
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1900102010001",
+        "NOME": "Vincci Baixa",
+        "MORADA": "Rua do Comércio, 32-36",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "150",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 148,
+        "GlobalID": "a05e300e-b966-4703-ac10-7fa76eaf07bb"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 149,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1502390339855,
+          38.720634797823
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4601405009001",
+        "NOME": "Altis",
+        "MORADA": "Rua Castilho, 11",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1269",
+        "COD_POST_3": "072",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 149,
+        "GlobalID": "d9052279-f3bf-4076-b10a-b201b09d74c3"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 150,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14382622168358,
+          38.7193498149839
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4501201053001",
+        "NOME": "Fonte Cruz Lisboa",
+        "MORADA": "Avenida da Liberdade, 138-138C",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "001",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 150,
+        "GlobalID": "2bf9dec5-cbe4-4e79-b4f3-8935a1f10301"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 151,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13789766779516,
+          38.7126293089183
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4800104005001",
+        "NOME": "Santa Justa",
+        "MORADA": "Rua de Santa Justa, 42-48",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "170",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 151,
+        "GlobalID": "18ff4b14-ba59-4a79-842a-497fe9d2ab32"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 152,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13685954141519,
+          38.7144458169335
+        ]
+      },
+      "properties": {
+        "COD_SIG": "3100307008001",
+        "NOME": "Portugal",
+        "MORADA": "Rua João das Regras, 4-4I",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "294",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 152,
+        "GlobalID": "786cd9b4-99cd-454d-a9ef-7759500a1643"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 153,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13814548962586,
+          38.7099761329462
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4800122004001",
+        "NOME": "My Story Hotel Ouro",
+        "MORADA": "Rua Áurea, 94-108",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "063",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 153,
+        "GlobalID": "b8daf14c-b40b-48cc-b561-8d5adef281a3"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 154,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14701755679902,
+          38.7263385983973
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1400208039001",
+        "NOME": "H10 Duque de Loulé",
+        "MORADA": "Avenida Duque de Loulé, 83",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1050",
+        "COD_POST_3": "088",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 154,
+        "GlobalID": "bac6b924-fa99-424e-a174-5928d841cd83"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 155,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14891047329098,
+          38.7222648730404
+        ]
+      },
+      "properties": {
+        "COD_SIG": "1401006003001",
+        "NOME": "Porto Bay Liberdade",
+        "MORADA": "Rua Rosa Araújo, 4-10",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "195",
+        "COD_ACT_ECON": "40105",
+        "DESC_ACT_ECON": "Hotel de 5 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 155,
+        "GlobalID": "5105b3d8-7bb2-49d9-9725-7c12d90907de"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 156,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14364660444084,
+          38.7168787642608
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4501302020001",
+        "NOME": "Bessa Hotel Liberdade",
+        "MORADA": "Avenida da Liberdade, 29-41",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "122",
+        "COD_POST_4": "1250",
+        "COD_POST_3": "139",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 156,
+        "GlobalID": "42600356-99c6-49d4-8556-42d77433fb9f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13866576599066,
+          38.7104754151942
+        ]
+      },
+      "properties": {
+        "COD_SIG": "4800117008001",
+        "NOME": "The 7 hotel",
+        "MORADA": "Rua Áurea, 133-143",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "121",
+        "COD_POST_4": "1100",
+        "COD_POST_3": "060",
+        "COD_ACT_ECON": "40103",
+        "DESC_ACT_ECON": "Hotel de 3 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 157,
+        "GlobalID": "1c368744-e9ed-49fd-abdd-f5b580789681"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 158,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15918741663531,
+          38.7279927175357
+        ]
+      },
+      "properties": {
+        "COD_SIG": "5001202011001",
+        "NOME": "Skyna Lisboa",
+        "MORADA": "Rua de Artilharia Um, 112-112B",
+        "NUM_POLICIA": null,
+        "FREGUESIA": "106",
+        "COD_POST_4": "1070",
+        "COD_POST_3": "015",
+        "COD_ACT_ECON": "40104",
+        "DESC_ACT_ECON": "Hotel de 4 estrelas",
+        "ANO": 2015,
+        "TIPO": "Hotelaria",
+        "OBJECTID": 158,
+        "GlobalID": "2e5820dc-d7bc-4b2d-96e7-4e427b727def"
+      }
+    }
+  ]
+}

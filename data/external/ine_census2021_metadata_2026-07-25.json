@@ -1,0 +1,12 @@
+{
+  "source": "INE, Census 2021 synthesis file - statistical subsections",
+  "source_url": "https://mapas.ine.pt/download/2021FicheiroSintese/FS2021SubSeccaoTot.zip",
+  "source_workbook": "census2021_subsections.xlsx",
+  "source_workbook_omitted_from_repository": true,
+  "omission_reason": "Official source ZIP is approximately 42 MB.",
+  "download_and_extraction_note": "Download the ZIP from source_url, extract the XLSX, then run src/extract_ine_population.py against that workbook.",
+  "municipality_filter": "MUNICIPIO == 1106 (Lisboa)",
+  "grain_filter": "Parish aggregate rows: SECCAO and SUBSECCAO are null",
+  "row_count": 24,
+  "age_definition_note": "The synthesis provides 15-24 and 25-64, not a separate 20-24 band. Therefore the reproducible measure is ages 15-64."
+}

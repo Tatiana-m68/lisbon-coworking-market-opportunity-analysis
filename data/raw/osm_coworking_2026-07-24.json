@@ -1,0 +1,676 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-24T22:56:05Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 4720152466,
+      "lat": 38.7203147,
+      "lon": -9.1349429,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "227",
+        "addr:postcode": "1100-085",
+        "addr:street": "Rua do Benformoso",
+        "contact:instagram": "@devazuka",
+        "email": "hi@devazuka.com",
+        "facebook": "https://www.facebook.com/devazuka",
+        "internet_access": "yes",
+        "name": "DEVAZUKA",
+        "office": "coworking",
+        "phone": "+351 963 695 361",
+        "website": "https://devazuka.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5069382167,
+      "lat": 38.7240893,
+      "lon": -9.1594568,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:country": "PT",
+        "addr:housenumber": "21-B",
+        "addr:postcode": "1070-100",
+        "addr:street": "Avenida Engenheiro Duarte Pacheco",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Work Café - Amoreiras",
+        "brand": "Santander",
+        "brand:website": "https://www.santander.pt/",
+        "brand:wikidata": "Q4854116",
+        "brand:wikipedia": "pt:Banco Santander Portugal",
+        "cash_in": "yes",
+        "cash_out": "yes",
+        "check_date": "2026-07-14",
+        "contact:email": "workcafe.amoreiras@santander.pt",
+        "contact:facebook": "santanderpt",
+        "contact:instagram": "santanderpt",
+        "contact:linkedin": "https://www.linkedin.com/company/santanderpt/",
+        "contact:phone": "+351 213 813 250",
+        "contact:twitter": "santanderpt",
+        "contact:youtube": "@santanderpt",
+        "internet_access": "wlan",
+        "language:en": "yes",
+        "language:es": "yes",
+        "language:fr": "yes",
+        "language:pt": "yes",
+        "name": "Santander Work Café",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 08:30-18:00; Sa-Su off; Jan 01,Apr 25,May 25,Jun 01,Jun 26,Aug 10,Aug 24,Oct 15,Nov 05,Dec 01,Dec 08,Dec 25 off",
+        "operator": "Banco Santander (Portugal)",
+        "operator:wikidata": "Q4854116",
+        "operator:wikipedia": "pt:Banco Santander Portugal",
+        "ref": "348",
+        "source:contact": "website",
+        "source:opening_hours": "website",
+        "website": "https://www.santander.pt/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5904542939,
+      "lat": 38.7173221,
+      "lon": -9.128739,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "35A",
+        "addr:postcode": "1170-165",
+        "addr:street": "Travessa do Pereira",
+        "email": "info@heden.co",
+        "internet_access": "wlan",
+        "name": "Heden Graça",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-19:00",
+        "phone": "+351 919 237 074",
+        "website": "https://www.heden.co/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6385072016,
+      "lat": 38.71044,
+      "lon": -9.135,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "11",
+        "addr:postcode": "1100-404",
+        "addr:street": "Travessa das Pedras Negras",
+        "brand": "Impact Hub",
+        "brand:wikidata": "Q25205858",
+        "brand:wikipedia": "en:Impact Hub (global network)",
+        "internet_access": "wlan",
+        "name": "Impact Hub",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "website": "https://lisbon.impacthub.net"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6396669672,
+      "lat": 38.7117433,
+      "lon": -9.1416358,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "29",
+        "addr:postcode": "1200-369",
+        "addr:street": "Largo Rafael Bordalo Pinheiro",
+        "addr:unit": "2",
+        "internet_access": "wlan",
+        "name": "Heden Chiado",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-19:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10011209150,
+      "lat": 38.6995865,
+      "lon": -9.1788825,
+      "tags": {
+        "check_date": "2022-09-09",
+        "name": "Scape",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10015362767,
+      "lat": 38.7188284,
+      "lon": -9.1437283,
+      "tags": {
+        "brand": "Regus",
+        "brand:wikidata": "Q761072",
+        "check_date": "2026-03-30",
+        "name": "Regus",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10321568413,
+      "lat": 38.7185285,
+      "lon": -9.157844,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:street": "Rua Saraiva de Carvalho",
+        "amenity": "coworking_space",
+        "name": "Resves Coworking Space",
+        "website": "https://resvescowork.pt/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11665827947,
+      "lat": 38.7328739,
+      "lon": -9.1497772,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "63",
+        "addr:postcode": "1050-111",
+        "addr:street": "Rua Latino Coelho",
+        "addr:unit": "1",
+        "check_date": "2024-02-26",
+        "check_date:currency:XBT": "2025-02-06",
+        "contact:email": "hello@theblocklisboa.com",
+        "contact:instagram": "https://www.instagram.com/theblocklisboa/",
+        "contact:twitter": "https://twitter.com/TheBlockLisboa",
+        "currency:XBT": "yes",
+        "name": "The Block Lisboa",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 10:00-18:30",
+        "payment:lightning": "yes",
+        "payment:lightning_contactless": "no",
+        "payment:onchain": "yes",
+        "phone": "+351 939 102832",
+        "survey:date": "2024-05-29",
+        "website": "https://www.theblocklisboa.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11777096574,
+      "lat": 38.7692178,
+      "lon": -9.1001017,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "8",
+        "addr:postcode": "1800-399",
+        "addr:street": "Avenida Aquilino Ribeiro Machado",
+        "alt_name": "Spaces Oriente",
+        "brand": "Spaces",
+        "brand:wikidata": "Q87629680",
+        "name": "Spaces",
+        "office": "coworking",
+        "phone": "+351 211451752"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11777100031,
+      "lat": 38.7255835,
+      "lon": -9.1488177,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "14",
+        "addr:postcode": "1250-162",
+        "addr:street": "Praça Marquês de Pombal",
+        "alt_name": "Spaces Marquês de Pombal",
+        "brand": "Spaces",
+        "brand:wikidata": "Q87629680",
+        "name": "Spaces",
+        "office": "coworking",
+        "phone": "+351 211451752"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11869392777,
+      "lat": 38.721086,
+      "lon": -9.1502599,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "13B",
+        "addr:postcode": "1250-195",
+        "addr:street": "R. Castilho",
+        "name": "Espaço Castilho",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11880069089,
+      "lat": 38.7550044,
+      "lon": -9.2057816,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "3B",
+        "addr:street": "Rua 5, Bairro Pedralvas",
+        "craft": "handicraft",
+        "name": "Sabor e Arte Atelie Cowork",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "phone": "+351 21 760 1788",
+        "website": "https://www.facebook.com/saboreartecowork/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11880069091,
+      "lat": 38.7551078,
+      "lon": -9.2049701,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "5A",
+        "addr:street": "Rua das Pedralvas",
+        "name": "FORJA Cowork + Studio",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-19:00",
+        "phone": "+351 21 160 6330",
+        "website": "https://www.forja.pt/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11882321570,
+      "lat": 38.7714021,
+      "lon": -9.0971082,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "52",
+        "addr:postcode": "1990-096",
+        "addr:street": "Avenida Dom João II",
+        "branch": "Parque das Nações",
+        "contact:email": "info@avilaspaces.com",
+        "contact:phone": "+351 21 330 3723; +351 910 642 244",
+        "name": "Avila Spaces",
+        "office": "coworking",
+        "website": "https://avilaspaces.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11886704394,
+      "lat": 38.7081896,
+      "lon": -9.2087411,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:street": "Rua Mem Rodrigues",
+        "name": "Cowork Restelo",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11892515134,
+      "lat": 38.7218325,
+      "lon": -9.1515312,
+      "tags": {
+        "addr:housenumber": "50",
+        "addr:postcode": "1250-011 Coração de Jesus",
+        "addr:street": "Rua Alexandre Herculano",
+        "brand": "WeWork",
+        "brand:wikidata": "Q19995004",
+        "fee": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "WeWork",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+351 210 203 005",
+        "website": "https://www.wework.com/pt-PT/l/office-space/lisbon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11892515135,
+      "lat": 38.7217465,
+      "lon": -9.1519444,
+      "tags": {
+        "addr:housenumber": "50",
+        "addr:postcode": "1250-011 Coração de Jesus",
+        "addr:street": "Rua Alexandre Herculano",
+        "brand": "WeWork",
+        "brand:wikidata": "Q19995004",
+        "fee": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "WeWork",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+351 210 203 005",
+        "website": "https://www.wework.com/pt-PT/l/office-space/lisbon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11898720626,
+      "lat": 38.756211,
+      "lon": -9.0970285,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "11A",
+        "addr:postcode": "1990-196",
+        "addr:street": "Alameda dos Oceanos",
+        "internet_access": "yes",
+        "name": "Inoffice",
+        "office": "coworking",
+        "opening_hours": "24h",
+        "phone": "+351 21 593 6085"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12323330753,
+      "lat": 38.7297514,
+      "lon": -9.1081008,
+      "tags": {
+        "addr:housenumber": "133-137",
+        "name": "Now no office word Beato",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12354242268,
+      "lat": 38.7332629,
+      "lon": -9.1526518,
+      "tags": {
+        "name": "IDEA Spaces - São Sebastião",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12526350974,
+      "lat": 38.744638,
+      "lon": -9.1011796,
+      "tags": {
+        "addr:housenumber": "29b",
+        "addr:street": "Rua Fernando Palha",
+        "check_date": "2025-01-23",
+        "name:pt": "WorkHub Prata",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12709903316,
+      "lat": 38.7358752,
+      "lon": -9.1449426,
+      "tags": {
+        "name": "Gaming Hub",
+        "office": "coworking",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12709912384,
+      "lat": 38.7565647,
+      "lon": -9.1434403,
+      "tags": {
+        "name": "AIhub",
+        "office": "coworking",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13282831857,
+      "lat": 38.7348821,
+      "lon": -9.1447434,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "6",
+        "addr:postcode": "1050-191",
+        "addr:street": "Avenida da República",
+        "branch": "Avenida da República",
+        "contact:email": "info@avilaspaces.com",
+        "contact:phone": "+351 21 330 3723; +351 910 642 244",
+        "name": "Avila Spaces",
+        "office": "coworking",
+        "website": "https://avilaspaces.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13468469969,
+      "lat": 38.7075066,
+      "lon": -9.1529208,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "49",
+        "addr:street": "Avenida Dom Carlos I",
+        "branch": "Work Café - Santos",
+        "name": "Santander Work Café",
+        "office": "coworking",
+        "operator": "Banco Santander (Portugal)",
+        "operator:wikidata": "Q4854116"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13529352806,
+      "lat": 38.73019,
+      "lon": -9.1370376,
+      "tags": {
+        "addr:housenumber": "99",
+        "addr:postcode": "1150-260",
+        "addr:street": "Rua Passos Manuel",
+        "addr:unit": "A",
+        "name": "Espaço Arroios",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "website": "https://www.instagram.com/espaco_arroios/?hl=en"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13543521830,
+      "lat": 38.8077656,
+      "lon": -9.1577159,
+      "tags": {
+        "addr:city": "Santo António dos Cavaleiros",
+        "addr:housenumber": "4",
+        "addr:postcode": "2660-329",
+        "addr:street": "Alameda Salgueiro Maia",
+        "email": "info@pontehub.pt",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Ponte Hub",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "phone": "+351 215 986 083",
+        "ref:vatin": "514272236",
+        "website": "https://pontehub.pt/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13917926242,
+      "lat": 38.7275817,
+      "lon": -9.1373321,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "4B",
+        "addr:postcode": "1150-202",
+        "addr:street": "Rua José Estevão",
+        "air_conditioning": "yes",
+        "contact:housenumber": "4",
+        "description": "self-organized and not profit oriented",
+        "email": "cowork@rizomacoop.pt",
+        "image": "https://www.rizomacoop.pt/wp-content/uploads/2026/05/rizoma121023_MC_08-1536x1024-1.jpg",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "level": "1",
+        "name": "CoWork @ Rizoma",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 10:00-18:30",
+        "operator": "Rizoma Cooperativa Integral",
+        "operator:type": "cooperative",
+        "website": "https://www.rizomacoop.pt/en/sections/services-section/cowork/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13926470143,
+      "lat": 38.7203723,
+      "lon": -9.1415892,
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "5",
+        "addr:postcode": "1150-236",
+        "addr:street": "Calçada do Moinho de Vento",
+        "addr:unit": "CV",
+        "alt_name": "On Spaces",
+        "name": "On Cowork Spaces",
+        "office": "coworking",
+        "parish": "Santo António",
+        "website": "https://www.on-spaces.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 96854133,
+      "center": {
+        "lat": 38.7209321,
+        "lon": -9.1607374
+      },
+      "tags": {
+        "amenity": "coworking_space",
+        "building": "apartments",
+        "name": "Regus",
+        "opening_hours": "\"by appointment only, or 24/7 for members\""
+      }
+    },
+    {
+      "type": "way",
+      "id": 98057563,
+      "center": {
+        "lat": 38.7161181,
+        "lon": -9.1440735
+      },
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "13",
+        "addr:street": "Travessa do Fala-Só",
+        "addr:unit": "B",
+        "building": "yes",
+        "description": "24/7 for members",
+        "name": "The Base Coworking Lisbon",
+        "office": "coworking",
+        "opening_hours": "Mo-Fr 09:00-16:00",
+        "website": "https://baselisbon.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 99628864,
+      "center": {
+        "lat": 38.7328457,
+        "lon": -9.1425794
+      },
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housenumber": "4",
+        "addr:postcode": "1000-154",
+        "addr:street": "Avenida Defensores de Chaves",
+        "amenity": "coworking_space",
+        "branch": "Saldanha",
+        "building": "office",
+        "name": "IDEA Spaces Saldanha",
+        "operator": "IDEA Spaces"
+      }
+    },
+    {
+      "type": "way",
+      "id": 155614371,
+      "center": {
+        "lat": 38.7035042,
+        "lon": -9.1622031
+      },
+      "tags": {
+        "building": "yes",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 155614383,
+      "center": {
+        "lat": 38.703109,
+        "lon": -9.1619567
+      },
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:postcode": "1350-352",
+        "addr:street": "Rocha do Conde de Óbidos",
+        "alt_name": "Conde de Óbidos",
+        "building": "yes",
+        "contact:email": "info@lacs.pt",
+        "contact:facebook": "https://www.facebook.com/lacscreators/",
+        "contact:instagram": "lacscreators",
+        "contact:linkedin": "lacscreators",
+        "contact:phone": "+351 210 539 176",
+        "contact:website": "https://www.lacs.pt",
+        "name": "LACS - Conde de Óbidos",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 209631407,
+      "center": {
+        "lat": 38.6815977,
+        "lon": -9.1615579
+      },
+      "tags": {
+        "building": "yes",
+        "name": "Quarteirão das Artes",
+        "office": "coworking"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1374548121,
+      "center": {
+        "lat": 38.7330015,
+        "lon": -9.1449296
+      },
+      "tags": {
+        "addr:city": "Lisboa",
+        "addr:housename": "Edificio Atrium Saldanha",
+        "addr:postcode": "1050-094",
+        "addr:street": "Praça do Duque de Saldanha",
+        "branch": "Atrium Saldanha",
+        "contact:email": "info@avilaspaces.com",
+        "contact:phone": "+351 21 330 3723; +351 910 642 244",
+        "indoor": "room",
+        "level": "2",
+        "name": "Avila Spaces",
+        "office": "coworking",
+        "website": "https://avilaspaces.com/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1420058911,
+      "center": {
+        "lat": 38.7483293,
+        "lon": -9.1443925
+      },
+      "tags": {
+        "building": "office",
+        "check_date": "2022-09-11",
+        "name": "Places",
+        "office": "coworking",
+        "place": "plot"
+      }
+    }
+  ]
+}

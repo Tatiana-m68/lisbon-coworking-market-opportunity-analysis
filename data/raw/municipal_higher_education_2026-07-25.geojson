@@ -1,0 +1,1280 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19158737594887,
+          38.6980782898824
+        ]
+      },
+      "properties": {
+        "OBJECTID": 3,
+        "IDTIPO": 14000,
+        "COD_SIG": "812",
+        "INF_NOME": "Universidade Lusíada -Centro Universitário Lusíada",
+        "INF_MORADA": "Rua da Junqueira, 188-198;",
+        "FREGUESIA": "Belém",
+        "INF_TELEFONE": "213611500",
+        "INF_EMAIL": "info@lis.ulusiada.pt",
+        "INF_SITE": "www.lis.ulusiada.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário",
+        "GlobalID": "77dcfe16-f19c-4a85-84b3-de9eef18b356"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.18158997715356,
+          38.699297532228
+        ]
+      },
+      "properties": {
+        "OBJECTID": 5,
+        "IDTIPO": 14000,
+        "COD_SIG": "814",
+        "INF_NOME": "Academia Nacional Superior de Orquestra",
+        "INF_MORADA": "Travessa da Galé, 36 - 3º Edifício Standard Eléctrica",
+        "FREGUESIA": "Alcântara",
+        "INF_TELEFONE": "+351 213 617 320",
+        "INF_EMAIL": "gabrielabaeta@metropolitana.pt",
+        "INF_SITE": "http://www.metropolitana.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Politécnico",
+        "GlobalID": "d8d30453-4f0a-4965-bd83-2c95ac762390"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1782113574969,
+          38.7040933732256
+        ]
+      },
+      "properties": {
+        "OBJECTID": 7,
+        "IDTIPO": 14000,
+        "COD_SIG": "816",
+        "INF_NOME": "Instituto Superior de Ciências Policiais e Segurança Interna",
+        "INF_MORADA": "Rua Primeiro de Maio, 3",
+        "FREGUESIA": "Alcântara",
+        "INF_TELEFONE": "+351 21 902 0600",
+        "INF_EMAIL": "iscpsi@psp.pt",
+        "INF_SITE": "http://www.iscpsi.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público Militar e Policial/Universitário. O Instituto Superior de Ciências Policiais e Segurança Interna (ISCPSI) é uma instituição de ensino superior público universitário policial.",
+        "GlobalID": "0879aca2-47d6-43c9-8419-b1a6982bf786"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.18237432098698,
+          38.7076611753988
+        ]
+      },
+      "properties": {
+        "OBJECTID": 12,
+        "IDTIPO": 14000,
+        "COD_SIG": "821",
+        "INF_NOME": "Universidade de Lisboa - Instituto Superior de Agronomia",
+        "INF_MORADA": "Tapada da Ajuda",
+        "FREGUESIA": "Alcântara",
+        "INF_TELEFONE": "+351 213 653 100",
+        "INF_EMAIL": "cgisa@isa.ulisboa.pt",
+        "INF_SITE": "http://www.isa.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "9f012d7c-2579-4120-a653-1c600304a1f0"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19491752929087,
+          38.7461444302684
+        ]
+      },
+      "properties": {
+        "OBJECTID": 13,
+        "IDTIPO": 14000,
+        "COD_SIG": "822",
+        "INF_NOME": "Instituto Politécnico de Lisboa - Escola Superior de Música",
+        "INF_MORADA": "Campus de Benfica do IPL",
+        "FREGUESIA": "Benfica",
+        "INF_TELEFONE": "+351 210 464 834",
+        "INF_EMAIL": "s.academicos@esml.ipl.pt",
+        "INF_SITE": "http://www.esml.ipl.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Politécnico",
+        "GlobalID": "9e80610f-501c-4b7f-a088-72e22d5f76f2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14056258539932,
+          38.7088352393146
+        ]
+      },
+      "properties": {
+        "OBJECTID": 14,
+        "IDTIPO": 14000,
+        "COD_SIG": "823",
+        "INF_NOME": "Faculdade de Belas-Artes da Universidade de Lisboa ",
+        "INF_MORADA": "Largo da Academia Nacional de Belas Artes",
+        "FREGUESIA": "Santa Maria Maior",
+        "INF_TELEFONE": "213252100",
+        "INF_EMAIL": "academicos@belasartes.ulisboa.pt",
+        "INF_SITE": "http://www.belasartes.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "4aa722fe-93c1-4a16-843c-031097734707"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15533209483227,
+          38.7098380006077
+        ]
+      },
+      "properties": {
+        "OBJECTID": 15,
+        "IDTIPO": 14000,
+        "COD_SIG": "824",
+        "INF_NOME": "Universidade de Lisboa - Instituto Superior de Economia e Gestão",
+        "INF_MORADA": "Rua do Quelhas, 6 ",
+        "FREGUESIA": "Estrela",
+        "INF_TELEFONE": "+351 213 925 800",
+        "INF_EMAIL": "seclic@iseg.utl.pt",
+        "INF_SITE": "http://www.iseg.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "68dabc54-803b-44f5-b7f2-04edb07c0ac8"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.12626761423179,
+          38.7120154718269
+        ]
+      },
+      "properties": {
+        "OBJECTID": 16,
+        "IDTIPO": 14000,
+        "COD_SIG": "825",
+        "INF_NOME": "ISPA - Instituto Universitário de Ciências Psicológicas, Sociais e da Vida",
+        "INF_MORADA": "Rua do Jardim do Tabaco, 34",
+        "FREGUESIA": "Santa Maria Maior",
+        "INF_TELEFONE": "+351 218 811 700",
+        "INF_EMAIL": "reitoria@ispa.pt",
+        "INF_SITE": "http://www.ispa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário\nInstituto Universitário de Ciências Psicológicas, Sociais e da Vida",
+        "GlobalID": "b19a3394-9f3f-4e87-acaf-bf2c3a80e9e2"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.17588760407144,
+          38.7127344698229
+        ]
+      },
+      "properties": {
+        "OBJECTID": 17,
+        "IDTIPO": 14000,
+        "COD_SIG": "826",
+        "INF_NOME": "Escola Superior de Saúde da Cruz Vermelha Portuguesa",
+        "INF_MORADA": "Av. de Ceuta, 1, Edifício Urbiceuta",
+        "FREGUESIA": "Alcântara",
+        "INF_TELEFONE": "+351 213 616 790",
+        "INF_EMAIL": "secretaria@esscvp.com",
+        "INF_SITE": "http://www.esscvp.eu",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Politécnico\n",
+        "GlobalID": "ff156c2d-5d25-4375-8589-db1fcada302d"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19488613757317,
+          38.7127934651125
+        ]
+      },
+      "properties": {
+        "OBJECTID": 19,
+        "IDTIPO": 14000,
+        "COD_SIG": "828",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Arquitectura",
+        "INF_MORADA": "Rua Sá Nogueira - Pólo Universitário da Ajuda",
+        "FREGUESIA": "Ajuda",
+        "INF_TELEFONE": "+351 213615000",
+        "INF_EMAIL": "sec_graduacao@fa.ulisboa.pt",
+        "INF_SITE": "http://www.fa.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "987c65d1-3e22-4fa3-bb9a-763482d01840"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14811370939947,
+          38.7133323632394
+        ]
+      },
+      "properties": {
+        "OBJECTID": 20,
+        "IDTIPO": 14000,
+        "COD_SIG": "829",
+        "INF_NOME": "Instituto Politécnico de Lisboa - Escola Superior de Dança de Lisboa",
+        "INF_MORADA": "Rua Conselheiro Emidio Navarro, 1",
+        "FREGUESIA": "Misericórdia",
+        "INF_TELEFONE": "+351 213 244 770",
+        "INF_EMAIL": "geral@esd.ipl.pt",
+        "INF_SITE": "http://www.esd.ipl.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Politécnico",
+        "GlobalID": "42d7e608-00fa-4225-9eee-aefe331bc627"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19792597981943,
+          38.7132592419756
+        ]
+      },
+      "properties": {
+        "OBJECTID": 21,
+        "IDTIPO": 14000,
+        "COD_SIG": "830",
+        "INF_NOME": "Universidade de Lisboa - Instituto Superior de Ciências Sociais e Políticas",
+        "INF_MORADA": "Rua Almerindo Lessa - Pólo Universitário da Ajuda",
+        "FREGUESIA": "Ajuda",
+        "INF_TELEFONE": "+351 213 69 430",
+        "INF_EMAIL": "licenciaturas@iscsp.ulisboa.pt",
+        "INF_SITE": "http://www.iscsp.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "fc838465-beb4-4650-be75-8a49bed2d8db"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19543738690601,
+          38.7142801709403
+        ]
+      },
+      "properties": {
+        "OBJECTID": 23,
+        "IDTIPO": 14000,
+        "COD_SIG": "832",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Medicina Veterinária",
+        "INF_MORADA": "Avenida da Universidade Técnica - Pólo Universitário da Ajuda",
+        "FREGUESIA": "Ajuda",
+        "INF_TELEFONE": "+351 213 652 800",
+        "INF_EMAIL": "divacademica@fmv.ulisboa.pt",
+        "INF_SITE": "http://www.fmv.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "41914d08-5e89-49c7-a975-f1ef2be874ad"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15799093513136,
+          38.7162494232262
+        ]
+      },
+      "properties": {
+        "OBJECTID": 26,
+        "IDTIPO": 14000,
+        "COD_SIG": "835",
+        "INF_NOME": "Escola Superior de Educação de João de Deus",
+        "INF_MORADA": "Avenida Álvares Cabral, 69",
+        "FREGUESIA": "Campo de Ourique",
+        "INF_TELEFONE": "+351 213 968 154",
+        "INF_EMAIL": "ese@escolasjoaodeus.pt",
+        "INF_SITE": "http://www.joaodedeus.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Politécnico\n",
+        "GlobalID": "cd575e99-3578-4558-9e98-17c7849b24fa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.13942788548246,
+          38.7197732791014
+        ]
+      },
+      "properties": {
+        "OBJECTID": 29,
+        "IDTIPO": 14000,
+        "COD_SIG": "838",
+        "INF_NOME": "Universidade Nova de Lisboa  - Faculdade de Ciências Médicas",
+        "INF_MORADA": "Campo dos Mártires da Pátria, 130",
+        "FREGUESIA": "Arroios",
+        "INF_TELEFONE": "+351 218 803 001",
+        "INF_EMAIL": "academico@nms.unl.pt",
+        "INF_SITE": "http://www.nms.unl.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "20d57e8f-057c-4747-84d6-0a02aa41b96f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16335537361524,
+          38.7462467655245
+        ]
+      },
+      "properties": {
+        "OBJECTID": 31,
+        "IDTIPO": 14000,
+        "COD_SIG": "840",
+        "INF_NOME": "Escola Superior de Enfermagem S. Francisco das Misericórdias",
+        "INF_MORADA": "Greenpark Lisboa, Rua General Firmino Miguel 6",
+        "FREGUESIA": "São Domingos de Benfica",
+        "INF_TELEFONE": "+351 215836488",
+        "INF_EMAIL": "geral@esesfm.pt",
+        "INF_SITE": "https://esesfm.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Politécnico\nFunciona nas instalações da Universidade Autónoma de Lisboa",
+        "GlobalID": "60cea2fb-d9bb-4a9b-893b-64c4bf60829b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14590682121525,
+          38.7244148638711
+        ]
+      },
+      "properties": {
+        "OBJECTID": 32,
+        "IDTIPO": 14000,
+        "COD_SIG": "841",
+        "INF_NOME": "Universidade Autónoma de Lisboa Luís de Camões",
+        "INF_MORADA": "Rua de Santa Marta, 47",
+        "FREGUESIA": "Santo António",
+        "INF_TELEFONE": "213 177 600",
+        "INF_EMAIL": "geral@autonoma.pt",
+        "INF_SITE": "http://autonoma.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário\n",
+        "GlobalID": "53d5a496-e877-4253-aa06-182a322ed39e"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1608752785393,
+          38.7326146471424
+        ]
+      },
+      "properties": {
+        "OBJECTID": 35,
+        "IDTIPO": 14000,
+        "COD_SIG": "844",
+        "INF_NOME": "Universidade Nova de Lisboa  - Instituto Superior de Estatística e Gestão de Informação",
+        "INF_MORADA": "Campus de Campolide",
+        "FREGUESIA": "Campolide",
+        "INF_TELEFONE": "+351 213 828 610",
+        "INF_EMAIL": "licenciaturas@novaims.unl.pt",
+        "INF_SITE": "http://www.novaims.unl.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "52bcdc41-ef14-4e8c-b624-1bd778cd1cef"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16131254139537,
+          38.7332763449026
+        ]
+      },
+      "properties": {
+        "OBJECTID": 36,
+        "IDTIPO": 14000,
+        "COD_SIG": "845",
+        "INF_NOME": "Universidade Nova de Lisboa  - Faculdade de Direito",
+        "INF_MORADA": "Campus de Campolide 18",
+        "FREGUESIA": null,
+        "INF_TELEFONE": "+351 21 384 74 00",
+        "INF_EMAIL": "info@novalaw.unl.pt",
+        "INF_SITE": "https://novalaw.unl.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "5b3e9541-458d-4d4e-a7ff-0a2f99be4df3"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.1393499615536,
+          38.7367364173094
+        ]
+      },
+      "properties": {
+        "OBJECTID": 38,
+        "IDTIPO": 14000,
+        "COD_SIG": "847",
+        "INF_NOME": "Universidade de Lisboa - Instituto Superior Técnico",
+        "INF_MORADA": "Avenida Rovisco Pais, 1",
+        "FREGUESIA": "Areeiro",
+        "INF_TELEFONE": "+351 218417769",
+        "INF_EMAIL": "ag@tecnico.ulisboa.pt",
+        "INF_SITE": "http:// www.tecnico.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "157162f4-9085-4ed1-80eb-9fe88acb61aa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14670878641058,
+          38.7372079666039
+        ]
+      },
+      "properties": {
+        "OBJECTID": 39,
+        "IDTIPO": 14000,
+        "COD_SIG": "848",
+        "INF_NOME": "Instituto Politécnico de Lisboa - Instituto Superior de Contabilidade e Administração de Lisboa",
+        "INF_MORADA": "Avenida Miguel Bombarda, 20 ",
+        "FREGUESIA": "Avenidas Novas",
+        "INF_TELEFONE": "+351 217 984 500",
+        "INF_EMAIL": "secretaria@iscal.ipl.pt",
+        "INF_SITE": "http://www.iscal.ipl.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Politécnico",
+        "GlobalID": "60aa69be-502f-4969-ae94-fa0caa0e0b1a"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15079076267029,
+          38.74051509062
+        ]
+      },
+      "properties": {
+        "OBJECTID": 41,
+        "IDTIPO": 14000,
+        "COD_SIG": "850",
+        "INF_NOME": "Universidade Nova de Lisboa  - Faculdade de Ciências Sociais e Humanas",
+        "INF_MORADA": "Avenida de Berna, 26C",
+        "FREGUESIA": "Avenidas Novas",
+        "INF_TELEFONE": "+351 21 790 83 34",
+        "INF_EMAIL": "novoaluno@fcsh.unl.pt",
+        "INF_SITE": "http://www.fcsh.unl.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "fc49b709-8b82-45d4-b90b-08fc5b2d956e"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.11319008181664,
+          38.7436144991225
+        ]
+      },
+      "properties": {
+        "OBJECTID": 42,
+        "IDTIPO": 14000,
+        "COD_SIG": "851",
+        "INF_NOME": "Escola Superior de Actividades Imobiliárias",
+        "INF_MORADA": "Praça Eduardo Mondlane, 7C",
+        "FREGUESIA": "Marvila",
+        "INF_TELEFONE": "+351 218 367 010",
+        "INF_EMAIL": "esai@esai.pt",
+        "INF_SITE": "http://www.esai.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário",
+        "GlobalID": "beaa6523-8f01-48b5-9003-891dfb5852fd"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.10018939255239,
+          38.7467456042071
+        ]
+      },
+      "properties": {
+        "OBJECTID": 43,
+        "IDTIPO": 14000,
+        "COD_SIG": "852",
+        "INF_NOME": "Instituto Politécnico da Lusofonia",
+        "INF_MORADA": "Rua do Telhal aos Olivais, 8 - 8A",
+        "FREGUESIA": "Marvila",
+        "INF_TELEFONE": "218621060",
+        "INF_EMAIL": "info@ipluso.pt",
+        "INF_SITE": "https://www.ipluso.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Politécnico\n",
+        "GlobalID": "db094a0e-7cff-4914-ab68-2dc32feb4c48"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19524809933504,
+          38.7461475494247
+        ]
+      },
+      "properties": {
+        "OBJECTID": 46,
+        "IDTIPO": 14000,
+        "COD_SIG": "855",
+        "INF_NOME": "Instituto Politécnico de Lisboa - Escola Superior de Educação de Lisboa",
+        "INF_MORADA": "Campus de Benfica do IPL",
+        "FREGUESIA": "Benfica",
+        "INF_TELEFONE": "+351 217 115 500",
+        "INF_EMAIL": "eselx@eselx.ipl.pt",
+        "INF_SITE": "http://www.eselx.ipl.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Politécnico",
+        "GlobalID": "d6771ac7-5331-4179-b413-064ffc62b48d"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19251199396482,
+          38.7463970029142
+        ]
+      },
+      "properties": {
+        "OBJECTID": 47,
+        "IDTIPO": 14000,
+        "COD_SIG": "856",
+        "INF_NOME": "Instituto Politécnico de Lisboa - Escola Superior de Comunicação Social de Lisboa",
+        "INF_MORADA": "Campus de Benfica do IPL",
+        "FREGUESIA": "Benfica",
+        "INF_TELEFONE": "+351 217 119 000",
+        "INF_EMAIL": "serviços_academicos@escs.ipl.pt",
+        "INF_SITE": "http://www.escs.ipl.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Politécnico",
+        "GlobalID": "75caaedc-388a-4e3f-a34b-4266d4762e44"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16127015479987,
+          38.746676181483
+        ]
+      },
+      "properties": {
+        "OBJECTID": 48,
+        "IDTIPO": 14000,
+        "COD_SIG": "857",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Medicina",
+        "INF_MORADA": "Avenida Professor Egas Moniz ",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "217999560",
+        "INF_EMAIL": "pedagogica@medicina.ulisboa.pt",
+        "INF_SITE": "http://www.medicina.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "bf79c77d-2e18-46a6-bedf-c5aadaccd92c"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15496136212956,
+          38.7480799047497
+        ]
+      },
+      "properties": {
+        "OBJECTID": 49,
+        "IDTIPO": 14000,
+        "COD_SIG": "858",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Farmácia",
+        "INF_MORADA": "Av. Prof. Gama Pinto",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217 946 400",
+        "INF_EMAIL": "geral@ff.ulisboa.pt",
+        "INF_SITE": "http://www.ff.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "913c0701-ba68-4e57-ba9b-eca9ad04d5da"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15444437889594,
+          38.7486955044972
+        ]
+      },
+      "properties": {
+        "OBJECTID": 50,
+        "IDTIPO": 14000,
+        "COD_SIG": "859",
+        "INF_NOME": "ISCTE - Instituto Universitário de Lisboa",
+        "INF_MORADA": " Avenida das Forças Armadas",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217 903 000",
+        "INF_EMAIL": "geral@iscte-iul.pt; admissions@iscte-iul.pt",
+        "INF_SITE": "http://www.iscte-iul.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "97d7686b-53c4-4ad8-9505-e997075ef845"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16602655927615,
+          38.748626056286
+        ]
+      },
+      "properties": {
+        "OBJECTID": 51,
+        "IDTIPO": 14000,
+        "COD_SIG": "860",
+        "INF_NOME": "Universidade Católica Portuguesa - Escola de Enfermagem",
+        "INF_MORADA": "Palma de Cima",
+        "FREGUESIA": "São Domingos de Benfica",
+        "INF_TELEFONE": "+351 21 721 40 47",
+        "INF_EMAIL": "saude.sede@ucp.pt",
+        "INF_SITE": "https://fcse.lisboa.ucp.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário",
+        "GlobalID": "f3b834c5-c7ce-466b-bc2a-cd51b6e8c659"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16493516769764,
+          38.7487438268181
+        ]
+      },
+      "properties": {
+        "OBJECTID": 52,
+        "IDTIPO": 14000,
+        "COD_SIG": "861",
+        "INF_NOME": "Universidade Católica Portuguesa - Faculdade de Ciências Económicas e Empresariais",
+        "INF_MORADA": "Palma de Cima\n",
+        "FREGUESIA": "São Domingos de Benfica",
+        "INF_TELEFONE": "217214277",
+        "INF_EMAIL": "gestao.economia@ucp.pt",
+        "INF_SITE": "http://www.clsbe.lisboa.ucp.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário",
+        "GlobalID": "50b8148e-e82a-4c67-9b31-d8cd7dae1538"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16493516769764,
+          38.7487438268181
+        ]
+      },
+      "properties": {
+        "OBJECTID": 54,
+        "IDTIPO": 14000,
+        "COD_SIG": "863",
+        "INF_NOME": "Universidade Católica Portuguesa - Instituto de Estudos Políticos",
+        "INF_MORADA": "Palma de Cima",
+        "FREGUESIA": "São Domingos de Benfica",
+        "INF_TELEFONE": "+351 217 214 129",
+        "INF_EMAIL": "secretariado.iep@iep.lisboa.ucp.pt",
+        "INF_SITE": "http://www.iep.lisboa.ucp.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário",
+        "GlobalID": "2723c8f0-6389-491e-b125-48796c91f2d5"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15514792165301,
+          38.7493625763499
+        ]
+      },
+      "properties": {
+        "OBJECTID": 56,
+        "IDTIPO": 14000,
+        "COD_SIG": "865",
+        "INF_NOME": "Universidade de Lisboa - Instituto de Geografia e Ordenamento do Território",
+        "INF_MORADA": "Rua Branca Edmée Marques - Edifício IGOT",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "21 0443000",
+        "INF_EMAIL": "academicos@igot.ulisboa.pt",
+        "INF_SITE": "http://www.igot.ulisboa.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": null,
+        "GlobalID": "79dc079d-dc6f-4e50-93c4-ea37c0cc7ca6"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16651033611601,
+          38.7496857585331
+        ]
+      },
+      "properties": {
+        "OBJECTID": 57,
+        "IDTIPO": 14000,
+        "COD_SIG": "866",
+        "INF_NOME": "Universidade Católica Portuguesa - Faculdade de Direito - Escola de Lisboa",
+        "INF_MORADA": "Palma de Cima ",
+        "FREGUESIA": "São Domingos de Benfica",
+        "INF_TELEFONE": "+351 21 721 41 57",
+        "INF_EMAIL": "candidaturas.fd.sede@ucp.pt",
+        "INF_SITE": "https://fd.lisboa.ucp.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário",
+        "GlobalID": "01f710a3-3691-4179-a8e6-b1bebafd329f"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16649883458853,
+          38.7496858602221
+        ]
+      },
+      "properties": {
+        "OBJECTID": 58,
+        "IDTIPO": 14000,
+        "COD_SIG": "867",
+        "INF_NOME": "Universidade Católica Portuguesa - Faculdade de Teologia",
+        "INF_MORADA": "Palma de Cima",
+        "FREGUESIA": "São Domingos de Benfica",
+        "INF_TELEFONE": "+351 217214150",
+        "INF_EMAIL": "direcao.ft@ucp.pt",
+        "INF_SITE": "https://ft.ucp.pt/pt-pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário",
+        "GlobalID": "cf0dcd03-afd0-401c-8ea5-abf4046e3406"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16647609124036,
+          38.7497040769392
+        ]
+      },
+      "properties": {
+        "OBJECTID": 59,
+        "IDTIPO": 14000,
+        "COD_SIG": "868",
+        "INF_NOME": "Universidade Católica Portuguesa - Faculdade de Ciências Humanas",
+        "INF_MORADA": "Palma de Cima",
+        "FREGUESIA": "São Domingos de Benfica",
+        "INF_TELEFONE": "+351 217214157",
+        "INF_EMAIL": "http://www.fch.lisboa.ucp.pt",
+        "INF_SITE": "direccaofch@ucp.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário",
+        "GlobalID": "aa27e022-1497-48bf-8f9c-2b63cb5d3281"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15565262298249,
+          38.7502903125988
+        ]
+      },
+      "properties": {
+        "OBJECTID": 60,
+        "IDTIPO": 14000,
+        "COD_SIG": "869",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Medicina Dentária",
+        "INF_MORADA": "Rua Professora Teresa Ambrósio - Cidade Universitária\n",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217922619",
+        "INF_EMAIL": "academicos@fmd.ul.pt",
+        "INF_SITE": "http://www.fmd.ulisboa.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "389ac1ae-2bac-4cd9-bbb9-94e75297dba8"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15674886276426,
+          38.7518253595765
+        ]
+      },
+      "properties": {
+        "OBJECTID": 61,
+        "IDTIPO": 14000,
+        "COD_SIG": "870",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Direito",
+        "INF_MORADA": "Alameda da Universidade",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217984600",
+        "INF_EMAIL": "divisaoacademica@fd.ulisboa.pt",
+        "INF_SITE": "http://www.fd.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "8b4951e4-1ba3-4f23-8bfe-e2ecb1da4961"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15531802460908,
+          38.7524442616981
+        ]
+      },
+      "properties": {
+        "OBJECTID": 63,
+        "IDTIPO": 14000,
+        "COD_SIG": "872",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Psicologia ",
+        "INF_MORADA": "Alameda da Universidade",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217943800",
+        "INF_EMAIL": "sacademicosfp@psicologia.ulisboa.pt",
+        "INF_SITE": "http://www.psicologia.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "c8f65300-c679-46bc-b5e4-538818252554"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.158234327098,
+          38.7542411682886
+        ]
+      },
+      "properties": {
+        "OBJECTID": 66,
+        "IDTIPO": 14000,
+        "COD_SIG": "875",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Letras",
+        "INF_MORADA": "Alameda da Universidade",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217 920 000",
+        "INF_EMAIL": "sa.graduados@letras.ulisboa.pt",
+        "INF_SITE": "http://www.letras.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "4732bf24-74b4-467e-accf-e2fc32135b25"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.11665366728054,
+          38.7561354968808
+        ]
+      },
+      "properties": {
+        "OBJECTID": 67,
+        "IDTIPO": 14000,
+        "COD_SIG": "876",
+        "INF_NOME": "Instituto Politécnico de Lisboa - Instituto Superior de Engenharia de Lisboa",
+        "INF_MORADA": "Rua Conselheiro Emídio Navarro, 1",
+        "FREGUESIA": "Marvila",
+        "INF_TELEFONE": "+351 218 317 000",
+        "INF_EMAIL": "isel@isel.pt",
+        "INF_SITE": "http://www.isel.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Politécnico",
+        "GlobalID": "2477262e-800e-452a-844b-9429f960f110"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15767153086615,
+          38.7561648121884
+        ]
+      },
+      "properties": {
+        "OBJECTID": 68,
+        "IDTIPO": 14000,
+        "COD_SIG": "877",
+        "INF_NOME": "Universidade de Lisboa - Instituto de Educação",
+        "INF_MORADA": "Alameda da Universidade",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217943902",
+        "INF_EMAIL": "sacademicosie@ie.ulisboa.pt",
+        "INF_SITE": "http://www.ie.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "25bc8352-6917-4011-a10d-8a671bfdb5e8"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15647917912294,
+          38.7565819658652
+        ]
+      },
+      "properties": {
+        "OBJECTID": 71,
+        "IDTIPO": 14000,
+        "COD_SIG": "880",
+        "INF_NOME": "Universidade de Lisboa - Faculdade de Ciências",
+        "INF_MORADA": "Campo Grande, - Edifício C5\n",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217 500 000",
+        "INF_EMAIL": "info@ciencias.ulisboa.pt",
+        "INF_SITE": "http://ciencias.ulisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "89c4f7da-287e-4f3a-bdce-168991640f51"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.15305457280655,
+          38.7579844991189
+        ]
+      },
+      "properties": {
+        "OBJECTID": 72,
+        "IDTIPO": 14000,
+        "COD_SIG": "881",
+        "INF_NOME": "Centro Universitário Lusófona",
+        "INF_MORADA": "Campo Grande, 376",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "+351 217 515 500",
+        "INF_EMAIL": "info.cul@ulusofona.pt",
+        "INF_SITE": "https://www.ulusofona.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário\n",
+        "GlobalID": "c2e820a6-b910-412d-bf91-e73c548f616b"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.19327738776271,
+          38.760156131647
+        ]
+      },
+      "properties": {
+        "OBJECTID": 75,
+        "IDTIPO": 14000,
+        "COD_SIG": "884",
+        "INF_NOME": "Instituto Português de Administração de Marketing de Lisboa",
+        "INF_MORADA": "Quinta do Bom Nome - Estrada da Correia, 53",
+        "FREGUESIA": "Carnide",
+        "INF_TELEFONE": "+351 210309930",
+        "INF_EMAIL": "direcao.ipamlisboa@ipam.pt",
+        "INF_SITE": "http://www.ipam.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário\n",
+        "GlobalID": "85c5290c-fb80-4d17-9297-93ba809513c1"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 77,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16044012109431,
+          38.7688153379044
+        ]
+      },
+      "properties": {
+        "OBJECTID": 77,
+        "IDTIPO": 14000,
+        "COD_SIG": "886",
+        "INF_NOME": "Instituto Superior de Educação e Ciências",
+        "INF_MORADA": "Alameda das Linhas de Torres, 179",
+        "FREGUESIA": "Lumiar",
+        "INF_TELEFONE": "+351 217 541 310",
+        "INF_EMAIL": "info@iseclisboa.pt",
+        "INF_SITE": "http://www.iseclisboa.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Politécnico\n",
+        "GlobalID": "4267c287-0717-46af-936e-dd304b1ceba1"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 78,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16044008683882,
+          38.7688153562211
+        ]
+      },
+      "properties": {
+        "OBJECTID": 78,
+        "IDTIPO": 14000,
+        "COD_SIG": "887",
+        "INF_NOME": "Instituto Superior de Tecnologias Avançadas de Lisboa",
+        "INF_MORADA": "Alameda das Linhas de Torres, 179",
+        "FREGUESIA": "Lumiar",
+        "INF_TELEFONE": "+351 218 436 670",
+        "INF_EMAIL": "info@istec.pt",
+        "INF_SITE": "http//www.istec.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Politécnico",
+        "GlobalID": "731c9dfd-8a73-4314-83bf-9739b4cd4405"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.09821485809046,
+          38.7760356101706
+        ]
+      },
+      "properties": {
+        "OBJECTID": 79,
+        "IDTIPO": 14000,
+        "COD_SIG": "888",
+        "INF_NOME": "Instituto Politécnico de Lisboa - Escola Superior de Tecnologia da Saúde de Lisboa",
+        "INF_MORADA": "Avenida D. João II, 4.69.01",
+        "FREGUESIA": "Parque das Nações",
+        "INF_TELEFONE": "+351 218 980 400",
+        "INF_EMAIL": "presidente@estesl.ipl.pt",
+        "INF_SITE": "http://www.estesl.ipl.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Politécnico",
+        "GlobalID": "9b03c701-17c6-4194-b8e4-6827198dc576"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 80,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.18507872275661,
+          38.7504516605805
+        ]
+      },
+      "properties": {
+        "OBJECTID": 80,
+        "IDTIPO": 14000,
+        "COD_SIG": "889",
+        "INF_NOME": "Instituto Superior de Gestão",
+        "INF_MORADA": "Rua Professor Reinaldo dos Santos, 46-46B",
+        "FREGUESIA": "São Domingos de Benfica",
+        "INF_TELEFONE": "+351 217 513 700",
+        "INF_EMAIL": "isg@isg.pt",
+        "INF_SITE": "http://www.isg.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Privado/Universitário\n",
+        "GlobalID": "45f1e428-a07c-4802-9d26-9f3a4830fc1d"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 322,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.16247560170969,
+          38.7494912748024
+        ]
+      },
+      "properties": {
+        "OBJECTID": 322,
+        "IDTIPO": 14000,
+        "COD_SIG": "4574",
+        "INF_NOME": "Escola Superior de Enfermagem de Lisboa",
+        "INF_MORADA": "Avenida Professor Egas Moniz, Escola Superior de Enfermagem",
+        "FREGUESIA": "Alvalade",
+        "INF_TELEFONE": "217913400",
+        "INF_EMAIL": "academica@esel.pt",
+        "INF_SITE": "www.esel.pt",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público/Universitário",
+        "GlobalID": "890795c2-b9e8-47f5-8a2d-7a3fe747f171"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 962,
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.14267408578589,
+          38.7283245856666
+        ]
+      },
+      "properties": {
+        "OBJECTID": 962,
+        "IDTIPO": 14000,
+        "COD_SIG": "839",
+        "INF_NOME": "Instituto Universitário Militar - Academia Militar",
+        "INF_MORADA": "Rua Gomes Freire, PJ-174",
+        "FREGUESIA": "Arroios",
+        "INF_TELEFONE": "+351 213 186 900",
+        "INF_EMAIL": "am@exercito.pt",
+        "INF_SITE": "http://academiamilitar.pt/",
+        "INF_ACTIVO": 1,
+        "INF_DESCRICAO": "Público Militar e Policial/Universitário",
+        "GlobalID": "d46b2872-dc1d-498c-bcbf-b85e07883d9e"
+      }
+    }
+  ]
+}

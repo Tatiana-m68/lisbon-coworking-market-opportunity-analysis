@@ -1,0 +1,60 @@
+# Data Dictionary - Version 2
+
+Latest documentation update: 25 July 2026. Both processed tables are
+implemented. Fields described as proxies must not be interpreted as complete
+business registers.
+
+## `coworking_locations.csv`
+Grain: one row per observed coworking location.
+
+| Column | Type | Source | Description | Unit / values | Missing-value rule | Example |
+|---|---|---|---|---|---|---|
+| coworking_id | string | Derived | Stable deduplication identifier | Unique text | Not allowed after cleaning | cw_001 |
+| coworking_name | string | OSM / verified public listing | Public business name | Text | Flag missing; do not invent | Second Home |
+| operator | string | OSM / official operator site | Brand or organisation operating the location | Text | Keep null when not published | Heden |
+| address | string | OSM / official operator site | Public street address | Text | Keep null and flag for verification | Rua Maria 10, Lisboa |
+| latitude | float | OSM / verified listing | WGS84 latitude | Decimal degrees | Exclude from spatial analysis until resolved | 38.727 |
+| longitude | float | OSM / verified listing | WGS84 longitude | Decimal degrees | Exclude from spatial analysis until resolved | -9.146 |
+| parish | category | Spatial join | Official Lisbon parish | One of 24 parishes | Not allowed in analysis-ready table | Misericórdia |
+| active_status | category | Manual validation | Status on collection date | active / uncertain / closed | Use uncertain when evidence conflicts | active |
+| source_type | category | Collection log | Discovery/evidence channel | OpenStreetMap / official operator website / combined | Not allowed | OpenStreetMap |
+| source_url | string | Source record | Primary auditable public source | URL | Not allowed for observed record | https://... |
+| secondary_source_url | string | Source record | Independent corroborating source or duplicate OSM reference | URL(s) | Keep null until available | https://... |
+| website | string | Public listing | Current public website associated with the location | URL | Keep null and flag | https://... |
+| website_domain | string | Derived | Normalised website domain | Text | Null when website is missing | heden.co |
+| collection_date | date | Collection log | Observation date | YYYY-MM-DD | Not allowed | 2026-07-22 |
+| verification_status | category | Verification workflow | Evidence-review state | pending / verified_official_site | Not allowed | verified_official_site |
+| matched_rule | string | Derived | Discovery rule that selected the record | Text | Not allowed | office=coworking |
+| osm_type | category | OSM | OSM element type | node / way / relation | Null for web-only record | node |
+| osm_id | integer | OSM | Source OSM element identifier | Integer | Null for web-only record | 4720152466 |
+| duplicate_group | string | QA | Candidate duplicate cluster | Text | Null when no candidate duplicate remains | near_name_match_001 |
+| review_note | string | Verification workflow | Short auditable caveat or decision note | Text | Optional | Official site checked |
+| raw_tags | string | OSM | Original OSM tags serialised as JSON | JSON text | Null for web-only record | {"office":"coworking"} |
+
+## `parish_indicators.csv`
+Grain: one row per Lisbon civil parish.
+
+| Column | Type | Source | Description | Unit / values | Missing-value rule | Example |
+|---|---|---|---|---|---|---|
+| parish | category | Lisboa Aberta | Official parish name | 24 parishes | Not allowed | Avenidas Novas |
+| area_km2 | float | Boundary geometry | Parish area | km² | Not allowed | 2.99 |
+| working_age_population_15_64 | integer | INE Census 2021 | Residents aged 15-64; the official synthesis bands do not isolate ages 20-24 | persons | Not allowed | 14200 |
+| coworking_count | integer | Aggregated locations table | Verified active locations | count | Zero only after confirmed coverage | 14 |
+| pending_coworking_count | integer | Aggregated locations table | Candidate locations still awaiting verification | count | Not allowed | 4 |
+| office_count | integer | OSM rule set | Mapped office POIs, excluding coworking | count | Zero only after successful query | 620 |
+| cafe_count | integer | OSM rule set | Café POIs | count | Zero only after successful query | 185 |
+| hotel_count | integer | OSM rule set | Hotel POIs | count | Zero only after successful query | 54 |
+| municipal_higher_education_count | integer | Lisboa Aberta | Active higher-education locations | count | Not allowed | 3 |
+| municipal_metro_station_count | integer | Lisboa Aberta | Existing metro station points | count | Not allowed | 4 |
+| municipal_hotel_2015_count | integer | Lisboa Aberta | Historical hotel count used only as a coverage reference | count | Not allowed; never treat as current | 12 |
+| transit_access_score | float | Lisboa Aberta + OSM | 60% official metro-station density rank + 40% OSM bus/tram-stop density rank | 0-100 | Not allowed after successful collection | 72.4 |
+| median_rent_eur_m2_month | float | Dated listing sample | Median commercial asking rent | EUR/m²/month | Keep null; flag fewer than 5 listings | 28.50 |
+| demand_proxy_score | float | Calculated | 40% working-age density, 30% OSM office density and 10% each OSM café, OSM hotel and official higher-education density ranks | 0-100 | Calculate only under documented rule | 78.1 |
+| opportunity_score | float | Calculated | Final screening score | 0-100 | Calculate only with documented scenario | 84.3 |
+
+## Data-quality rules
+- Preserve raw files unchanged and resolve duplicates only in processed data.
+- Keep a documented matching/deduplication rule and a review flag for uncertain records.
+- Record all conversions, recoding and derived variables in the cleaning notebook.
+- Missing does not mean zero. Use zero only when the collection method confirms absence.
+- Record coverage gaps, source limitations and the latest update date.

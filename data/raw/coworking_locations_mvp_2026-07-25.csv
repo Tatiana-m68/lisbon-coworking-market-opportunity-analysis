@@ -1,0 +1,49 @@
+coworking_id,coworking_name,latitude,longitude,parish,active_status,source_url,collection_date,source_type,verification_status
+osm_node_10011209150,Scape Workspaces,38.6995865,-9.1788825,Alcântara,active,https://www.openstreetmap.org/node/10011209150,2026-07-24,OpenStreetMap,verified_official_site
+web_026,Spaces Alcântara,38.705806,-9.175569,Alcântara,active,https://www.spacesworks.com/en/pt/lisboa/sete-rios/coworking,2026-07-24,official_operator_website,verified_official_site
+osm_node_12709912384,AIhub by Unicorn Factory Lisboa,38.7565647,-9.1434403,Alvalade,active,https://www.openstreetmap.org/node/12709912384,2026-07-24,OpenStreetMap,verified_official_site
+web_009,Heden Alvalade,38.7562928,-9.1419905,Alvalade,active,https://heden.co/about-heden-coworking/,2026-07-24,official_operator_website,verified_official_site
+web_003,Kübe Coworking,38.7562928,-9.1419905,Alvalade,active,https://kubecoworking.pt/pages/sobre-nos,2026-07-24,official_operator_website,verified_official_site
+osm_way_1420058911,Plaçes Cowork,38.7483293,-9.1443925,Alvalade,active,https://www.openstreetmap.org/way/1420058911,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_13282831857,Avila Spaces,38.7348821,-9.1447434,Arroios,active,https://www.openstreetmap.org/node/13282831857,2026-07-24,OpenStreetMap + official operator website,verified_official_site
+osm_way_1374548121,Avila Spaces,38.7330015,-9.1449296,Arroios,active,https://www.openstreetmap.org/way/1374548121,2026-07-24,OpenStreetMap + official operator website,verified_official_site
+osm_node_13917926242,Cowork Rizoma,38.7275817,-9.1373321,Arroios,active,https://www.openstreetmap.org/node/13917926242,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_13529352806,Espaço Arroios,38.73019,-9.1370376,Arroios,active,https://www.openstreetmap.org/node/13529352806,2026-07-24,OpenStreetMap,verified_official_site
+web_010,Heden Intendente,38.7220872,-9.1335676,Arroios,active,https://heden.co/about-heden-coworking/,2026-07-24,official_operator_website,verified_official_site
+osm_way_99628864,IDEA Spaces Saldanha,38.7328457,-9.1425794,Arroios,active,https://www.openstreetmap.org/way/99628864,2026-07-24,OpenStreetMap,verified_official_site
+web_005,The Liz,38.7238056,-9.1332034,Arroios,active,https://lisboncoworkingspace.com/anjos-arroios-lisboa/,2026-07-24,official_operator_website,verified_official_site
+osm_node_12709903316,Gaming Hub by Unicorn Factory Lisboa,38.7358752,-9.1449426,Avenidas Novas,active,https://www.openstreetmap.org/node/12709903316,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_12354242268,IDEA Spaces - São Sebastião,38.7332629,-9.1526518,Avenidas Novas,active,https://www.openstreetmap.org/node/12354242268,2026-07-24,OpenStreetMap + official operator website,verified_official_site
+web_018,Spaces Avenida da República 50,38.7405904,-9.1460442,Avenidas Novas,active,https://www.spacesworks.com/en/pt/lisboa/portela/coworking,2026-07-24,official_operator_website,verified_official_site
+osm_node_11665827947,The Block Lisboa,38.7328739,-9.1497772,Avenidas Novas,active,https://www.openstreetmap.org/node/11665827947,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_11886704394,Sincera Coworking,38.7081896,-9.2087411,Belém,active,https://www.openstreetmap.org/node/11886704394,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_11880069091,FORJA Cowork + Studio,38.7551078,-9.2049701,Benfica,active,https://www.openstreetmap.org/node/11880069091,2026-07-24,OpenStreetMap,verified_official_site
+osm_way_96854133,Regus — Lisbon Dom João V,38.7209321,-9.1607374,Campo de Ourique,active,https://www.openstreetmap.org/way/96854133,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_10321568413,Resvés Cowork,38.7185285,-9.157844,Campo de Ourique,active,https://www.openstreetmap.org/node/10321568413,2026-07-24,OpenStreetMap,verified_official_site
+web_027,Spaces Dom João V,38.7209086,-9.1607872,Campo de Ourique,active,https://www.spacesworks.com/pt/pt/lisboa/campolide/coworking,2026-07-24,official_operator_website,verified_official_site
+osm_way_155614383,LACS Conde d'Óbidos,38.703109,-9.1619567,Estrela,active,https://www.openstreetmap.org/way/155614383,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_13468469969,Santander Work Café Santos,38.7075066,-9.1529208,Estrela,active,https://www.openstreetmap.org/node/13468469969,2026-07-24,OpenStreetMap,verified_official_site
+web_002,The Fyve,38.7584265,-9.1120448,Marvila,active,https://www.thefyve.pt/,2026-07-24,official_operator_website,verified_official_site
+osm_node_12526350974,WorkHub Prata,38.744638,-9.1011796,Marvila,active,https://www.openstreetmap.org/node/12526350974,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_11882321570,Avila Spaces,38.7714021,-9.0971082,Parque das Nações,active,https://www.openstreetmap.org/node/11882321570,2026-07-24,OpenStreetMap + official operator website,verified_official_site
+web_017,Spaces Mar Vermelho Building,38.7691601,-9.0976491,Parque das Nações,active,https://www.spacesworks.com/en/pt/lisboa/portela/coworking,2026-07-24,official_operator_website,verified_official_site
+osm_node_11777096574,Spaces Oriente,38.7692178,-9.1001017,Parque das Nações,active,https://www.openstreetmap.org/node/11777096574,2026-07-24,OpenStreetMap + official operator website,verified_official_site
+osm_node_6396669672,Heden Chiado,38.7117433,-9.1416358,Santa Maria Maior,active,https://www.openstreetmap.org/node/6396669672,2026-07-24,OpenStreetMap + official operator website,verified_official_site
+web_011,Heden Trindade,38.7116787,-9.1422776,Santa Maria Maior,active,https://heden.co/about-heden-coworking/,2026-07-24,official_operator_website,verified_official_site
+osm_node_6385072016,Impact Hub Lisbon — Baixa Chiado,38.71044,-9.135,Santa Maria Maior,active,https://www.openstreetmap.org/node/6385072016,2026-07-24,OpenStreetMap,verified_official_site
+web_025,Spaces Chiado,38.7101897,-9.1403374,Santa Maria Maior,active,https://www.spacesworks.com/en/pt/lisboa/sete-rios/coworking,2026-07-24,official_operator_website,verified_official_site
+osm_node_13926470143,On Cowork Spaces,38.7203723,-9.1415892,Santo António,active,https://www.openstreetmap.org/node/13926470143,2026-07-24,OpenStreetMap + official operator website,verified_official_site
+osm_node_10015362767,Regus — Lisbon Avenida da Liberdade,38.7188284,-9.1437283,Santo António,active,https://www.openstreetmap.org/node/10015362767,2026-07-24,OpenStreetMap,verified_official_site
+osm_node_5069382167,Santander Work Café Amoreiras,38.7240893,-9.1594568,Santo António,active,https://www.openstreetmap.org/node/5069382167,2026-07-24,OpenStreetMap,verified_official_site
+web_023,Spaces Braamcamp 52,38.722427,-9.1520008,Santo António,active,https://www.spacesworks.com/en/pt/lisboa/sete-rios/coworking,2026-07-24,official_operator_website,verified_official_site
+osm_node_11777100031,Spaces Marquês de Pombal 14,38.7255835,-9.1488177,Santo António,active,https://www.openstreetmap.org/node/11777100031,2026-07-24,OpenStreetMap + official operator website,verified_official_site
+web_022,Spaces Rua Mouzinho da Silveira,38.7232439,-9.1505323,Santo António,active,https://www.spacesworks.com/en/pt/lisboa/sete-rios/coworking,2026-07-24,official_operator_website,verified_official_site
+osm_way_98057563,The Base Lisbon,38.7161181,-9.1440735,Santo António,active,https://www.openstreetmap.org/way/98057563,2026-07-24,OpenStreetMap,verified_official_site
+web_001,Venture X Lisboa,38.7224782,-9.1468965,Santo António,active,https://venturex.pt/,2026-07-24,official_operator_website,verified_official_site
+osm_node_11892515134,WeWork — Rua Alexandre Herculano 50,38.7218325,-9.1515312,Santo António,active,https://www.openstreetmap.org/node/11892515134,2026-07-24,OpenStreetMap,verified_official_site
+web_004,Business Networking Lounge,38.7518526,-9.1717533,São Domingos de Benfica,active,https://www.bn-lounge.com/,2026-07-24,official_operator_website,verified_official_site
+web_020,Spaces Laranjeiras Palace,38.7441954,-9.1680312,São Domingos de Benfica,active,https://www.spacesworks.com/en/pt/lisboa/portela/coworking,2026-07-24,official_operator_website,verified_official_site
+osm_node_5904542939,Heden Graça,38.7173221,-9.128739,São Vicente,active,https://www.openstreetmap.org/node/5904542939,2026-07-24,OpenStreetMap,verified_official_site
+web_006,Heden Rossio,38.7145909,-9.1418412,Santa Maria Maior,active,https://heden.co/coworking-rossio/,2026-07-24,official_operator_website,verified_official_site
+web_007,Heden Santa Apolónia,38.7102209,-9.1263576,Santa Maria Maior,active,https://heden.co/about-heden-coworking/,2026-07-24,official_operator_website,verified_official_site
+web_019,Spaces Torres de Lisboa,38.7564410,-9.1749607,São Domingos de Benfica,active,https://www.spacesworks.com/en/pt/77,2026-07-24,official_operator_website,verified_official_site

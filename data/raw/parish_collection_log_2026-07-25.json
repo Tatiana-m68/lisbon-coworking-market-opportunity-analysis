@@ -1,0 +1,9 @@
+{
+  "collection_date": "2026-07-25",
+  "collected_at_utc": "2026-07-25T08:03:03.855941+00:00",
+  "source": "https://overpass-api.de/api/interpreter",
+  "query_file": "src/queries/lisbon_parish_pois.overpassql",
+  "element_count": 8220,
+  "licence": "OpenStreetMap contributors, ODbL.",
+  "scope_note": "Bounding-box discovery followed by point-in-polygon filtering against official Lisbon parish boundaries."
+}

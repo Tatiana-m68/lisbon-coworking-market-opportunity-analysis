@@ -1,0 +1,21 @@
+{
+  "collection_date": "2026-07-25",
+  "collected_at_utc": "2026-07-25T09:18:32.669449+00:00",
+  "sources": {
+    "municipal_higher_education": {
+      "url": "https://services.arcgis.com/1dSrzEWVQn5kHHyK/arcgis/rest/services/POIEducacao/FeatureServer/0/query",
+      "feature_count": 51,
+      "raw_file": "municipal_higher_education_2026-07-25.geojson"
+    },
+    "municipal_hotels_2015": {
+      "url": "https://services.arcgis.com/1dSrzEWVQn5kHHyK/arcgis/rest/services/Alojamento/FeatureServer/0/query",
+      "feature_count": 148,
+      "raw_file": "municipal_hotels_2015_2026-07-25.geojson"
+    },
+    "municipal_metro_stations": {
+      "url": "https://services.arcgis.com/1dSrzEWVQn5kHHyK/arcgis/rest/services/POITransportes/FeatureServer/1/query",
+      "feature_count": 50,
+      "raw_file": "municipal_metro_stations_2026-07-25.geojson"
+    }
+  }
+}

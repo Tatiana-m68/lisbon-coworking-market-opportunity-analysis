@@ -1,0 +1,17 @@
+{
+  "collection_date": "2026-07-24",
+  "collected_at_utc": "2026-07-24T22:57:08.556759+00:00",
+  "overpass_endpoint": "https://overpass-api.de/api/interpreter",
+  "overpass_query_file": "src/queries/lisbon_coworking.overpassql",
+  "overpass_element_count": 38,
+  "parish_boundaries_endpoint": "https://gisimage.cm-lisboa.pt/arcgis/rest/services/SMPC_GRELHA/MapServer/2/query",
+  "parish_feature_count": 24,
+  "raw_files": [
+    "data/raw/osm_coworking_2026-07-24.json",
+    "data/raw/lisbon_parishes_2026-07-24.geojson"
+  ],
+  "licence_notes": {
+    "openstreetmap": "ODbL; attribution required.",
+    "lisbon_parishes": "Câmara Municipal de Lisboa open-data service."
+  }
+}

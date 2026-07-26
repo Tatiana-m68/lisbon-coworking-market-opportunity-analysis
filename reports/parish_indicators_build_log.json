@@ -1,0 +1,20 @@
+{
+  "collection_date": "2026-07-25",
+  "output": "data/processed/parish_indicators.csv",
+  "row_count": 24,
+  "classified_osm_elements": 8183,
+  "unassigned_or_outside_osm_elements": 2893,
+  "official_boundary_file": "data/raw/lisbon_parishes_2026-07-24.geojson",
+  "population_file": "data/external/ine_census2021_lisbon_parishes_2026-07-25.csv",
+  "coworking_file": "data/processed/coworking_locations.csv",
+  "poi_file": "data/raw/osm_parish_pois_2026-07-25.json",
+  "municipal_higher_education_file": "data/raw/municipal_higher_education_2026-07-25.geojson",
+  "municipal_metro_file": "data/raw/municipal_metro_stations_2026-07-25.geojson",
+  "municipal_hotel_validation_file": "data/raw/municipal_hotels_2015_2026-07-25.geojson",
+  "municipal_unassigned_points": {
+    "higher_education": 0,
+    "metro": 5,
+    "hotels_2015": 0
+  },
+  "score_note": "Scores are transparent percentile-rank screening indices, not forecasts. Transit uses official municipal metro stations plus OSM bus/tram stops; demand uses official municipal higher education plus OSM proxies. Opportunity score is intentionally blank."
+}
