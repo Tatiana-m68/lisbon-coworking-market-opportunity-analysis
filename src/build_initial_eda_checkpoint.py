@@ -93,7 +93,19 @@ def build_notebook() -> None:
 
             sns.set_theme(style="whitegrid")
 
-            DATA_PATH = Path("../data/raw/{MVP_FILENAME}")
+            PROJECT_ROOT = Path.cwd()
+            if PROJECT_ROOT.name == "notebooks":
+                PROJECT_ROOT = PROJECT_ROOT.parent
+
+            DATA_PATH = PROJECT_ROOT / "data" / "raw" / "{MVP_FILENAME}"
+            FIGURES_DIR = PROJECT_ROOT / "reports" / "figures"
+            TABLES_DIR = PROJECT_ROOT / "reports" / "tables"
+            FIGURE_PATH = FIGURES_DIR / "01_coworking_locations_by_parish.png"
+            TABLE_PATH = TABLES_DIR / "coworking_locations_by_parish.csv"
+
+            FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+            TABLES_DIR.mkdir(parents=True, exist_ok=True)
+
             df = pd.read_csv(DATA_PATH, parse_dates=["collection_date"])
             """
         ),
@@ -194,7 +206,8 @@ def build_notebook() -> None:
 
             The chart is an initial view of observed coworking competition by
             parish. It is not yet an opportunity ranking: population, transport,
-            rents, and other demand indicators will be joined later.
+            rents, and other demand indicators will be joined later. The chart
+            is exported by code as a PNG file in `reports/figures/`.
             """
         ),
         code(
@@ -206,18 +219,52 @@ def build_notebook() -> None:
                 .sort_values(ascending=True)
             )
 
-            plt.figure(figsize=(10, 7))
-            sns.barplot(x=parish_counts.values, y=parish_counts.index, color="#2A9D8F")
-            plt.title("Verified active coworking locations by Lisbon parish")
-            plt.xlabel("Number of locations")
-            plt.ylabel("Parish")
-            plt.tight_layout()
+            fig, ax = plt.subplots(figsize=(10, 7))
+            sns.barplot(
+                x=parish_counts.values,
+                y=parish_counts.index,
+                color="#2A9D8F",
+                ax=ax,
+            )
+            ax.set_title("Verified active coworking locations by Lisbon parish")
+            ax.set_xlabel("Number of locations")
+            ax.set_ylabel("Parish")
+            fig.tight_layout()
+            fig.savefig(FIGURE_PATH, dpi=150, bbox_inches="tight")
             plt.show()
+
+            print(f"Saved chart: {FIGURE_PATH.relative_to(PROJECT_ROOT)}")
             """
         ),
         markdown(
             """
-            ## 7. Initial data-quality observations
+            ## 7. BI-ready summary table
+
+            The parish counts behind the chart are exported as a tidy CSV file
+            with one row per represented parish. This file can be imported into
+            Power BI or Tableau without copying values manually.
+            """
+        ),
+        code(
+            """
+            parish_summary = (
+                df.groupby("parish", as_index=False)
+                .agg(coworking_location_count=("coworking_id", "nunique"))
+                .sort_values(
+                    ["coworking_location_count", "parish"],
+                    ascending=[False, True],
+                )
+                .reset_index(drop=True)
+            )
+
+            parish_summary.to_csv(TABLE_PATH, index=False)
+            display(parish_summary)
+            print(f"Saved summary table: {TABLE_PATH.relative_to(PROJECT_ROOT)}")
+            """
+        ),
+        markdown(
+            """
+            ## 8. Initial data-quality observations
 
             1. The checkpoint contains **48 confirmed active locations**, and
                all critical identification and source fields are populated.

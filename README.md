@@ -81,6 +81,7 @@ coworking_lisbon_analysis/
 ├── src/                 # reusable functions, paths and constants
 ├── reports/
 │   ├── figures/         # final numbered PNG/PDF/SVG exports
+│   ├── tables/          # notebook-generated summary CSV exports
 │   └── bi_exports/      # Tableau/Power BI working files, if used
 ├── docs/
 │   ├── project_brief.md
@@ -93,7 +94,9 @@ coworking_lisbon_analysis/
 
 ## How to run
 To reproduce the initial analysis, open `notebooks/01_eda.ipynb` and run all
-cells from top to bottom. The longer project workflow then continues through
+cells from top to bottom. This run also generates
+`reports/figures/01_coworking_locations_by_parish.png` and
+`reports/tables/coworking_locations_by_parish.csv`. The longer project workflow then continues through
 `01_data_collection.ipynb`, `02_cleaning.ipynb`, `03_eda.ipynb`,
 `04_deeper_analysis.ipynb`, `05_insights_recommendations.ipynb`, and
 `06_final_charts.ipynb`.
@@ -122,6 +125,8 @@ has both linked processed tables, raw source snapshots, reproducible collection
 scripts and automated quality reports. The parish table covers all 24
 freguesias and uses official census, higher-education and metro data alongside
 documented OSM proxies. Manual coworking candidate verification is complete.
+The initial EDA runs reproducibly and exports its chart and 14-row
+parish-level coworking summary table directly from the notebook.
 The remaining data-collection work is collecting a terms-compliant commercial
 asking-rent sample.
 The final opportunity score is intentionally deferred until those gaps close.
