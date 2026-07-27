@@ -14,7 +14,7 @@ from config import PROJECT_ROOT, RAW_DIR
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 USER_AGENT = (
-    "lisbon-coworking-capstone/0.1 "
+    "lisbon-coworking-analysis/0.1 "
     "(educational parish indicators; contact: repository owner)"
 )
 

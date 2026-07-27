@@ -22,7 +22,7 @@ PARISH_BOUNDARIES_URL = (
     "SMPC_GRELHA/MapServer/2/query"
 )
 USER_AGENT = (
-    "lisbon-coworking-capstone/0.1 "
+    "lisbon-coworking-analysis/0.1 "
     "(educational data collection; contact: repository owner)"
 )
 

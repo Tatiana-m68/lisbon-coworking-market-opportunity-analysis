@@ -8,7 +8,7 @@
 - [x] Expand README and data dictionary.
 - [x] Add BI and figure export locations.
 
-## Next capstone stages
+## Next project stages
 - [x] Collect and log the initial public source snapshots.
 - [x] Deduplicate candidates and spatially join available coordinates.
 - [x] Build the 24-row parish-indicator table and automated QA.

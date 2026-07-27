@@ -21,7 +21,7 @@ from config import RAW_DIR
 
 NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
 USER_AGENT = (
-    "lisbon-coworking-capstone/0.1 "
+    "lisbon-coworking-analysis/0.1 "
     "(educational one-time address verification; contact: repository owner)"
 )
 

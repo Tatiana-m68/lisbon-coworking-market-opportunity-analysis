@@ -26,7 +26,7 @@ SOURCES = {
     ),
 }
 USER_AGENT = (
-    "lisbon-coworking-capstone/0.1 "
+    "lisbon-coworking-analysis/0.1 "
     "(educational coverage validation; contact: repository owner)"
 )
 

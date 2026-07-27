@@ -1,4 +1,4 @@
-# Versions follow the Class 2 reference environment and will be re-frozen after the pipeline runs successfully.
+# Versions are pinned for reproducible local and remote execution.
 # Tested project environment: Python 3.11 or 3.12
 pandas==2.2.1
 numpy==1.26.4
