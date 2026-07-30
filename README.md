@@ -25,14 +25,16 @@ operator websites, official Lisbon parish boundaries, Lisboa Aberta and INE
 Census 2021. See [`docs/data_dictionary.md`](docs/data_dictionary.md),
 [`docs/source_plan.md`](docs/source_plan.md), and
 [`docs/coworking_collection_method.md`](docs/coworking_collection_method.md).
+The commercial asking-rent pilot is documented in
+[`docs/commercial_rent_collection_method.md`](docs/commercial_rent_collection_method.md).
 
 The project scope is Lisbon municipality's 24 civil parishes. Coworking-location
 collection started on 24 July 2026. The current candidate inventory combines
 OpenStreetMap/Overpass, current official operator websites, and official Lisbon
 parish boundaries. Every source snapshot and collection date is retained. See
 [`docs/coworking_collection_method.md`](docs/coworking_collection_method.md).
-Known MVP limitations are possible omissions from public discovery sources and
-the absence of the planned commercial asking-rent sample.
+Known limitations are possible omissions from public discovery sources and
+commercial asking-rent coverage limited to three priority parishes.
 
 ## Target audience
 The primary user is an Expansion Director or market-development manager at a
@@ -101,11 +103,15 @@ cells from top to bottom. This run generates
 
 The implemented parish-analysis sequence is:
 
-1. `02_cleaning.ipynb` - validates processed inputs and creates
+1. `./.venv/bin/python -m src.prepare_commercial_rent` - validates the raw rent
+   pilot and creates listing-, building- and parish-level processed tables.
+2. `02_cleaning.ipynb` - validates processed inputs and creates
    `data/processed/parish_analysis_base.csv`.
-2. `03_eda.ipynb` - compares all 24 parishes and exports EDA figures/tables.
-3. `04_deeper_analysis.ipynb` - creates a provisional no-rent score,
-   documented scenarios and reproducible sensitivity results.
+3. `03_eda.ipynb` - compares all 24 parishes and exports EDA figures/tables,
+   including the three-parish rent pilot.
+4. `04_deeper_analysis.ipynb` - creates a provisional citywide score,
+   documented scenarios, reproducible sensitivity results and a separate
+   rent-inclusive comparison of the three covered parishes.
 
 The workflow will later be completed with `01_data_collection.ipynb`,
 `05_insights_recommendations.ipynb`, and `06_final_charts.ipynb`.
@@ -127,17 +133,21 @@ coordinates and parish assignments. Ten of Lisbon's 24 parishes have no
 verified active coworking location in the current dataset. Santo António,
 Arroios and Santa Maria Maior together contain 22 of the 48 verified locations.
 
-The provisional no-rent model ranks Areeiro first, followed by Campolide and
+The provisional citywide model ranks Areeiro first, followed by Campolide and
 Arroios. Areeiro appears in the top three in 100% of the documented weight
-simulations. This is not the final recommendation: commercial asking rent,
-available sites and local due diligence are still missing.
+simulations. The rent pilot contains 60 listings, reduced to 41 building
+observations; the 10-building target is met for all three priority parishes.
+Their median asking rents are EUR 17.50–20.01 per m² per month. In the
+rent-inclusive pilot, Areeiro remains first, followed by Arroios and Campolide.
+This is not the final recommendation because citywide rent coverage, available
+sites and local due diligence are still incomplete.
 
 ## BI dashboard and final figures
 If Tableau or Power BI is used, working files will be stored in `reports/bi_exports/`. Final shareable charts and dashboard exports will be stored in `reports/figures/`. Relative data paths will point to `data/processed/`.
 
 ## Current status
 The repository structure and core documentation are complete. The project now
-has both linked processed tables, raw source snapshots, reproducible collection
+has linked processed tables, raw source snapshots, reproducible collection
 scripts and automated quality reports. The parish table covers all 24
 freguesias and uses official census, higher-education and metro data alongside
 documented OSM proxies. Manual coworking candidate verification is complete.
@@ -145,19 +155,20 @@ The initial EDA runs reproducibly and exports its chart and 14-row
 parish-level coworking summary table directly from the notebook.
 The cleaning, parish-level EDA and provisional deeper-analysis notebooks are
 now implemented and run from top to bottom. They generate a 24-row base
-analysis table, six additional figures, six additional summary/scenario
-tables and a 5,000-run weight sensitivity analysis.
-The remaining data-collection work is collecting a terms-compliant commercial
-asking-rent sample.
+analysis table, seven additional figures, eight additional summary/scenario
+tables and a 5,000-run weight sensitivity analysis. A terms-compliant
+commercial asking-rent pilot is now integrated for the current top-three
+parishes.
 The final rent-inclusive opportunity score and recommendation remain deferred
-until that gap closes.
+until comparable rent coverage is extended to the remaining serious
+candidates.
 
 ## Known blockers and risks
 - Public directories and map data can omit new locations or retain outdated ones.
-- A terms-compliant, sufficiently large commercial asking-rent sample has not yet been collected.
+- Asking-rent coverage is sufficient for only three priority parishes and may not represent all available properties.
 - The Opportunity Score can create false precision unless weights and data coverage are tested transparently.
 
 ## Next steps
-1. Review cross-source coverage and document any remaining discovery limitations.
-2. Collect and document a terms-compliant commercial asking-rent sample.
-3. Join the two analysis tables, complete the full EDA, and test Opportunity Score weighting scenarios.
+1. Extend the same commercial-rent method to the remaining serious candidate parishes.
+2. Add the final recommendation notebook with evidence, trade-offs and due-diligence actions.
+3. Create the final decision-facing charts or dashboard and run the full reproducibility audit.

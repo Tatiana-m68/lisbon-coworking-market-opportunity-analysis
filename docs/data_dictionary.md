@@ -1,8 +1,7 @@
 # Data Dictionary - Version 2
 
-Latest documentation update: 25 July 2026. Both processed tables are
-implemented. Fields described as proxies must not be interpreted as complete
-business registers.
+Latest documentation update: 30 July 2026. Fields described as proxies or
+pilot samples must not be interpreted as complete business registers.
 
 ## `coworking_locations.csv`
 Grain: one row per observed coworking location.
@@ -72,9 +71,33 @@ fields used in the analysis and adds:
 | competition_opportunity_score | float | Derived | Inverse percentile score of coworking locations per 10,000 working-age residents | 0-100 | Not allowed after successful build | 100.0 |
 | analysis_status | category | Derived | States whether all planned model components are available | provisional_no_rent | Not allowed | provisional_no_rent |
 
-Commercial rent remains missing in this table until a dated,
-terms-compliant listing sample is collected. Missing rent must not be converted
-to zero.
+The current dated, terms-compliant pilot populates rent fields for Areeiro,
+Arroios and Campolide only. Rent remains missing for the other parishes and
+must not be converted to zero.
+
+## Commercial rent tables
+
+`commercial_rent_listings.csv` has one row per collected listing and retains
+the listing ID, source URL, collection date, requested search parish, official
+spatially assigned parish, asking rent, area, calculated unit rent, coordinates,
+building key, QA flags and verification note.
+
+`commercial_rent_buildings.csv` has one row per rounded coordinate/building.
+It uses the median of multiple offers in the same building so repeated units or
+broker variants do not dominate the parish result.
+
+`commercial_rent_parish_summary.csv` has one row per observed parish:
+
+| Column | Type | Description |
+|---|---|---|
+| parish | category | Official parish assigned from coordinates |
+| rent_sample_size | integer | Number of distinct building observations |
+| valid_listing_count | integer | Valid listing records before building aggregation |
+| median_rent_eur_m2_month | float | Median building-level asking rent |
+| min_rent_eur_m2_month | float | Minimum building-level asking rent |
+| max_rent_eur_m2_month | float | Maximum building-level asking rent |
+| collection_date | date | Latest observation date in the sample |
+| rent_coverage_flag | category | target_met / usable_low_coverage / insufficient |
 
 ## Provisional analysis outputs
 

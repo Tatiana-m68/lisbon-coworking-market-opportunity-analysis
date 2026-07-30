@@ -17,7 +17,7 @@ of occupancy, revenue or profitability.
 - metro and bus/tram accessibility;
 - the existing demand and transit component scores;
 - a derived competition-opportunity component;
-- explicit empty rent fields and coverage flags.
+- pilot rent medians and explicit coverage flags.
 
 The table must contain 24 unique parishes and reconcile to 48 verified active
 coworking locations.
@@ -31,10 +31,11 @@ higher score. Tied values receive the same score.
 This component identifies lower observed supply, not proven unmet demand.
 Public-source omissions and future supply remain limitations.
 
-## Provisional no-rent score
+## Provisional citywide score
 
-Commercial asking rent has not yet been collected. The provisional model
-therefore renormalises the planned non-rent weights:
+Commercial asking rent is currently usable for only three priority parishes.
+The citywide model therefore continues to renormalise the planned non-rent
+weights:
 
 ```text
 Provisional Opportunity Score =
@@ -46,6 +47,24 @@ Provisional Opportunity Score =
 The weights come from the planned final 35/25/25/15
 demand/accessibility/competition/affordability structure after excluding the
 15% affordability component.
+
+## Rent-inclusive pilot
+
+For Areeiro, Arroios and Campolide, the notebook calculates an inverse
+percentile affordability score from the building-level median asking rent and
+applies the planned weights:
+
+```text
+Pilot Opportunity Score =
+    0.35 × Demand Proxy Score
+  + 0.25 × Transit Access Score
+  + 0.25 × Competition Opportunity Score
+  + 0.15 × Rent Opportunity Score
+```
+
+This comparison is valid only among the three covered parishes. It must not be
+merged into the 24-parish rank until comparable rent coverage is available for
+the remaining candidates.
 
 ## Documented scenarios
 
@@ -68,7 +87,6 @@ rank and observed best/worst rank.
 - With only 24 parishes, correlations are descriptive and non-causal.
 - OSM POI counts are proxies and may reflect tagging intensity.
 - A zero coworking count is not, by itself, evidence of commercial demand.
-- Rent, unit economics, available floorplates and lease conditions must be
-  added before the final recommendation.
+- Rent coverage must be extended, and unit economics, available floorplates
+  and lease conditions must be added before the final recommendation.
 - The provisional ranking must not be presented as the final site decision.
-

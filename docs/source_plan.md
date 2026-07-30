@@ -6,7 +6,7 @@
 | INE Census 2021 | Population by parish and age group | Official download/API | Decennial snapshot |
 | OpenStreetMap / Overpass | Coworking, amenities, selected transport POIs | Saved queries and raw JSON | Incomplete or inconsistent tagging |
 | Public coworking websites/listings | Name, address, active status | Manual validation with URL/date | Time-sensitive; avoid personal data |
-| Commercial property listings | Asking rent, area, location, date | Small manual sample only if permitted | Asking rent differs from transaction rent |
+| Idealista office listings | Asking rent, area, coordinates, listing URL, date | Connector search; no HTML scraping | Asking rent differs from transaction rent; pilot coverage |
 
 ## Implemented parish sources (25 July 2026)
 - Official Lisbon boundaries cover all 24 civil parishes.
@@ -30,3 +30,12 @@ query with European Portuguese and English discovery terms, official operator
 websites, and the Câmara Municipal de Lisboa parish-boundary service. See
 `coworking_collection_method.md` for the operational definitions, status rules,
 and current limitations.
+
+## Commercial asking-rent pilot started
+
+On 30 July 2026, 60 office-rental listing records were collected through the
+Idealista connector for Areeiro, Arroios and Campolide. The raw connector
+result is preserved, coordinates are checked against official parish
+boundaries, implausible unit rents are excluded and same-building offers are
+aggregated before parish medians are calculated. See
+`commercial_rent_collection_method.md`.

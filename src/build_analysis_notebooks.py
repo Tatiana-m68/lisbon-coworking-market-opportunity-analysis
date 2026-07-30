@@ -46,9 +46,9 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                 # 02 Cleaning and analysis-table preparation
 
                 This notebook validates the two processed source tables and
-                creates a 24-row parish-level analysis table. Commercial rent
-                remains explicitly missing, so the output is labelled as a
-                provisional no-rent dataset.
+                creates a 24-row parish-level analysis table. A pilot commercial
+                asking-rent sample is available for three priority parishes;
+                the citywide output therefore remains provisional.
                 """
             ),
             markdown(
@@ -73,6 +73,7 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                     sys.path.insert(0, str(PROJECT_ROOT))
 
                 from src.config import (
+                    COMMERCIAL_RENT_PARISH_FILE,
                     COWORKING_LOCATIONS_FILE,
                     PARISH_ANALYSIS_BASE_FILE,
                     PARISH_INDICATORS_FILE,
@@ -102,6 +103,10 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                     PARISH_INDICATORS_FILE,
                     parse_dates=["collection_date"],
                 )
+                rent = pd.read_csv(
+                    COMMERCIAL_RENT_PARISH_FILE,
+                    parse_dates=["collection_date"],
+                )
 
                 required_coworking = {
                     "coworking_id",
@@ -126,6 +131,7 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
 
                 print("Coworking audit table:", coworking.shape)
                 print("Parish indicator table:", parish.shape)
+                print("Rent pilot summary:", rent.shape)
                 print(
                     "Verified active locations:",
                     int(
@@ -184,7 +190,37 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                 analysis["competition_opportunity_score"] = inverse_percentile_score(
                     analysis["coworking_per_10000_working_age"]
                 )
-                analysis["analysis_status"] = "provisional_no_rent"
+                usable_rent = rent[
+                    rent["rent_coverage_flag"].isin(
+                        ["target_met", "usable_low_coverage"]
+                    )
+                ][
+                    [
+                        "parish",
+                        "median_rent_eur_m2_month",
+                        "rent_sample_size",
+                        "rent_coverage_flag",
+                    ]
+                ]
+                analysis = analysis.drop(
+                    columns=[
+                        "median_rent_eur_m2_month",
+                        "rent_sample_size",
+                        "rent_coverage_flag",
+                    ]
+                ).merge(
+                    usable_rent,
+                    on="parish",
+                    how="left",
+                    validate="one_to_one",
+                )
+                analysis["rent_sample_size"] = (
+                    analysis["rent_sample_size"].fillna(0).astype(int)
+                )
+                analysis["rent_coverage_flag"] = analysis[
+                    "rent_coverage_flag"
+                ].fillna("not_collected")
+                analysis["analysis_status"] = "provisional_partial_rent"
                 analysis = analysis.sort_values("parish").reset_index(drop=True)
                 analysis.head()
                 """
@@ -195,8 +231,8 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
 
                 The base table must contain all 24 parishes, reconcile to 48
                 verified active locations and have complete core analysis
-                fields. Rent is allowed to be missing because collection is a
-                documented next stage.
+                fields. The pilot rent medians must be available only where at
+                least five distinct building observations support them.
                 """
             ),
             code(
@@ -223,7 +259,11 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                         "competition_opportunity_score",
                     ]
                 ].apply(lambda column: column.between(0, 100).all()).all()
-                assert analysis["median_rent_eur_m2_month"].isna().all()
+                assert analysis["median_rent_eur_m2_month"].notna().sum() == 3
+                assert analysis.loc[
+                    analysis["median_rent_eur_m2_month"].notna(),
+                    "rent_sample_size",
+                ].ge(5).all()
 
                 quality_summary = pd.DataFrame(
                     {
@@ -275,8 +315,9 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
 
                 The analysis base contains 24 unique parishes and reconciles to
                 48 verified active coworking locations. Demand, accessibility
-                and competition components are complete. Rent remains missing
-                for all parishes and must not be treated as zero.
+                and competition components are complete. Rent is usable for
+                Areeiro, Arroios and Campolide only; missing rent elsewhere is
+                not treated as zero.
                 """
             ),
         ]
@@ -332,8 +373,8 @@ def build_eda_notebook() -> nbf.NotebookNode:
                 ## 2. Coverage, missingness and descriptive statistics
 
                 Rent is the only intentionally incomplete analysis component.
-                All demand, accessibility and competition fields used in the
-                provisional analysis must be complete.
+                The pilot covers three priority parishes. All demand,
+                accessibility and competition fields remain complete.
                 """
             ),
             code(
@@ -533,13 +574,51 @@ def build_eda_notebook() -> nbf.NotebookNode:
                 plt.show()
                 """
             ),
-            markdown("## 7. Export EDA tables and key observations"),
+            markdown("## 7. Pilot commercial asking-rent comparison"),
+            code(
+                """
+                rent_pilot = (
+                    df.loc[
+                        df["median_rent_eur_m2_month"].notna(),
+                        [
+                            "parish",
+                            "median_rent_eur_m2_month",
+                            "rent_sample_size",
+                            "rent_coverage_flag",
+                        ],
+                    ]
+                    .sort_values("median_rent_eur_m2_month")
+                    .reset_index(drop=True)
+                )
+
+                fig, ax = plt.subplots(figsize=(8, 5))
+                sns.barplot(
+                    data=rent_pilot,
+                    x="median_rent_eur_m2_month",
+                    y="parish",
+                    color="#F4A261",
+                    ax=ax,
+                )
+                ax.set_title("Pilot median office asking rent by parish")
+                ax.set_xlabel("Median asking rent (EUR/m²/month)")
+                ax.set_ylabel("Parish")
+                fig.tight_layout()
+                rent_path = FIGURES_DIR / "08_pilot_commercial_rent.png"
+                save_figure(fig, rent_path)
+                plt.show()
+
+                display(rent_pilot)
+                """
+            ),
+            markdown("## 8. Export EDA tables and key observations"),
             code(
                 """
                 eda_summary_path = TABLES_DIR / "parish_eda_summary.csv"
                 zero_supply_path = TABLES_DIR / "zero_coworking_parishes.csv"
+                rent_pilot_path = TABLES_DIR / "commercial_rent_pilot.csv"
                 eda_summary.to_csv(eda_summary_path, index=False)
                 zero_supply.to_csv(zero_supply_path, index=False)
+                rent_pilot.to_csv(rent_pilot_path, index=False)
 
                 highest_supply = df.nlargest(3, "coworking_count")[
                     ["parish", "coworking_count"]
@@ -556,6 +635,7 @@ def build_eda_notebook() -> nbf.NotebookNode:
                 print("Rent coverage:", int(df["median_rent_eur_m2_month"].notna().sum()), "/ 24")
                 print("Saved:", eda_summary_path.relative_to(PROJECT_ROOT))
                 print("Saved:", zero_supply_path.relative_to(PROJECT_ROOT))
+                print("Saved:", rent_pilot_path.relative_to(PROJECT_ROOT))
                 """
             ),
             markdown(
@@ -566,8 +646,9 @@ def build_eda_notebook() -> nbf.NotebookNode:
                 several parishes have no verified active coworking locations,
                 while a small group contains most observed supply. Demand and
                 transit signals vary independently enough to justify a
-                multi-component decision model. Rent is still missing and the
-                next ranking must therefore be labelled provisional.
+                multi-component decision model. Rent is usable for three
+                priority parishes but not citywide, so the main ranking remains
+                provisional.
                 """
             ),
         ]
@@ -606,6 +687,7 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                     sys.path.insert(0, str(PROJECT_ROOT))
 
                 from src.config import (
+                    FINAL_WEIGHTS,
                     FIGURES_DIR,
                     PARISH_ANALYSIS_BASE_FILE,
                     PROVISIONAL_WEIGHTS,
@@ -613,7 +695,7 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                     SENSITIVITY_ITERATIONS,
                     TABLES_DIR,
                 )
-                from src.utils import save_figure
+                from src.utils import inverse_percentile_score, save_figure
 
                 sns.set_theme(style="whitegrid", context="notebook")
                 df = pd.read_csv(PARISH_ANALYSIS_BASE_FILE)
@@ -748,7 +830,41 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                 sensitivity.head(10)
                 """
             ),
-            markdown("## 5. Export rankings and sensitivity results"),
+            markdown("## 5. Rent-inclusive pilot for the three covered parishes"),
+            code(
+                """
+                rent_pilot = df[
+                    df["median_rent_eur_m2_month"].notna()
+                ][
+                    [
+                        "parish",
+                        *component_columns,
+                        "median_rent_eur_m2_month",
+                        "rent_sample_size",
+                    ]
+                ].copy()
+                rent_pilot["rent_opportunity_score"] = inverse_percentile_score(
+                    rent_pilot["median_rent_eur_m2_month"]
+                )
+                rent_pilot["pilot_opportunity_score"] = sum(
+                    rent_pilot[column] * weight
+                    for column, weight in FINAL_WEIGHTS.items()
+                ).round(2)
+                rent_pilot["pilot_rank"] = (
+                    rent_pilot["pilot_opportunity_score"]
+                    .rank(method="min", ascending=False)
+                    .astype(int)
+                )
+                rent_pilot = rent_pilot.sort_values(
+                    ["pilot_rank", "parish"]
+                ).reset_index(drop=True)
+
+                assert len(rent_pilot) == 3
+                assert rent_pilot["rent_sample_size"].ge(5).all()
+                display(rent_pilot)
+                """
+            ),
+            markdown("## 6. Export rankings and sensitivity results"),
             code(
                 """
                 ranking = ranking.merge(
@@ -760,17 +876,20 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                 ranking_path = TABLES_DIR / "provisional_opportunity_ranking.csv"
                 scenario_path = TABLES_DIR / "provisional_opportunity_scenarios.csv"
                 sensitivity_path = TABLES_DIR / "provisional_score_sensitivity.csv"
+                rent_pilot_path = TABLES_DIR / "rent_inclusive_pilot_ranking.csv"
 
                 ranking.to_csv(ranking_path, index=False)
                 scenario_output.to_csv(scenario_path, index=False)
                 sensitivity.to_csv(sensitivity_path, index=False)
+                rent_pilot.to_csv(rent_pilot_path, index=False)
 
                 print("Saved:", ranking_path.relative_to(PROJECT_ROOT))
                 print("Saved:", scenario_path.relative_to(PROJECT_ROOT))
                 print("Saved:", sensitivity_path.relative_to(PROJECT_ROOT))
+                print("Saved:", rent_pilot_path.relative_to(PROJECT_ROOT))
                 """
             ),
-            markdown("## 6. Decision-facing figures"),
+            markdown("## 7. Decision-facing figures"),
             code(
                 """
                 chart_data = ranking.nlargest(
@@ -818,7 +937,7 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                 plt.show()
                 """
             ),
-            markdown("## 7. Provisional conclusion and limitation"),
+            markdown("## 8. Provisional conclusion and limitation"),
             code(
                 """
                 display(
@@ -833,8 +952,9 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                     ]
                 )
                 print(
-                    "This shortlist excludes commercial asking rent and is not "
-                    "the final site recommendation."
+                    "The citywide shortlist remains provisional. A separate "
+                    "rent-inclusive comparison is available for the three "
+                    "parishes with sufficient pilot coverage."
                 )
                 """
             ),
@@ -842,8 +962,9 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                 """
                 The provisional shortlist is useful for directing the next
                 research effort, but it is not a final expansion decision.
-                Commercial asking rent, site availability and local due
-                diligence must be added before the final recommendation.
+                Commercial asking rent must be extended to all candidate
+                parishes, and site availability and local due diligence must be
+                added before the final recommendation.
                 """
             ),
         ]

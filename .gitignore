@@ -17,6 +17,7 @@ data/raw/*
 !data/raw/municipal_*.geojson
 !data/raw/municipal_validation_log_*.json
 !data/raw/coworking_locations_mvp_*.csv
+!data/raw/commercial_rent_listings_*.json
 data/external/*
 !data/external/.gitkeep
 !data/external/ine_census2021_*.csv
@@ -28,3 +29,6 @@ data/processed/*
 !data/processed/coworking_manual_review.csv
 !data/processed/parish_indicators.csv
 !data/processed/parish_analysis_base.csv
+!data/processed/commercial_rent_listings.csv
+!data/processed/commercial_rent_buildings.csv
+!data/processed/commercial_rent_parish_summary.csv
