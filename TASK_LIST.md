@@ -16,6 +16,9 @@
 - [x] Resolve coordinates and parish assignments for all verified coworking locations.
 - [ ] Collect a terms-compliant commercial asking-rent sample.
 - [x] Run initial data-quality checks and EDA.
+- [x] Create the 24-row parish analysis base table.
+- [x] Complete parish-level demand, accessibility and competition EDA.
+- [x] Build a clearly labelled provisional no-rent score and sensitivity test.
 - [ ] Compare demand, accessibility, competition and asking-rent value.
 - [ ] Build and sensitivity-test the Opportunity Score.
 - [ ] Produce final charts and recommendation.

@@ -86,20 +86,31 @@ coworking_lisbon_analysis/
 ├── docs/
 │   ├── project_brief.md
 │   ├── source_plan.md
-│   └── data_dictionary.md
+│   ├── data_dictionary.md
+│   └── methodology.md
 ├── requirements.txt     # pinned Python dependencies
 ├── TASK_LIST.md
 └── README.md
 ```
 
 ## How to run
-To reproduce the initial analysis, open `notebooks/01_eda.ipynb` and run all
-cells from top to bottom. This run also generates
+To reproduce the initial checkpoint, open `notebooks/01_eda.ipynb` and run all
+cells from top to bottom. This run generates
 `reports/figures/01_coworking_locations_by_parish.png` and
-`reports/tables/coworking_locations_by_parish.csv`. The longer project workflow then continues through
-`01_data_collection.ipynb`, `02_cleaning.ipynb`, `03_eda.ipynb`,
-`04_deeper_analysis.ipynb`, `05_insights_recommendations.ipynb`, and
-`06_final_charts.ipynb`.
+`reports/tables/coworking_locations_by_parish.csv`.
+
+The implemented parish-analysis sequence is:
+
+1. `02_cleaning.ipynb` - validates processed inputs and creates
+   `data/processed/parish_analysis_base.csv`.
+2. `03_eda.ipynb` - compares all 24 parishes and exports EDA figures/tables.
+3. `04_deeper_analysis.ipynb` - creates a provisional no-rent score,
+   documented scenarios and reproducible sensitivity results.
+
+The workflow will later be completed with `01_data_collection.ipynb`,
+`05_insights_recommendations.ipynb`, and `06_final_charts.ipynb`.
+See [`docs/methodology.md`](docs/methodology.md) for scoring assumptions and
+interpretation limits.
 
 ## Success criteria
 - At least 90% coverage of coworking locations found across two independent public discovery sources.
@@ -112,9 +123,14 @@ cells from top to bottom. This run also generates
 
 ## Key findings
 The verified-active MVP contains 48 coworking locations with complete
-coordinates and parish assignments. Decision-facing findings are intentionally deferred until the
-coworking table is joined to population, accessibility, higher-education and
-rent indicators.
+coordinates and parish assignments. Ten of Lisbon's 24 parishes have no
+verified active coworking location in the current dataset. Santo António,
+Arroios and Santa Maria Maior together contain 22 of the 48 verified locations.
+
+The provisional no-rent model ranks Areeiro first, followed by Campolide and
+Arroios. Areeiro appears in the top three in 100% of the documented weight
+simulations. This is not the final recommendation: commercial asking rent,
+available sites and local due diligence are still missing.
 
 ## BI dashboard and final figures
 If Tableau or Power BI is used, working files will be stored in `reports/bi_exports/`. Final shareable charts and dashboard exports will be stored in `reports/figures/`. Relative data paths will point to `data/processed/`.
@@ -127,9 +143,14 @@ freguesias and uses official census, higher-education and metro data alongside
 documented OSM proxies. Manual coworking candidate verification is complete.
 The initial EDA runs reproducibly and exports its chart and 14-row
 parish-level coworking summary table directly from the notebook.
+The cleaning, parish-level EDA and provisional deeper-analysis notebooks are
+now implemented and run from top to bottom. They generate a 24-row base
+analysis table, six additional figures, six additional summary/scenario
+tables and a 5,000-run weight sensitivity analysis.
 The remaining data-collection work is collecting a terms-compliant commercial
 asking-rent sample.
-The final opportunity score is intentionally deferred until those gaps close.
+The final rent-inclusive opportunity score and recommendation remain deferred
+until that gap closes.
 
 ## Known blockers and risks
 - Public directories and map data can omit new locations or retain outdated ones.

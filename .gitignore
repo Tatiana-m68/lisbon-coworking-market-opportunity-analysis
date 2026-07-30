@@ -27,3 +27,4 @@ data/processed/*
 !data/processed/coworking_verification_queue.csv
 !data/processed/coworking_manual_review.csv
 !data/processed/parish_indicators.csv
+!data/processed/parish_analysis_base.csv
