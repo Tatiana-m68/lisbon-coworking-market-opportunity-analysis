@@ -6,9 +6,10 @@ The rent dataset is a decision-focused pilot, not a complete census of Lisbon
 commercial property. It tests whether the current shortlist changes after an
 asking-rent value component is added.
 
-The 30 July 2026 collection covers searches for Areeiro, Arroios and Campolide.
-These were the top three parishes in the provisional no-rent model. Citywide
-ranking remains provisional until comparable coverage is extended.
+The 30 July 2026 collection uses two immutable snapshots. The first covers
+Areeiro, Arroios and Campolide. The second expands collection to Misericórdia,
+Lumiar, Avenidas Novas, Santo António, Penha de França, Carnide and São
+Domingos de Benfica. Together these are the provisional top-ten candidates.
 
 ## Source and acquisition
 
@@ -61,9 +62,11 @@ table. Missing rent is never converted to zero.
 
 ## Current result and limitations
 
-The target is met for Areeiro, Arroios and Campolide. Search spillover also
-produced observations for four neighbouring parishes, but their coverage is
-insufficient and those medians are not used.
+After deduplication across searches, the audit table contains 191 unique
+listings and 148 valid building observations. At least usable coverage is
+available for all provisional top-ten candidates. Search spillover also
+produced observations for neighbouring parishes, but insufficient medians are
+not used.
 
 The values are advertised rents, not signed transaction rents. VAT,
 condominium charges, incentives, fit-out condition and negotiability may differ

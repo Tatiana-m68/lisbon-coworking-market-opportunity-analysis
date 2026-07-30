@@ -71,8 +71,8 @@ fields used in the analysis and adds:
 | competition_opportunity_score | float | Derived | Inverse percentile score of coworking locations per 10,000 working-age residents | 0-100 | Not allowed after successful build | 100.0 |
 | analysis_status | category | Derived | States whether all planned model components are available | provisional_no_rent | Not allowed | provisional_no_rent |
 
-The current dated, terms-compliant pilot populates rent fields for Areeiro,
-Arroios and Campolide only. Rent remains missing for the other parishes and
+The current dated, terms-compliant sample populates rent fields for the
+provisional top-ten candidates. Rent remains missing for the other parishes and
 must not be converted to zero.
 
 ## Commercial rent tables
@@ -111,3 +111,14 @@ ranks under four documented weight scenarios.
 shares and rank ranges from 5,000 reproducible weight simulations.
 
 These outputs are screening results, not a final site recommendation.
+
+## Recommendation outputs
+
+- `rent_inclusive_pilot_ranking.csv`: four-component ranking of the ten covered
+  candidates.
+- `rent_inclusive_shortlist_sensitivity.csv`: 5,000-run four-component weight
+  stability results.
+- `final_shortlist.csv`: Areeiro as priority, with Lumiar and Arroios as
+  alternatives.
+- `recommendation_evidence.csv`: strengths, trade-offs and next due-diligence
+  actions for the three recommended parishes.

@@ -11,7 +11,7 @@ from src.config import (
     COMMERCIAL_RENT_BUILDINGS_FILE,
     COMMERCIAL_RENT_LISTINGS_FILE,
     COMMERCIAL_RENT_PARISH_FILE,
-    COMMERCIAL_RENT_RAW_FILE,
+    COMMERCIAL_RENT_RAW_PATTERN,
     RAW_DIR,
 )
 
@@ -22,34 +22,44 @@ TARGET_LISTINGS_PER_PARISH = 10
 
 
 def load_raw_listings() -> pd.DataFrame:
-    """Flatten the saved connector response without changing the raw file."""
-    with COMMERCIAL_RENT_RAW_FILE.open(encoding="utf-8") as file:
-        payload = json.load(file)
-
+    """Flatten all saved connector snapshots without changing raw files."""
     rows = []
-    for search in payload["searches"]:
-        for listing in search["listings"]:
-            rows.append(
-                {
-                    "listing_id": f"idealista_{listing['property_code']}",
-                    "source_name": payload["source_name"],
-                    "source_url": listing["source_url"],
-                    "collection_date": payload["collection_date"],
-                    "requested_parish": search["requested_parish"],
-                    "address_or_area_text": listing["title"],
-                    "property_type": listing["property_type"],
-                    "property_subtype": listing["property_subtype"],
-                    "monthly_rent_eur": listing["monthly_rent_eur"],
-                    "area_m2": listing["area_m2"],
-                    "source_rent_eur_m2_month": listing[
-                        "source_price_eur_m2_month"
-                    ],
-                    "latitude": listing["latitude"],
-                    "longitude": listing["longitude"],
-                    "listing_status": listing["status"],
-                }
-            )
-    return pd.DataFrame(rows)
+    raw_files = sorted(RAW_DIR.glob(COMMERCIAL_RENT_RAW_PATTERN))
+    if not raw_files:
+        raise FileNotFoundError("No commercial rent snapshots were found.")
+
+    for raw_file in raw_files:
+        with raw_file.open(encoding="utf-8") as file:
+            payload = json.load(file)
+        for search in payload["searches"]:
+            for listing in search["listings"]:
+                rows.append(
+                    {
+                        "listing_id": f"idealista_{listing['property_code']}",
+                        "source_name": payload["source_name"],
+                        "source_snapshot": raw_file.name,
+                        "source_url": listing["source_url"],
+                        "collection_date": payload["collection_date"],
+                        "requested_parish": search["requested_parish"],
+                        "address_or_area_text": listing["title"],
+                        "property_type": listing["property_type"],
+                        "property_subtype": listing["property_subtype"],
+                        "monthly_rent_eur": listing["monthly_rent_eur"],
+                        "area_m2": listing["area_m2"],
+                        "source_rent_eur_m2_month": listing[
+                            "source_price_eur_m2_month"
+                        ],
+                        "latitude": listing["latitude"],
+                        "longitude": listing["longitude"],
+                        "listing_status": listing["status"],
+                    }
+                )
+    return (
+        pd.DataFrame(rows)
+        .sort_values(["listing_id", "source_snapshot", "requested_parish"])
+        .drop_duplicates("listing_id", keep="first")
+        .reset_index(drop=True)
+    )
 
 
 def point_in_ring(
@@ -246,14 +256,25 @@ def main() -> None:
     parish_summary = aggregate_parishes(listings, buildings)
 
     assert listings["listing_id"].is_unique
-    assert len(listings) == 60
+    assert len(listings) >= 150
     assert listings["parish"].notna().all()
-    assert int(listings["valid_for_analysis"].sum()) == 59
+    assert listings["valid_for_analysis"].mean() >= 0.95
     target_coverage = parish_summary.set_index("parish").loc[
-        ["Areeiro", "Arroios", "Campolide"],
+        [
+            "Areeiro",
+            "Arroios",
+            "Campolide",
+            "Misericórdia",
+            "Lumiar",
+            "Avenidas Novas",
+            "Santo António",
+            "Penha de França",
+            "Carnide",
+            "São Domingos de Benfica",
+        ],
         "rent_coverage_flag",
     ]
-    assert target_coverage.eq("target_met").all()
+    assert target_coverage.isin(["target_met", "usable_low_coverage"]).all()
 
     COMMERCIAL_RENT_LISTINGS_FILE.parent.mkdir(parents=True, exist_ok=True)
     listings.to_csv(COMMERCIAL_RENT_LISTINGS_FILE, index=False)

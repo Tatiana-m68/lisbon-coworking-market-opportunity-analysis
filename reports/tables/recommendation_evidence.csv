@@ -1,0 +1,4 @@
+parish,role,strength,trade_off,next_action
+Areeiro,priority,"Strong demand and transit, zero verified coworking supply, and mid-range pilot rent.",Zero observed supply may reflect a discovery gap or weak site availability.,"Inspect available 300-800 m² offices near Areeiro, Alameda and Roma-Areeiro stations."
+Lumiar,alternative_1,"Low pilot rent, good transit and zero verified coworking supply.",Lower demand proxy and a more residential market profile.,Validate daytime worker/student catchments and test demand around metro nodes.
+Arroios,alternative_2,Highest demand and accessibility signals with competitive pilot rent.,Seven verified coworking competitors reduce white-space opportunity.,"Map competitor capacity, pricing and customer segments before selecting a micro-location."

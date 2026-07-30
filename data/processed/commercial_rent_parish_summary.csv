@@ -1,8 +1,14 @@
 parish,rent_sample_size,median_rent_eur_m2_month,min_rent_eur_m2_month,max_rent_eur_m2_month,collection_date,valid_listing_count,rent_coverage_flag
-Alvalade,1,18.0,18.0,18.0,2026-07-30,1,insufficient
+Alvalade,2,18.77,18.0,19.55,2026-07-30,2,insufficient
 Areeiro,10,17.73,7.86,29.75,2026-07-30,16,target_met
 Arroios,15,17.5,9.72,41.66,2026-07-30,19,target_met
-Avenidas Novas,3,19.0,18.5,19.69,2026-07-30,3,insufficient
+Avenidas Novas,22,20.38,9.57,45.0,2026-07-30,22,target_met
 Beato,1,14.55,14.55,14.55,2026-07-30,1,insufficient
 Campolide,10,20.01,12.78,23.0,2026-07-30,18,target_met
-São Domingos de Benfica,1,20.0,20.0,20.0,2026-07-30,1,insufficient
+Carnide,11,17.5,11.59,23.44,2026-07-30,12,target_met
+Lumiar,17,15.71,6.11,24.51,2026-07-30,20,target_met
+Misericórdia,17,22.0,18.75,44.0,2026-07-30,19,target_met
+Penha de França,15,13.91,2.33,78.38,2026-07-30,16,target_met
+Santa Maria Maior,1,31.67,31.67,31.67,2026-07-30,1,insufficient
+Santo António,13,25.6,4.38,37.78,2026-07-30,20,target_met
+São Domingos de Benfica,14,16.99,12.47,20.0,2026-07-30,20,target_met

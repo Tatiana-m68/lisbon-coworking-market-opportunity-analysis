@@ -47,7 +47,7 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
 
                 This notebook validates the two processed source tables and
                 creates a 24-row parish-level analysis table. A pilot commercial
-                asking-rent sample is available for three priority parishes;
+                asking-rent sample is available for ten priority parishes;
                 the citywide output therefore remains provisional.
                 """
             ),
@@ -259,7 +259,7 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                         "competition_opportunity_score",
                     ]
                 ].apply(lambda column: column.between(0, 100).all()).all()
-                assert analysis["median_rent_eur_m2_month"].notna().sum() == 3
+                assert analysis["median_rent_eur_m2_month"].notna().sum() == 10
                 assert analysis.loc[
                     analysis["median_rent_eur_m2_month"].notna(),
                     "rent_sample_size",
@@ -316,8 +316,8 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                 The analysis base contains 24 unique parishes and reconciles to
                 48 verified active coworking locations. Demand, accessibility
                 and competition components are complete. Rent is usable for
-                Areeiro, Arroios and Campolide only; missing rent elsewhere is
-                not treated as zero.
+                for the provisional top-ten candidates; missing rent elsewhere
+                is not treated as zero.
                 """
             ),
         ]
@@ -373,7 +373,7 @@ def build_eda_notebook() -> nbf.NotebookNode:
                 ## 2. Coverage, missingness and descriptive statistics
 
                 Rent is the only intentionally incomplete analysis component.
-                The pilot covers three priority parishes. All demand,
+                The pilot covers ten priority parishes. All demand,
                 accessibility and competition fields remain complete.
                 """
             ),
@@ -646,9 +646,9 @@ def build_eda_notebook() -> nbf.NotebookNode:
                 several parishes have no verified active coworking locations,
                 while a small group contains most observed supply. Demand and
                 transit signals vary independently enough to justify a
-                multi-component decision model. Rent is usable for three
-                priority parishes but not citywide, so the main ranking remains
-                provisional.
+                multi-component decision model. Rent is usable for the
+                provisional top-ten candidates but not citywide, so the main
+                24-parish ranking remains provisional.
                 """
             ),
         ]
@@ -830,7 +830,7 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                 sensitivity.head(10)
                 """
             ),
-            markdown("## 5. Rent-inclusive pilot for the three covered parishes"),
+            markdown("## 5. Rent-inclusive shortlist for covered candidates"),
             code(
                 """
                 rent_pilot = df[
@@ -859,7 +859,7 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                     ["pilot_rank", "parish"]
                 ).reset_index(drop=True)
 
-                assert len(rent_pilot) == 3
+                assert len(rent_pilot) == 10
                 assert rent_pilot["rent_sample_size"].ge(5).all()
                 display(rent_pilot)
                 """
@@ -953,8 +953,8 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                 )
                 print(
                     "The citywide shortlist remains provisional. A separate "
-                    "rent-inclusive comparison is available for the three "
-                    "parishes with sufficient pilot coverage."
+                    "rent-inclusive comparison is available for the ten "
+                    "candidate parishes with sufficient pilot coverage."
                 )
                 """
             ),
@@ -962,9 +962,457 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                 """
                 The provisional shortlist is useful for directing the next
                 research effort, but it is not a final expansion decision.
-                Commercial asking rent must be extended to all candidate
-                parishes, and site availability and local due diligence must be
-                added before the final recommendation.
+                Commercial asking rent covers the provisional top ten, but site
+                availability and local due diligence must be added before the
+                final recommendation.
+                """
+            ),
+        ]
+    )
+
+
+def build_recommendations_notebook() -> nbf.NotebookNode:
+    """Create the decision recommendation and due-diligence notebook."""
+    return notebook(
+        [
+            markdown(
+                """
+                # 05 Insights and recommendations
+
+                This notebook converts the rent-inclusive candidate comparison
+                into one priority parish, two alternatives and a documented
+                due-diligence plan. It is a market-screening recommendation,
+                not approval to sign a lease.
+                """
+            ),
+            markdown("## 1. Imports and validated shortlist"),
+            code(
+                """
+                import sys
+                from pathlib import Path
+
+                import matplotlib.pyplot as plt
+                import numpy as np
+                import pandas as pd
+                import seaborn as sns
+
+                PROJECT_ROOT = Path.cwd()
+                if PROJECT_ROOT.name == "notebooks":
+                    PROJECT_ROOT = PROJECT_ROOT.parent
+                if str(PROJECT_ROOT) not in sys.path:
+                    sys.path.insert(0, str(PROJECT_ROOT))
+
+                from src.config import (
+                    FIGURES_DIR,
+                    FINAL_WEIGHTS,
+                    RANDOM_STATE,
+                    SENSITIVITY_ITERATIONS,
+                    TABLES_DIR,
+                )
+                from src.utils import save_figure, validate_required_columns
+
+                sns.set_theme(style="whitegrid", context="notebook")
+                shortlist_path = TABLES_DIR / "rent_inclusive_pilot_ranking.csv"
+                shortlist = pd.read_csv(shortlist_path)
+
+                required_columns = {
+                    "parish",
+                    "demand_proxy_score",
+                    "transit_access_score",
+                    "competition_opportunity_score",
+                    "rent_opportunity_score",
+                    "median_rent_eur_m2_month",
+                    "rent_sample_size",
+                    "pilot_opportunity_score",
+                    "pilot_rank",
+                }
+                validate_required_columns(shortlist, required_columns)
+                assert len(shortlist) == 10
+                assert shortlist["rent_sample_size"].ge(5).all()
+                shortlist.head()
+                """
+            ),
+            markdown(
+                """
+                ## 2. Four-component weight sensitivity
+
+                Five thousand plausible weight combinations are sampled around
+                the planned 35/25/25/15 weights. This checks whether the
+                recommendation depends on one exact subjective weighting.
+                """
+            ),
+            code(
+                """
+                component_columns = list(FINAL_WEIGHTS)
+                base_weights = np.array(
+                    [FINAL_WEIGHTS[column] for column in component_columns]
+                )
+                rng = np.random.default_rng(RANDOM_STATE)
+                sampled_weights = rng.dirichlet(
+                    base_weights * 40,
+                    size=SENSITIVITY_ITERATIONS,
+                )
+                score_matrix = (
+                    shortlist[component_columns].to_numpy() @ sampled_weights.T
+                )
+                order = np.argsort(-score_matrix, axis=0)
+                simulation_ranks = np.empty_like(order)
+                simulation_ranks[order, np.arange(SENSITIVITY_ITERATIONS)] = (
+                    np.arange(1, len(shortlist) + 1)[:, None]
+                )
+
+                sensitivity = pd.DataFrame(
+                    {
+                        "parish": shortlist["parish"],
+                        "top1_share": (simulation_ranks == 1).mean(axis=1) * 100,
+                        "top3_share": (simulation_ranks <= 3).mean(axis=1) * 100,
+                        "median_rank": np.median(simulation_ranks, axis=1),
+                        "best_rank": simulation_ranks.min(axis=1),
+                        "worst_rank": simulation_ranks.max(axis=1),
+                    }
+                )
+                sensitivity[["top1_share", "top3_share"]] = sensitivity[
+                    ["top1_share", "top3_share"]
+                ].round(2)
+                decision_table = shortlist.merge(
+                    sensitivity,
+                    on="parish",
+                    how="left",
+                    validate="one_to_one",
+                ).sort_values(["pilot_rank", "parish"])
+                decision_table.head()
+                """
+            ),
+            markdown("## 3. Priority parish and alternatives"),
+            code(
+                """
+                final_shortlist = decision_table.head(3).copy()
+                final_shortlist["recommendation_role"] = [
+                    "priority",
+                    "alternative_1",
+                    "alternative_2",
+                ]
+
+                assert final_shortlist.iloc[0]["parish"] == "Areeiro"
+                display(
+                    final_shortlist[
+                        [
+                            "recommendation_role",
+                            "parish",
+                            "pilot_opportunity_score",
+                            "median_rent_eur_m2_month",
+                            "rent_sample_size",
+                            "top1_share",
+                            "top3_share",
+                        ]
+                    ]
+                )
+                """
+            ),
+            markdown(
+                """
+                **Priority: Areeiro.** It retains the highest balanced score,
+                combines strong demand and transit signals with no verified
+                active coworking location in the current inventory, and has
+                acceptable pilot asking rent.
+
+                **Alternative 1: Lumiar.** It offers lower pilot asking rent,
+                good transit accessibility and no verified active coworking
+                location, but its demand proxy is materially weaker than
+                Areeiro's.
+
+                **Alternative 2: Arroios.** It has the strongest combined
+                demand and accessibility signals and competitive asking rent.
+                Its main trade-off is seven verified coworking locations, so a
+                new site would need clear positioning and micro-location
+                differentiation.
+                """
+            ),
+            markdown("## 4. Decision evidence and due-diligence actions"),
+            code(
+                """
+                evidence = pd.DataFrame(
+                    [
+                        {
+                            "parish": "Areeiro",
+                            "role": "priority",
+                            "strength": (
+                                "Strong demand and transit, zero verified "
+                                "coworking supply, and mid-range pilot rent."
+                            ),
+                            "trade_off": (
+                                "Zero observed supply may reflect a discovery "
+                                "gap or weak site availability."
+                            ),
+                            "next_action": (
+                                "Inspect available 300-800 m² offices near "
+                                "Areeiro, Alameda and Roma-Areeiro stations."
+                            ),
+                        },
+                        {
+                            "parish": "Lumiar",
+                            "role": "alternative_1",
+                            "strength": (
+                                "Low pilot rent, good transit and zero verified "
+                                "coworking supply."
+                            ),
+                            "trade_off": (
+                                "Lower demand proxy and a more residential "
+                                "market profile."
+                            ),
+                            "next_action": (
+                                "Validate daytime worker/student catchments and "
+                                "test demand around metro nodes."
+                            ),
+                        },
+                        {
+                            "parish": "Arroios",
+                            "role": "alternative_2",
+                            "strength": (
+                                "Highest demand and accessibility signals with "
+                                "competitive pilot rent."
+                            ),
+                            "trade_off": (
+                                "Seven verified coworking competitors reduce "
+                                "white-space opportunity."
+                            ),
+                            "next_action": (
+                                "Map competitor capacity, pricing and customer "
+                                "segments before selecting a micro-location."
+                            ),
+                        },
+                    ]
+                )
+                evidence
+                """
+            ),
+            markdown("## 5. Decision-facing comparison"),
+            code(
+                """
+                profile_columns = {
+                    "demand_proxy_score": "Demand",
+                    "transit_access_score": "Transit",
+                    "competition_opportunity_score": "Competition opportunity",
+                    "rent_opportunity_score": "Rent opportunity",
+                }
+                profile = final_shortlist[
+                    ["parish", *profile_columns]
+                ].rename(columns=profile_columns).melt(
+                    id_vars="parish",
+                    var_name="component",
+                    value_name="score",
+                )
+
+                fig, ax = plt.subplots(figsize=(10, 6))
+                sns.barplot(
+                    data=profile,
+                    x="score",
+                    y="component",
+                    hue="parish",
+                    ax=ax,
+                )
+                ax.set_title("Recommendation component profiles")
+                ax.set_xlabel("Component score (0-100)")
+                ax.set_ylabel("")
+                ax.set_xlim(0, 100)
+                ax.legend(title="Parish", bbox_to_anchor=(1.02, 1), loc="upper left")
+                fig.tight_layout()
+                figure_path = FIGURES_DIR / "09_recommendation_component_profiles.png"
+                save_figure(fig, figure_path)
+                plt.show()
+                """
+            ),
+            markdown("## 6. Export recommendation tables"),
+            code(
+                """
+                final_shortlist_path = TABLES_DIR / "final_shortlist.csv"
+                sensitivity_path = (
+                    TABLES_DIR / "rent_inclusive_shortlist_sensitivity.csv"
+                )
+                evidence_path = TABLES_DIR / "recommendation_evidence.csv"
+
+                final_shortlist.to_csv(final_shortlist_path, index=False)
+                sensitivity.to_csv(sensitivity_path, index=False)
+                evidence.to_csv(evidence_path, index=False)
+
+                print("Saved:", final_shortlist_path.relative_to(PROJECT_ROOT))
+                print("Saved:", sensitivity_path.relative_to(PROJECT_ROOT))
+                print("Saved:", evidence_path.relative_to(PROJECT_ROOT))
+                """
+            ),
+            markdown(
+                """
+                ## 7. Recommendation boundary
+
+                Advance Areeiro to site-level due diligence, while retaining
+                Lumiar and Arroios as alternatives. Before any lease decision,
+                validate live availability, effective occupancy cost, usable
+                floorplate, footfall and catchment demand, competitor capacity,
+                planning constraints and unit economics. The parish score
+                prioritises where to investigate; it does not select a building
+                or forecast profitability.
+                """
+            ),
+        ]
+    )
+
+
+def build_final_charts_notebook() -> nbf.NotebookNode:
+    """Create the final decision-facing chart notebook."""
+    return notebook(
+        [
+            markdown(
+                """
+                # 06 Final decision charts
+
+                This notebook creates the compact visual outputs used to
+                communicate the candidate shortlist and recommendation. It
+                reads exported analysis tables rather than repeating the
+                cleaning or scoring logic.
+                """
+            ),
+            markdown("## 1. Imports and final outputs"),
+            code(
+                """
+                import sys
+                from pathlib import Path
+
+                import matplotlib.pyplot as plt
+                import pandas as pd
+                import seaborn as sns
+
+                PROJECT_ROOT = Path.cwd()
+                if PROJECT_ROOT.name == "notebooks":
+                    PROJECT_ROOT = PROJECT_ROOT.parent
+                if str(PROJECT_ROOT) not in sys.path:
+                    sys.path.insert(0, str(PROJECT_ROOT))
+
+                from src.config import FIGURES_DIR, TABLES_DIR
+                from src.utils import save_figure, validate_required_columns
+
+                sns.set_theme(style="whitegrid", context="notebook")
+                shortlist = pd.read_csv(
+                    TABLES_DIR / "rent_inclusive_pilot_ranking.csv"
+                )
+                final_shortlist = pd.read_csv(TABLES_DIR / "final_shortlist.csv")
+
+                validate_required_columns(
+                    shortlist,
+                    {
+                        "parish",
+                        "pilot_opportunity_score",
+                        "median_rent_eur_m2_month",
+                        "rent_sample_size",
+                    },
+                )
+                validate_required_columns(
+                    final_shortlist,
+                    {
+                        "parish",
+                        "pilot_opportunity_score",
+                        "top1_share",
+                        "top3_share",
+                        "recommendation_role",
+                    },
+                )
+                """
+            ),
+            markdown("## 2. Rent-inclusive candidate ranking"),
+            code(
+                """
+                ranking_chart = shortlist.sort_values(
+                    "pilot_opportunity_score"
+                )
+                colors = [
+                    "#E76F51" if parish == "Areeiro" else "#457B9D"
+                    for parish in ranking_chart["parish"]
+                ]
+
+                fig, ax = plt.subplots(figsize=(10, 7))
+                ax.barh(
+                    ranking_chart["parish"],
+                    ranking_chart["pilot_opportunity_score"],
+                    color=colors,
+                )
+                ax.set_title("Rent-inclusive opportunity shortlist")
+                ax.set_xlabel("Opportunity score (0-100)")
+                ax.set_ylabel("Parish")
+                ax.set_xlim(0, 100)
+                for index, value in enumerate(
+                    ranking_chart["pilot_opportunity_score"]
+                ):
+                    ax.text(value + 0.8, index, f"{value:.1f}", va="center")
+                fig.tight_layout()
+                ranking_path = FIGURES_DIR / "10_rent_inclusive_shortlist.png"
+                save_figure(fig, ranking_path)
+                plt.show()
+                """
+            ),
+            markdown("## 3. Score, rent and sample coverage"),
+            code(
+                """
+                fig, ax = plt.subplots(figsize=(10, 7))
+                sns.scatterplot(
+                    data=shortlist,
+                    x="median_rent_eur_m2_month",
+                    y="pilot_opportunity_score",
+                    size="rent_sample_size",
+                    hue="pilot_opportunity_score",
+                    palette="viridis",
+                    sizes=(90, 450),
+                    legend=False,
+                    ax=ax,
+                )
+                for row in shortlist.itertuples():
+                    ax.annotate(
+                        row.parish,
+                        (
+                            row.median_rent_eur_m2_month,
+                            row.pilot_opportunity_score,
+                        ),
+                        xytext=(5, 5),
+                        textcoords="offset points",
+                        fontsize=8,
+                    )
+                ax.set_title("Opportunity score versus median asking rent")
+                ax.set_xlabel("Median asking rent (EUR/m²/month)")
+                ax.set_ylabel("Opportunity score (0-100)")
+                fig.tight_layout()
+                tradeoff_path = FIGURES_DIR / "11_score_vs_asking_rent.png"
+                save_figure(fig, tradeoff_path)
+                plt.show()
+                """
+            ),
+            markdown("## 4. Final recommendation summary"),
+            code(
+                """
+                display(
+                    final_shortlist[
+                        [
+                            "recommendation_role",
+                            "parish",
+                            "pilot_opportunity_score",
+                            "top1_share",
+                            "top3_share",
+                            "median_rent_eur_m2_month",
+                            "rent_sample_size",
+                        ]
+                    ]
+                )
+                print("Priority parish: Areeiro")
+                print("Alternatives: Lumiar and Arroios")
+                print(
+                    "Recommendation status: advance to site-level due "
+                    "diligence; no lease decision implied."
+                )
+                """
+            ),
+            markdown(
+                """
+                The final visuals deliberately separate the parish screening
+                recommendation from building selection. Areeiro is the priority
+                investigation area; Lumiar and Arroios are retained because
+                they offer different rent, demand and competition trade-offs.
                 """
             ),
         ]
@@ -972,12 +1420,14 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
 
 
 def main() -> None:
-    """Write the three analysis notebooks."""
+    """Write the implemented analysis notebooks."""
     NOTEBOOK_DIR.mkdir(parents=True, exist_ok=True)
     outputs = {
         "02_cleaning.ipynb": build_cleaning_notebook(),
         "03_eda.ipynb": build_eda_notebook(),
         "04_deeper_analysis.ipynb": build_deeper_analysis_notebook(),
+        "05_insights_recommendations.ipynb": build_recommendations_notebook(),
+        "06_final_charts.ipynb": build_final_charts_notebook(),
     }
     for filename, generated_notebook in outputs.items():
         output_path = NOTEBOOK_DIR / filename

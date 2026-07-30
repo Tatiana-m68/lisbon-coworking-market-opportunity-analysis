@@ -14,12 +14,11 @@
 - [x] Build the 24-row parish-indicator table and automated QA.
 - [x] Manually verify all coworking candidates.
 - [x] Resolve coordinates and parish assignments for all verified coworking locations.
-- [x] Collect and validate a terms-compliant rent pilot for three priority parishes.
-- [ ] Extend comparable asking-rent coverage to the remaining serious candidates.
+- [x] Collect and validate terms-compliant rent coverage for the provisional top-ten candidates.
 - [x] Run initial data-quality checks and EDA.
 - [x] Create the 24-row parish analysis base table.
 - [x] Complete parish-level demand, accessibility and competition EDA.
 - [x] Build a clearly labelled provisional no-rent score and sensitivity test.
-- [x] Compare demand, accessibility, competition and asking-rent value in the three-parish pilot.
-- [ ] Build and sensitivity-test the Opportunity Score.
-- [ ] Produce final charts and recommendation.
+- [x] Compare demand, accessibility, competition and asking-rent value across the covered shortlist.
+- [x] Build and sensitivity-test the rent-inclusive Opportunity Score for the covered shortlist.
+- [x] Produce final charts and recommendation.

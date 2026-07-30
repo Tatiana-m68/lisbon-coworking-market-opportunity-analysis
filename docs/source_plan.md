@@ -33,9 +33,10 @@ and current limitations.
 
 ## Commercial asking-rent pilot started
 
-On 30 July 2026, 60 office-rental listing records were collected through the
-Idealista connector for Areeiro, Arroios and Campolide. The raw connector
-result is preserved, coordinates are checked against official parish
+On 30 July 2026, two office-rental snapshots were collected through the
+Idealista connector for the provisional top-ten candidates. After cross-search
+deduplication, 191 unique listing records remain. Raw connector results are
+preserved separately, coordinates are checked against official parish
 boundaries, implausible unit rents are excluded and same-building offers are
 aggregated before parish medians are calculated. See
 `commercial_rent_collection_method.md`.

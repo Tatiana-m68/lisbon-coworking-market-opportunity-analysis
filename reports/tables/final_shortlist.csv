@@ -1,0 +1,4 @@
+parish,demand_proxy_score,transit_access_score,competition_opportunity_score,median_rent_eur_m2_month,rent_sample_size,rent_opportunity_score,pilot_opportunity_score,pilot_rank,top1_share,top3_share,median_rank,best_rank,worst_rank,recommendation_role
+Areeiro,85.42,73.33,100.0,17.73,10,44.44,79.9,1,92.76,99.96,1.0,1,4,priority
+Lumiar,43.33,67.5,100.0,15.71,17,88.89,70.37,2,1.78,76.94,3.0,1,9,alternative_1
+Arroios,94.17,95.0,10.81,17.5,15,61.11,68.58,3,4.32,52.68,3.0,1,8,alternative_2

@@ -33,7 +33,8 @@ Public-source omissions and future supply remain limitations.
 
 ## Provisional citywide score
 
-Commercial asking rent is currently usable for only three priority parishes.
+Commercial asking rent is currently usable for the provisional top-ten
+candidates.
 The citywide model therefore continues to renormalise the planned non-rent
 weights:
 
@@ -50,9 +51,9 @@ demand/accessibility/competition/affordability structure after excluding the
 
 ## Rent-inclusive pilot
 
-For Areeiro, Arroios and Campolide, the notebook calculates an inverse
-percentile affordability score from the building-level median asking rent and
-applies the planned weights:
+For the ten covered candidates, the notebook calculates an inverse percentile
+affordability score from the building-level median asking rent and applies the
+planned weights:
 
 ```text
 Pilot Opportunity Score =
@@ -62,9 +63,13 @@ Pilot Opportunity Score =
   + 0.15 × Rent Opportunity Score
 ```
 
-This comparison is valid only among the three covered parishes. It must not be
-merged into the 24-parish rank until comparable rent coverage is available for
-the remaining candidates.
+This comparison is valid among the ten covered candidates. It is a
+decision-focused shortlist rather than a complete 24-parish market ranking.
+
+The shortlist receives a second 5,000-run Dirichlet sensitivity analysis around
+the planned four-component weights. Areeiro ranks first in 92.76% of runs and
+appears in the top three in 99.96%, supporting its selection for site-level due
+diligence.
 
 ## Documented scenarios
 

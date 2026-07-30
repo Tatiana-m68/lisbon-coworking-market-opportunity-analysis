@@ -34,7 +34,7 @@ OpenStreetMap/Overpass, current official operator websites, and official Lisbon
 parish boundaries. Every source snapshot and collection date is retained. See
 [`docs/coworking_collection_method.md`](docs/coworking_collection_method.md).
 Known limitations are possible omissions from public discovery sources and
-commercial asking-rent coverage limited to three priority parishes.
+commercial asking-rent coverage limited to the provisional top-ten candidates.
 
 ## Target audience
 The primary user is an Expansion Director or market-development manager at a
@@ -108,13 +108,18 @@ The implemented parish-analysis sequence is:
 2. `02_cleaning.ipynb` - validates processed inputs and creates
    `data/processed/parish_analysis_base.csv`.
 3. `03_eda.ipynb` - compares all 24 parishes and exports EDA figures/tables,
-   including the three-parish rent pilot.
+   including the ten-candidate rent sample.
 4. `04_deeper_analysis.ipynb` - creates a provisional citywide score,
    documented scenarios, reproducible sensitivity results and a separate
-   rent-inclusive comparison of the three covered parishes.
+   rent-inclusive comparison of the ten covered candidates.
+5. `05_insights_recommendations.ipynb` - tests four-component weight
+   sensitivity and documents one priority parish, two alternatives and
+   due-diligence actions.
+6. `06_final_charts.ipynb` - exports the final decision-facing ranking and
+   rent/score trade-off charts.
 
-The workflow will later be completed with `01_data_collection.ipynb`,
-`05_insights_recommendations.ipynb`, and `06_final_charts.ipynb`.
+`01_data_collection.ipynb` remains the only planned pipeline notebook that has
+not yet been converted from its documented placeholder.
 See [`docs/methodology.md`](docs/methodology.md) for scoring assumptions and
 interpretation limits.
 
@@ -135,10 +140,14 @@ Arroios and Santa Maria Maior together contain 22 of the 48 verified locations.
 
 The provisional citywide model ranks Areeiro first, followed by Campolide and
 Arroios. Areeiro appears in the top three in 100% of the documented weight
-simulations. The rent pilot contains 60 listings, reduced to 41 building
-observations; the 10-building target is met for all three priority parishes.
-Their median asking rents are EUR 17.50–20.01 per m² per month. In the
-rent-inclusive pilot, Areeiro remains first, followed by Arroios and Campolide.
+simulations. The expanded rent sample contains 191 unique listings, reduced to
+148 building observations; the minimum usable coverage is met for all ten
+provisional top-ten candidates.
+In the rent-inclusive shortlist, the candidate order is recalculated using the
+planned demand, accessibility, competition and affordability weights.
+The resulting recommendation is Areeiro as the priority parish, with Lumiar
+and Arroios as alternatives. Across 5,000 four-component weight simulations,
+Areeiro ranks first in 92.76% and appears in the top three in 99.96%.
 This is not the final recommendation because citywide rent coverage, available
 sites and local due diligence are still incomplete.
 
@@ -155,20 +164,20 @@ The initial EDA runs reproducibly and exports its chart and 14-row
 parish-level coworking summary table directly from the notebook.
 The cleaning, parish-level EDA and provisional deeper-analysis notebooks are
 now implemented and run from top to bottom. They generate a 24-row base
-analysis table, seven additional figures, eight additional summary/scenario
-tables and a 5,000-run weight sensitivity analysis. A terms-compliant
-commercial asking-rent pilot is now integrated for the current top-three
-parishes.
-The final rent-inclusive opportunity score and recommendation remain deferred
-until comparable rent coverage is extended to the remaining serious
+analysis table, ten additional figures, recommendation tables and two
+reproducible 5,000-run weight sensitivity analyses. A terms-compliant
+commercial asking-rent sample is now integrated for the provisional top-ten
 candidates.
+The recommendation and final chart notebooks are implemented. Remaining work
+is the data-collection notebook, optional dashboard and final fresh-clone/ZIP
+reproducibility audit.
 
 ## Known blockers and risks
 - Public directories and map data can omit new locations or retain outdated ones.
-- Asking-rent coverage is sufficient for only three priority parishes and may not represent all available properties.
+- Asking-rent coverage is sufficient for the top-ten candidates but may not represent all available properties.
 - The Opportunity Score can create false precision unless weights and data coverage are tested transparently.
 
 ## Next steps
-1. Extend the same commercial-rent method to the remaining serious candidate parishes.
-2. Add the final recommendation notebook with evidence, trade-offs and due-diligence actions.
-3. Create the final decision-facing charts or dashboard and run the full reproducibility audit.
+1. Convert `01_data_collection.ipynb` from a placeholder into a reproducible orchestration notebook.
+2. Decide whether to add an optional Tableau/Power BI dashboard.
+3. Run a fresh-clone/ZIP reproducibility audit and complete the final handoff.

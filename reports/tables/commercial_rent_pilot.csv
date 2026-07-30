@@ -1,4 +1,11 @@
 parish,median_rent_eur_m2_month,rent_sample_size,rent_coverage_flag
+Penha de França,13.91,15,target_met
+Lumiar,15.71,17,target_met
+São Domingos de Benfica,16.99,14,target_met
 Arroios,17.5,15,target_met
+Carnide,17.5,11,target_met
 Areeiro,17.73,10,target_met
 Campolide,20.01,10,target_met
+Avenidas Novas,20.38,22,target_met
+Misericórdia,22.0,17,target_met
+Santo António,25.6,13,target_met
