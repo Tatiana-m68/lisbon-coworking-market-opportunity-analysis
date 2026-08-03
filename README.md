@@ -49,11 +49,11 @@ Lisbon's coworking supply and market signals.
 - How sensitive is the shortlist to alternative weights in the Opportunity Score?
 - Which data gaps or local risks require site-level due diligence before an expansion decision?
 
-## Planned deliverables
+## Deliverables
 - A cleaned, documented coworking-location dataset and a 24-row parish indicators table.
 - Reproducible collection, cleaning and EDA notebooks with reusable Python functions in `src/`.
 - Decision-facing visualisations and a transparent Opportunity Score with sensitivity analysis.
-- A concise report or dashboard recommending one priority parish and two alternatives.
+- A concise recommendation supported by final decision-facing charts; a BI dashboard remains a final presentation deliverable.
 
 ## Setup
 Use Python 3.11 or 3.12 with the pinned project dependencies. Newer Python
@@ -148,8 +148,46 @@ planned demand, accessibility, competition and affordability weights.
 The resulting recommendation is Areeiro as the priority parish, with Lumiar
 and Arroios as alternatives. Across 5,000 four-component weight simulations,
 Areeiro ranks first in 92.76% and appears in the top three in 99.96%.
-This is not the final recommendation because citywide rent coverage, available
-sites and local due diligence are still incomplete.
+This is the final screening recommendation: begin site-level due diligence in
+Areeiro, while keeping Lumiar and Arroios as alternatives. It is not a final
+lease or investment decision because citywide rent coverage, available sites
+and local due diligence are still incomplete.
+
+## Business recommendations
+
+### 1. Start site-level due diligence in Areeiro
+
+**Situation:** Areeiro combines strong demand (85.42), good transit access
+(73.33) and no verified active coworking location in the current dataset.
+**Complication:** Its pilot median asking rent is EUR 17.73/m²/month, and zero
+observed supply may partly reflect a discovery gap rather than proven unmet
+demand. **Resolution:** Prioritise a four-week search for 300-800 m² offices
+near Areeiro, Alameda and Roma-Areeiro stations, then validate competitor
+coverage and unit economics before making a site decision. Evidence:
+`reports/figures/09_recommendation_component_profiles.png` and
+`reports/tables/recommendation_evidence.csv`.
+
+### 2. Keep Lumiar as the lower-rent alternative
+
+**Situation:** Lumiar has no verified active coworking location, good transit
+access (67.50) and the strongest rent opportunity among the final three.
+**Complication:** Its demand score (43.33) is substantially below Areeiro and
+the area has a more residential profile. **Resolution:** Run a two-week demand
+validation around metro nodes, focused on daytime workers and students, before
+placing Lumiar on the active site shortlist. Evidence:
+`reports/figures/10_rent_inclusive_shortlist.png` and
+`reports/tables/final_shortlist.csv`.
+
+### 3. Treat Arroios as a demand-led, higher-competition option
+
+**Situation:** Arroios has the strongest demand (94.17) and transit (95.00)
+signals among the final three, with a pilot median rent of EUR 17.50/m²/month.
+**Complication:** Seven verified active coworking locations reduce the apparent
+market gap. **Resolution:** Map competitor capacity, prices and customer
+segments before selecting a micro-location; advance Arroios only if the review
+finds a clear underserved segment. Evidence:
+`reports/figures/11_score_vs_asking_rent.png` and
+`reports/tables/recommendation_evidence.csv`.
 
 ## BI dashboard and final figures
 If Tableau or Power BI is used, working files will be stored in `reports/bi_exports/`. Final shareable charts and dashboard exports will be stored in `reports/figures/`. Relative data paths will point to `data/processed/`.
@@ -169,8 +207,8 @@ reproducible 5,000-run weight sensitivity analyses. A terms-compliant
 commercial asking-rent sample is now integrated for the provisional top-ten
 candidates.
 The recommendation and final chart notebooks are implemented. Remaining work
-is the data-collection notebook, optional dashboard and final fresh-clone/ZIP
-reproducibility audit.
+is the data-collection notebook, the required one-page BI dashboard, the final
+8-slide presentation and a fresh-clone/ZIP reproducibility audit.
 
 ## Known blockers and risks
 - Public directories and map data can omit new locations or retain outdated ones.
@@ -179,5 +217,6 @@ reproducibility audit.
 
 ## Next steps
 1. Convert `01_data_collection.ipynb` from a placeholder into a reproducible orchestration notebook.
-2. Decide whether to add an optional Tableau/Power BI dashboard.
-3. Run a fresh-clone/ZIP reproducibility audit and complete the final handoff.
+2. Build the required one-page Tableau/Power BI dashboard from the exported CSV files.
+3. Build and rehearse the required 8-slide presentation; export PPTX and PDF.
+4. Run a fresh-clone/ZIP reproducibility audit and complete the final handoff.

@@ -22,3 +22,12 @@
 - [x] Compare demand, accessibility, competition and asking-rent value across the covered shortlist.
 - [x] Build and sensitivity-test the rent-inclusive Opportunity Score for the covered shortlist.
 - [x] Produce final charts and recommendation.
+
+## Final delivery
+- [x] Write three data-backed recommendations in SCR format and link each to evidence.
+- [ ] Convert `01_data_collection.ipynb` from a documented placeholder into an orchestration notebook.
+- [ ] Build one Tableau or Power BI dashboard page supporting the main recommendation.
+- [ ] Create the required 8-slide deck with one exported chart on each finding slide.
+- [ ] Export the presentation as both PPTX and PDF.
+- [ ] Rehearse the presentation in 10-12 minutes and prepare for Q&A.
+- [ ] Run a fresh-clone/ZIP reproducibility audit using the README instructions.
