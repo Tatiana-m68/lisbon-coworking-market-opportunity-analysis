@@ -118,7 +118,8 @@ These outputs are screening results, not a final site recommendation.
   candidates.
 - `rent_inclusive_shortlist_sensitivity.csv`: 5,000-run four-component weight
   stability results.
-- `final_shortlist.csv`: Areeiro as priority, with Lumiar and Arroios as
-  alternatives.
+- `final_shortlist.csv`: close three-area shortlist of Areeiro, Arroios and
+  Lumiar after the 13 August 2026 competitor audit; score order is retained for
+  transparency but is not treated as a final business ranking.
 - `recommendation_evidence.csv`: strengths, trade-offs and next due-diligence
   actions for the three recommended parishes.

@@ -2,8 +2,9 @@
 
 ## Current scope
 
-The first dataset covers physical coworking-location candidates inside the
-municipality of Lisbon. The collection date is 24 July 2026. This is a
+The dataset covers physical coworking-location candidates inside the
+municipality of Lisbon. The initial collection date is 24 July 2026, with a
+targeted competitor-coverage audit completed on 13 August 2026. This is a
 candidate inventory rather than a claim that every row is currently active.
 Rows may be used as confirmed active locations only when
 `verification_status` equals `verified_official_site`.
@@ -17,6 +18,8 @@ Rows may be used as confirmed active locations only when
    - English and European Portuguese name keywords
 2. Current official operator websites in Portuguese or English.
 3. Official Lisbon parish polygons from Câmara Municipal de Lisboa.
+4. A targeted Google Maps discovery pass for the recommendation shortlist and
+   every parish with zero verified supply, followed by official-site checks.
 
 Searches included Portuguese wording such as `espaço de coworking`,
 `escritório partilhado`, `espaço de trabalho partilhado`, `morada`, and
@@ -42,6 +45,8 @@ excluded.
    processed table and verification queue.
 4. `src/qa_coworking_locations.py` validates structure, IDs, coordinates,
    statuses, parish names, and missingness.
+5. `src/apply_coworking_competitor_audit.py` appends the dated, verified
+   official-site audit rows, assigns official parishes and blocks duplicates.
 
 ## Status meanings
 
@@ -59,10 +64,10 @@ Missing does not mean zero, and `uncertain` does not mean inactive.
 - OSM coverage and tagging are incomplete and may be stale.
 - Official operator sites are stronger evidence of current operation but do not
   prove occupancy, capacity, prices, or commercial performance.
-- Three official-site records still require coordinates.
 - Same-name OSM objects at the same street address are consolidated while all
   contributing OSM URLs are retained.
-- Ten of Lisbon's 24 parishes currently have no discovered candidate; this
-  cannot yet be interpreted as confirmed zero supply.
-- Further independent discovery and verification are required before market
-  share or competitor-density conclusions are drawn.
+- The targeted audit improves coverage but is not a complete business census.
+- A zero count still means "no verified active location found under this
+  method", not proven absence of every informal or newly opened workspace.
+- Search platforms sometimes use neighbourhood labels that do not match
+  official civil-parish polygons; all counts use the official boundaries.

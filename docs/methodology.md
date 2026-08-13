@@ -19,8 +19,8 @@ of occupancy, revenue or profitability.
 - a derived competition-opportunity component;
 - pilot rent medians and explicit coverage flags.
 
-The table must contain 24 unique parishes and reconcile to 48 verified active
-coworking locations.
+The table must contain 24 unique parishes and reconcile to the current
+verified-active coworking inventory.
 
 ## Competition opportunity
 
@@ -67,9 +67,10 @@ This comparison is valid among the ten covered candidates. It is a
 decision-focused shortlist rather than a complete 24-parish market ranking.
 
 The shortlist receives a second 5,000-run Dirichlet sensitivity analysis around
-the planned four-component weights. Areeiro ranks first in 92.76% of runs and
-appears in the top three in 99.96%, supporting its selection for site-level due
-diligence.
+the planned four-component weights. The top three scores differ by only 1.35
+points, and Areeiro, Lumiar and Arroios each remain in the top three in more
+than 77% of runs. They are therefore interpreted as a close shortlist rather
+than a definitive internal ranking.
 
 ## Documented scenarios
 

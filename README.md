@@ -7,7 +7,7 @@ This project supports an Expansion Director deciding which of Lisbon municipalit
 A coworking company plans to open one new Lisbon location but lacks a consistent evidence base for selecting the parish in which to begin site-level due diligence. A poor choice could combine weak demand, strong competition, poor accessibility or unsustainable occupancy costs.
 
 ## Project goal
-Build a transparent and reproducible parish-level comparison and recommend one priority parish plus two alternatives for further due diligence by August 2026.
+Build a transparent and reproducible parish-level comparison and recommend a three-parish shortlist for further due diligence by August 2026.
 
 ## Dataset
 The project uses two linked analysis tables:
@@ -113,13 +113,13 @@ The implemented parish-analysis sequence is:
    documented scenarios, reproducible sensitivity results and a separate
    rent-inclusive comparison of the ten covered candidates.
 5. `05_insights_recommendations.ipynb` - tests four-component weight
-   sensitivity and documents one priority parish, two alternatives and
+   sensitivity and documents a close three-parish shortlist with
    due-diligence actions.
 6. `06_final_charts.ipynb` - exports the final decision-facing ranking and
    rent/score trade-off charts.
 
-`01_data_collection.ipynb` remains the only planned pipeline notebook that has
-not yet been converted from its documented placeholder.
+`01_data_collection.ipynb` documents the saved source snapshots, validates the
+current competitor inventory and records the offline rebuild order.
 See [`docs/methodology.md`](docs/methodology.md) for scoring assumptions and
 interpretation limits.
 
@@ -128,64 +128,66 @@ interpretation limits.
 - At least 95% completeness for parish, coordinates, active status and source URL.
 - All 24 Lisbon parishes represented, including zero-count parishes.
 - Target at least 10 valid rent listings per parish; flag any parish with fewer than five.
-- One priority parish and two alternatives supported by 3-5 evidence points, trade-offs and next steps.
-- Recommended parish remains in the top three in at least 70% of documented weighting scenarios.
+- A three-area shortlist supported by evidence, trade-offs and next steps.
+- Each shortlisted parish remains in the top three in at least 70% of documented weighting scenarios.
 - A non-technical stakeholder can understand the decision and rationale in five minutes or less.
 
 ## Key findings
-The verified-active MVP contains 48 coworking locations with complete
-coordinates and parish assignments. Ten of Lisbon's 24 parishes have no
-verified active coworking location in the current dataset. Santo António,
-Arroios and Santa Maria Maior together contain 22 of the 48 verified locations.
+The frozen initial MVP contains 48 locations. A targeted competitor audit on
+13 August 2026 expanded the current verified-active inventory to 67 locations
+with complete coordinates and official-parish assignments. Only Olivais has no
+verified active location under the current method; this means "none found",
+not proven absence.
 
-The provisional citywide model ranks Areeiro first, followed by Campolide and
-Arroios. Areeiro appears in the top three in 100% of the documented weight
-simulations. The expanded rent sample contains 191 unique listings, reduced to
+The updated provisional citywide model ranks Areeiro first, followed by
+Arroios and Avenidas Novas. Areeiro appears in the top three in 93.76% of the
+documented weight simulations. The expanded rent sample contains 191 unique listings, reduced to
 148 building observations; the minimum usable coverage is met for all ten
 provisional top-ten candidates.
 In the rent-inclusive shortlist, the candidate order is recalculated using the
 planned demand, accessibility, competition and affordability weights.
-The resulting recommendation is Areeiro as the priority parish, with Lumiar
-and Arroios as alternatives. Across 5,000 four-component weight simulations,
-Areeiro ranks first in 92.76% and appears in the top three in 99.96%.
-This is the final screening recommendation: begin site-level due diligence in
-Areeiro, while keeping Lumiar and Arroios as alternatives. It is not a final
+The three highest scores are separated by only 1.35 points. Across 5,000
+four-component weight simulations, Areeiro, Lumiar and Arroios each remain in
+the top three in more than 77% of runs. The screening recommendation is
+therefore a close three-area shortlist rather than a strict internal ranking.
+It is not a final
 lease or investment decision because citywide rent coverage, available sites
 and local due diligence are still incomplete.
 
 ## Business recommendations
 
-### 1. Start site-level due diligence in Areeiro
+### 1. Validate the lower-cost Lumiar hypothesis
 
-**Situation:** Areeiro combines strong demand (85.42), good transit access
-(73.33) and no verified active coworking location in the current dataset.
-**Complication:** Its pilot median asking rent is EUR 17.73/m²/month, and zero
-observed supply may partly reflect a discovery gap rather than proven unmet
-demand. **Resolution:** Prioritise a four-week search for 300-800 m² offices
-near Areeiro, Alameda and Roma-Areeiro stations, then validate competitor
-coverage and unit economics before making a site decision. Evidence:
+**Situation:** Lumiar combines good transit access (67.50), one verified
+competitor and the strongest rent opportunity among the final three.
+**Complication:** Its demand score (43.33) is relatively weak and the area has
+a more residential profile. **Resolution:** Validate daytime worker and
+student catchments over two weeks, then inspect viable sites around Lumiar and
+Quinta das Conchas metro stations.
+Evidence:
 `reports/figures/09_recommendation_component_profiles.png` and
 `reports/tables/recommendation_evidence.csv`.
 
-### 2. Keep Lumiar as the lower-rent alternative
-
-**Situation:** Lumiar has no verified active coworking location, good transit
-access (67.50) and the strongest rent opportunity among the final three.
-**Complication:** Its demand score (43.33) is substantially below Areeiro and
-the area has a more residential profile. **Resolution:** Run a two-week demand
-validation around metro nodes, focused on daytime workers and students, before
-placing Lumiar on the active site shortlist. Evidence:
-`reports/figures/10_rent_inclusive_shortlist.png` and
-`reports/tables/final_shortlist.csv`.
-
-### 3. Treat Arroios as a demand-led, higher-competition option
+### 2. Test whether Arroios has an underserved segment
 
 **Situation:** Arroios has the strongest demand (94.17) and transit (95.00)
 signals among the final three, with a pilot median rent of EUR 17.50/m²/month.
-**Complication:** Seven verified active coworking locations reduce the apparent
-market gap. **Resolution:** Map competitor capacity, prices and customer
-segments before selecting a micro-location; advance Arroios only if the review
-finds a clear underserved segment. Evidence:
+**Complication:** Eight verified active locations create substantial
+competition. **Resolution:** Map competitor capacity, prices and customer
+segments over two weeks and proceed only if the review finds a clear
+underserved segment.
+Evidence:
+`reports/figures/10_rent_inclusive_shortlist.png` and
+`reports/tables/final_shortlist.csv`.
+
+### 3. Compare live sites in balanced Areeiro
+
+**Situation:** Areeiro combines strong demand (85.42), good transit (73.33),
+two verified competitors and a pilot median rent of EUR 17.73/m²/month.
+**Complication:** It is neither the cheapest nor the lowest-competition option.
+**Resolution:** Run a four-week search for 300-800 m² sites and compare
+competitor positioning near Areeiro, Alameda and Roma-Areeiro before advancing
+a building. Evidence:
 `reports/figures/11_score_vs_asking_rent.png` and
 `reports/tables/recommendation_evidence.csv`.
 
@@ -206,9 +208,10 @@ analysis table, ten additional figures, recommendation tables and two
 reproducible 5,000-run weight sensitivity analyses. A terms-compliant
 commercial asking-rent sample is now integrated for the provisional top-ten
 candidates.
-The recommendation and final chart notebooks are implemented. Remaining work
-is the data-collection notebook, the required one-page BI dashboard, the final
-8-slide presentation and a fresh-clone/ZIP reproducibility audit.
+The collection-orchestration, recommendation and final chart notebooks are
+implemented, and a clean local clone reproduces notebooks 01-06. Remaining
+work is the required one-page BI dashboard. The separate 8-slide presentation is
+maintained outside this public repository.
 
 ## Known blockers and risks
 - Public directories and map data can omit new locations or retain outdated ones.
@@ -216,7 +219,5 @@ is the data-collection notebook, the required one-page BI dashboard, the final
 - The Opportunity Score can create false precision unless weights and data coverage are tested transparently.
 
 ## Next steps
-1. Convert `01_data_collection.ipynb` from a placeholder into a reproducible orchestration notebook.
-2. Build the required one-page Tableau/Power BI dashboard from the exported CSV files.
-3. Build and rehearse the required 8-slide presentation; export PPTX and PDF.
-4. Run a fresh-clone/ZIP reproducibility audit and complete the final handoff.
+1. Build the required one-page Tableau/Power BI dashboard from the exported CSV files.
+2. Complete the final handoff after the dashboard is ready.

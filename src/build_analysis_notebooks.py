@@ -37,6 +37,142 @@ def notebook(cells: list) -> nbf.NotebookNode:
     )
 
 
+def build_data_collection_notebook() -> nbf.NotebookNode:
+    """Create the offline provenance and collection-orchestration notebook."""
+    return notebook(
+        [
+            markdown(
+                """
+                # 01 Data collection and provenance
+
+                This notebook documents the saved public-source snapshots,
+                validates the current competitor audit and records the rebuild
+                order. It uses repository snapshots rather than making live
+                network requests, so the analysis can be reproduced later.
+                """
+            ),
+            markdown("## 1. Imports and project paths"),
+            code(
+                """
+                import sys
+                from pathlib import Path
+
+                import pandas as pd
+
+                PROJECT_ROOT = Path.cwd()
+                if PROJECT_ROOT.name == "notebooks":
+                    PROJECT_ROOT = PROJECT_ROOT.parent
+                if str(PROJECT_ROOT) not in sys.path:
+                    sys.path.insert(0, str(PROJECT_ROOT))
+
+                from src.config import PROCESSED_DIR, RAW_DIR
+                """
+            ),
+            markdown(
+                """
+                ## 2. Check the saved source snapshots
+
+                The project keeps dated raw files for coworking discovery,
+                official parish boundaries, census inputs, municipal
+                validation, points of interest and commercial asking rent.
+                """
+            ),
+            code(
+                """
+                required_patterns = {
+                    "OSM coworking snapshot": "osm_coworking_*.json",
+                    "official parish boundaries": "lisbon_parishes_*.geojson",
+                    "manual official-site discovery": "manual_discovery_*.csv",
+                    "targeted competitor audit": "manual_competitor_audit_*.csv",
+                    "OSM parish POIs": "osm_parish_pois_*.json",
+                    "commercial rent snapshots": "commercial_rent_listings_*.json",
+                }
+
+                snapshot_check = []
+                for source, pattern in required_patterns.items():
+                    matches = sorted(RAW_DIR.glob(pattern))
+                    snapshot_check.append(
+                        {
+                            "source": source,
+                            "pattern": pattern,
+                            "files_found": len(matches),
+                            "latest_file": matches[-1].name if matches else None,
+                        }
+                    )
+
+                snapshot_check = pd.DataFrame(snapshot_check)
+                assert snapshot_check["files_found"].gt(0).all()
+                snapshot_check
+                """
+            ),
+            markdown("## 3. Validate the current coworking inventory"),
+            code(
+                """
+                coworking = pd.read_csv(PROCESSED_DIR / "coworking_locations.csv")
+                verified = coworking[
+                    (coworking["active_status"] == "active")
+                    & (
+                        coworking["verification_status"]
+                        == "verified_official_site"
+                    )
+                ].copy()
+
+                assert verified["coworking_id"].is_unique
+                assert verified[["latitude", "longitude", "parish"]].notna().all().all()
+                assert verified["source_url"].notna().all()
+
+                pd.DataFrame(
+                    {
+                        "metric": [
+                            "verified active locations",
+                            "parishes with verified supply",
+                            "pending verification rows",
+                        ],
+                        "value": [
+                            len(verified),
+                            verified["parish"].nunique(),
+                            int((coworking["verification_status"] == "pending").sum()),
+                        ],
+                    }
+                )
+                """
+            ),
+            markdown(
+                """
+                ## 4. Rebuild order
+
+                Live collection scripts are kept in `src/`, but ordinary
+                reproducibility runs start from the dated raw snapshots. Run
+                the following steps from the project root:
+
+                1. `python src/build_coworking_locations.py --collection-date 2026-07-24`
+                2. `python src/apply_coworking_review_decisions.py`
+                3. `python src/apply_coworking_competitor_audit.py --audit-date 2026-08-13`
+                4. `python src/qa_coworking_locations.py`
+                5. `python src/build_parish_indicators.py --collection-date 2026-07-25`
+                6. `python src/qa_parish_indicators.py`
+                7. Run notebooks `02_cleaning.ipynb` through
+                   `06_final_charts.ipynb` in order.
+
+                This separation preserves the original source evidence and
+                avoids silently replacing it with newer live responses.
+                """
+            ),
+            markdown(
+                """
+                ## 5. Collection boundary
+
+                Coworking counts represent verified active locations found in
+                the documented public sources. They are not a complete census.
+                Missing locations, recent openings and outdated listings remain
+                possible, so the final output is a screening shortlist for
+                deeper local due diligence.
+                """
+            ),
+        ]
+    )
+
+
 def build_cleaning_notebook() -> nbf.NotebookNode:
     """Create the analysis-table preparation notebook."""
     return notebook(
@@ -229,8 +365,8 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                 """
                 ## 4. Quality checks
 
-                The base table must contain all 24 parishes, reconcile to 48
-                verified active locations and have complete core analysis
+                The base table must contain all 24 parishes, reconcile to the
+                current verified-active location inventory and have complete core analysis
                 fields. The pilot rent medians must be available only where at
                 least five distinct building observations support them.
                 """
@@ -250,7 +386,16 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                 assert len(analysis) == 24
                 assert analysis["parish"].nunique() == 24
                 assert analysis["parish_code"].nunique() == 24
-                assert int(analysis["coworking_count"].sum()) == 48
+                verified_active_total = int(
+                    (
+                        (coworking["active_status"] == "active")
+                        & (
+                            coworking["verification_status"]
+                            == "verified_official_site"
+                        )
+                    ).sum()
+                )
+                assert int(analysis["coworking_count"].sum()) == verified_active_total
                 assert not analysis[core_columns].isna().any().any()
                 assert analysis[
                     [
@@ -314,7 +459,7 @@ def build_cleaning_notebook() -> nbf.NotebookNode:
                 ## 6. Cleaning outcome
 
                 The analysis base contains 24 unique parishes and reconciles to
-                48 verified active coworking locations. Demand, accessibility
+                the current verified-active coworking inventory. Demand, accessibility
                 and competition components are complete. Rent is usable for
                 for the provisional top-ten candidates; missing rent elsewhere
                 is not treated as zero.
@@ -643,8 +788,9 @@ def build_eda_notebook() -> nbf.NotebookNode:
                 ## 8. EDA interpretation
 
                 The analysis reveals substantial geographic concentration:
-                several parishes have no verified active coworking locations,
-                while a small group contains most observed supply. Demand and
+                Olivais has no verified active coworking location in the
+                documented sources, while a small group contains much of the
+                observed supply. Demand and
                 transit signals vary independently enough to justify a
                 multi-component decision model. Rent is usable for the
                 provisional top-ten candidates but not citywide, so the main
@@ -980,7 +1126,7 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                 # 05 Insights and recommendations
 
                 This notebook converts the rent-inclusive candidate comparison
-                into one priority parish, two alternatives and a documented
+                into a close three-parish shortlist and a documented
                 due-diligence plan. It is a market-screening recommendation,
                 not approval to sign a lease.
                 """
@@ -1083,17 +1229,19 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                 decision_table.head()
                 """
             ),
-            markdown("## 3. Priority parish and alternatives"),
+            markdown("## 3. Close three-area shortlist"),
             code(
                 """
                 final_shortlist = decision_table.head(3).copy()
-                final_shortlist["recommendation_role"] = [
-                    "priority",
-                    "alternative_1",
-                    "alternative_2",
-                ]
+                final_shortlist["recommendation_role"] = "shortlist"
 
-                assert final_shortlist.iloc[0]["parish"] == "Areeiro"
+                assert set(final_shortlist["parish"]) == {
+                    "Areeiro", "Arroios", "Lumiar"
+                }
+                assert (
+                    final_shortlist["pilot_opportunity_score"].max()
+                    - final_shortlist["pilot_opportunity_score"].min()
+                ) < 2
                 display(
                     final_shortlist[
                         [
@@ -1111,21 +1259,26 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
             ),
             markdown(
                 """
-                **Priority: Areeiro.** It retains the highest balanced score,
-                combines strong demand and transit signals with no verified
-                active coworking location in the current inventory, and has
-                acceptable pilot asking rent.
+                **Lumiar** combines the strongest rent opportunity among the
+                three, good transit accessibility and one verified competitor.
+                Its lower demand proxy means that low competition cannot be
+                treated as proof of unmet demand.
 
-                **Alternative 1: Lumiar.** It offers lower pilot asking rent,
-                good transit accessibility and no verified active coworking
-                location, but its demand proxy is materially weaker than
-                Areeiro's.
-
-                **Alternative 2: Arroios.** It has the strongest combined
+                **Arroios** has the strongest combined
                 demand and accessibility signals and competitive asking rent.
-                Its main trade-off is seven verified coworking locations, so a
+                Its main trade-off is eight verified coworking locations, so a
                 new site would need clear positioning and micro-location
                 differentiation.
+
+                **Areeiro** combines strong demand and good
+                transit with two verified competitors and mid-range pilot rent.
+                It is the most balanced profile, although it is neither the
+                cheapest nor the lowest-competition option.
+
+                The scores differ by only 1.35 points. Because public-source
+                coverage is not a complete census, the three areas are treated
+                as an unordered business shortlist rather than a strict final
+                ranking.
                 """
             ),
             markdown("## 4. Decision evidence and due-diligence actions"),
@@ -1134,51 +1287,54 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                 evidence = pd.DataFrame(
                     [
                         {
-                            "parish": "Areeiro",
-                            "role": "priority",
-                            "strength": (
-                                "Strong demand and transit, zero verified "
-                                "coworking supply, and mid-range pilot rent."
-                            ),
-                            "trade_off": (
-                                "Zero observed supply may reflect a discovery "
-                                "gap or weak site availability."
-                            ),
-                            "next_action": (
-                                "Inspect available 300-800 m² offices near "
-                                "Areeiro, Alameda and Roma-Areeiro stations."
-                            ),
-                        },
-                        {
                             "parish": "Lumiar",
-                            "role": "alternative_1",
+                            "role": "shortlist",
                             "strength": (
-                                "Low pilot rent, good transit and zero verified "
-                                "coworking supply."
+                                "Strong rent opportunity, good transit and only "
+                                "one verified coworking competitor."
                             ),
                             "trade_off": (
                                 "Lower demand proxy and a more residential "
                                 "market profile."
                             ),
                             "next_action": (
-                                "Validate daytime worker/student catchments and "
-                                "test demand around metro nodes."
+                                "Validate daytime worker and student catchments, "
+                                "then inspect sites around Lumiar and Quinta "
+                                "das Conchas metro stations over two weeks."
                             ),
                         },
                         {
                             "parish": "Arroios",
-                            "role": "alternative_2",
+                            "role": "shortlist",
                             "strength": (
                                 "Highest demand and accessibility signals with "
                                 "competitive pilot rent."
                             ),
                             "trade_off": (
-                                "Seven verified coworking competitors reduce "
-                                "white-space opportunity."
+                                "Eight verified competitors reduce white-space "
+                                "opportunity."
                             ),
                             "next_action": (
                                 "Map competitor capacity, pricing and customer "
-                                "segments before selecting a micro-location."
+                                "segments over two weeks before selecting a "
+                                "micro-location."
+                            ),
+                        },
+                        {
+                            "parish": "Areeiro",
+                            "role": "shortlist",
+                            "strength": (
+                                "Strong demand, good transit, two verified "
+                                "competitors and mid-range pilot rent."
+                            ),
+                            "trade_off": (
+                                "It is neither the cheapest nor the "
+                                "lowest-competition option."
+                            ),
+                            "next_action": (
+                                "Run a four-week search for 300-800 m² sites and "
+                                "compare competitor positioning near Areeiro, "
+                                "Alameda and Roma-Areeiro."
                             ),
                         },
                     ]
@@ -1244,8 +1400,8 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                 """
                 ## 7. Recommendation boundary
 
-                Advance Areeiro to site-level due diligence, while retaining
-                Lumiar and Arroios as alternatives. Before any lease decision,
+                Advance Areeiro, Arroios and Lumiar as a close three-area
+                shortlist for focused local due diligence. Before any lease decision,
                 validate live availability, effective occupancy cost, usable
                 floorplate, footfall and catchment demand, competitor capacity,
                 planning constraints and unit economics. The parish score
@@ -1324,7 +1480,9 @@ def build_final_charts_notebook() -> nbf.NotebookNode:
                     "pilot_opportunity_score"
                 )
                 colors = [
-                    "#E76F51" if parish == "Areeiro" else "#457B9D"
+                    "#E76F51"
+                    if parish in {"Areeiro", "Arroios", "Lumiar"}
+                    else "#457B9D"
                     for parish in ranking_chart["parish"]
                 ]
 
@@ -1334,7 +1492,7 @@ def build_final_charts_notebook() -> nbf.NotebookNode:
                     ranking_chart["pilot_opportunity_score"],
                     color=colors,
                 )
-                ax.set_title("Rent-inclusive opportunity shortlist")
+                ax.set_title("The top three candidates are separated by 1.35 points")
                 ax.set_xlabel("Opportunity score (0-100)")
                 ax.set_ylabel("Parish")
                 ax.set_xlim(0, 100)
@@ -1399,8 +1557,7 @@ def build_final_charts_notebook() -> nbf.NotebookNode:
                         ]
                     ]
                 )
-                print("Priority parish: Areeiro")
-                print("Alternatives: Lumiar and Arroios")
+                print("Close shortlist: Areeiro, Arroios and Lumiar")
                 print(
                     "Recommendation status: advance to site-level due "
                     "diligence; no lease decision implied."
@@ -1410,9 +1567,10 @@ def build_final_charts_notebook() -> nbf.NotebookNode:
             markdown(
                 """
                 The final visuals deliberately separate the parish screening
-                recommendation from building selection. Areeiro is the priority
-                investigation area; Lumiar and Arroios are retained because
-                they offer different rent, demand and competition trade-offs.
+                recommendation from building selection. Areeiro, Arroios and
+                Lumiar form a close shortlist because they offer different
+                rent, demand and competition trade-offs. Their internal score
+                order is not treated as a definitive business ranking.
                 """
             ),
         ]
@@ -1423,6 +1581,7 @@ def main() -> None:
     """Write the implemented analysis notebooks."""
     NOTEBOOK_DIR.mkdir(parents=True, exist_ok=True)
     outputs = {
+        "01_data_collection.ipynb": build_data_collection_notebook(),
         "02_cleaning.ipynb": build_cleaning_notebook(),
         "03_eda.ipynb": build_eda_notebook(),
         "04_deeper_analysis.ipynb": build_deeper_analysis_notebook(),

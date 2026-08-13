@@ -301,7 +301,7 @@ def main() -> None:
     indicators["population_reference_year"] = 2021
     indicators["coworking_status_note"] = (
         "Count includes verified active rows with assigned parishes. Manual "
-        "review is complete; all 48 verified rows have coordinates."
+        f"review is complete; all {len(verified)} verified rows have coordinates."
     )
 
     ordered_columns = [

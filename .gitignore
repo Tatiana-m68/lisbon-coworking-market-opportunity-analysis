@@ -11,6 +11,7 @@ data/raw/*
 !data/raw/lisbon_parishes_*.geojson
 !data/raw/collection_log_*.json
 !data/raw/manual_discovery_*.csv
+!data/raw/manual_competitor_audit_*.csv
 !data/raw/nominatim_geocoding_*.json
 !data/raw/osm_parish_pois_*.json
 !data/raw/parish_collection_log_*.json

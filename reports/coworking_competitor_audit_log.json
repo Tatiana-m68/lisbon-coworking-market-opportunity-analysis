@@ -1,0 +1,22 @@
+{
+  "generated_at_utc": "2026-08-13T17:04:34.349297+00:00",
+  "audit_date": "2026-08-13",
+  "input": "data/raw/manual_competitor_audit_2026-08-13.csv",
+  "added_count": 19,
+  "skipped_existing_count": 0,
+  "skipped_existing_names": [],
+  "added_by_parish": {
+    "Ajuda": 2,
+    "Alvalade": 3,
+    "Areeiro": 2,
+    "Arroios": 1,
+    "Beato": 1,
+    "Campolide": 2,
+    "Carnide": 1,
+    "Lumiar": 1,
+    "Misericórdia": 3,
+    "Penha de França": 2,
+    "Santa Clara": 1
+  },
+  "method_note": "Only locations with a current official operator/service page, a physical address and coordinates inside an official Lisbon parish were included. Name-and-distance checks prevented duplicates."
+}

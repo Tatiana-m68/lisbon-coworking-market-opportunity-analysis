@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-07-30T16:28:40.584945+00:00",
+  "generated_at_utc": "2026-08-13T18:43:18.561920+00:00",
   "dataset": "data/processed/parish_indicators.csv",
   "row_count": 24,
   "column_count": 39,
   "total_area_km2": 99.95,
   "total_population_2021": 545796,
   "total_working_age_population_15_64": 346808,
-  "verified_coworking_count": 48,
+  "verified_coworking_count": 67,
   "pending_coworking_count": 0,
   "osm_totals": {
     "office_count": 1177,
@@ -26,7 +26,7 @@
     "hotels_2015_reference_only": 148
   },
   "zero_count_parishes": {
-    "coworking_count": 10,
+    "coworking_count": 1,
     "pending_coworking_count": 24,
     "office_count": 0,
     "cafe_count": 0,
@@ -102,7 +102,7 @@
     "transit": "official_municipal_metro_complete; osm_bus_tram_tagging_completeness_unknown",
     "higher_education": "official_municipal_points_complete",
     "hotels": "osm_current_proxy_cross_checked_against_stale_2015_municipal_reference",
-    "coworking": "manual_candidate_review_complete; all 48 verified locations have coordinates and parish assignments",
+    "coworking": "manual_candidate_review_complete; all verified locations have coordinates and parish assignments",
     "rent": "not_collected"
   }
 }

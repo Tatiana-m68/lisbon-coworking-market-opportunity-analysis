@@ -133,7 +133,7 @@ def main() -> None:
                 "municipal_reference"
             ),
             "coworking": (
-                "manual_candidate_review_complete; all 48 verified locations "
+                "manual_candidate_review_complete; all verified locations "
                 "have coordinates and parish assignments"
             ),
             "rent": "not_collected",

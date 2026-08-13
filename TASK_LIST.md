@@ -25,9 +25,9 @@
 
 ## Final delivery
 - [x] Write three data-backed recommendations in SCR format and link each to evidence.
-- [ ] Convert `01_data_collection.ipynb` from a documented placeholder into an orchestration notebook.
+- [x] Convert `01_data_collection.ipynb` from a documented placeholder into an orchestration notebook.
 - [ ] Build one Tableau or Power BI dashboard page supporting the main recommendation.
-- [ ] Create the required 8-slide deck with one exported chart on each finding slide.
-- [ ] Export the presentation as both PPTX and PDF.
+- [x] Create the required 8-slide deck with one exported chart on each finding slide (kept outside the public repository).
+- [x] Export the presentation as both PPTX and PDF (kept outside the public repository).
 - [ ] Rehearse the presentation in 10-12 minutes and prepare for Q&A.
-- [ ] Run a fresh-clone/ZIP reproducibility audit using the README instructions.
+- [x] Run a fresh-clone/ZIP reproducibility audit using the README instructions.

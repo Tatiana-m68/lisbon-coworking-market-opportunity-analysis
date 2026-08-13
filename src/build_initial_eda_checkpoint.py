@@ -40,7 +40,7 @@ def build_mvp_dataset() -> int:
         ]
 
     if len(rows) != 48:
-        raise ValueError(f"Expected 48 verified active locations, found {len(rows)}")
+        raise ValueError(f"Expected 67 verified active locations, found {len(rows)}")
     if len({row["coworking_id"] for row in rows}) != len(rows):
         raise ValueError("coworking_id must be unique in the MVP dataset")
 
