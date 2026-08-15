@@ -1,6 +1,6 @@
 # Parish Indicators Collection Method
 
-## Status on 25 July 2026
+## Current status
 
 The dataset has one row for each of Lisbon municipality's 24 civil parishes.
 Official boundaries and INE Census 2021 population fields are complete.
@@ -14,9 +14,10 @@ The source hierarchy is:
 
 ## Counts and scores
 
-`coworking_count` includes only rows confirmed active through an official
-operator website. Pending candidates are kept in a separate count and do not
-enter the confirmed competition measure.
+`coworking_count` includes only rows supported by the documented active-location
+verification rules. The current audit contains 67 verified active locations
+and no pending candidates. Public discovery sources can still omit locations,
+so a zero means "none found under the current method", not proven absence.
 
 `transit_access_score` is a 0-100 screening index: 60% percentile rank of
 official metro-station density and 40% percentile rank of mapped OSM bus/tram
@@ -30,8 +31,10 @@ hotel density, and official higher-education density. It is not a forecast.
 
 - OSM coverage varies by tag and parish, so office, café, hotel and bus/tram
   counts are comparable exploratory proxies, not complete registers.
-- Commercial asking-rent observations have not yet been collected.
-- The final `opportunity_score` remains blank until rent coverage and the
-  scoring scenario are documented.
-- The confirmed coworking measure will change if pending candidates pass
-  manual verification.
+- Commercial asking-rent coverage is available for the ten screening
+  candidates, but it is not a complete citywide market register.
+- The base `parish_indicators.csv` keeps `opportunity_score` blank by design.
+  Reproducible scores are generated in the analysis notebooks and exported to
+  `reports/tables/`.
+- The verified coworking inventory can change as public business information
+  changes or newly discovered locations pass the documented review rules.

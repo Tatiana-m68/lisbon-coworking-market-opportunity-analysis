@@ -1,6 +1,6 @@
 # Data Dictionary - Version 2
 
-Latest documentation update: 30 July 2026. Fields described as proxies or
+Latest documentation update: 15 August 2026. Fields described as proxies or
 pilot samples must not be interpreted as complete business registers.
 
 ## `coworking_locations.csv`
@@ -110,7 +110,8 @@ ranks under four documented weight scenarios.
 `reports/tables/provisional_score_sensitivity.csv` contains top-one/top-three
 shares and rank ranges from 5,000 reproducible weight simulations.
 
-These outputs are screening results, not a final site recommendation.
+These outputs are intermediate screening results, not the final shortlist or a
+lease decision.
 
 ## Recommendation outputs
 

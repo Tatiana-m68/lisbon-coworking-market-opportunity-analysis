@@ -21,7 +21,7 @@
 - [x] Build a clearly labelled provisional no-rent score and sensitivity test.
 - [x] Compare demand, accessibility, competition and asking-rent value across the covered shortlist.
 - [x] Build and sensitivity-test the rent-inclusive Opportunity Score for the covered shortlist.
-- [x] Produce final charts and recommendation.
+- [x] Produce final charts, a three-area shortlist and practical next steps.
 
 ## Final delivery
 - [x] Write three data-backed recommendations in SCR format and link each to evidence.

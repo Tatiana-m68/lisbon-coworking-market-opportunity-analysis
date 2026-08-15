@@ -136,7 +136,10 @@ def main() -> None:
                 "manual_candidate_review_complete; all verified locations "
                 "have coordinates and parish assignments"
             ),
-            "rent": "not_collected",
+            "rent": (
+                "not_stored_in_base_table; separate top-ten pilot tables "
+                "are available under data/processed"
+            ),
         },
     }
     output_path.write_text(

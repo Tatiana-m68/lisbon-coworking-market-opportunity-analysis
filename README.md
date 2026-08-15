@@ -1,10 +1,10 @@
 # Lisbon Coworking Market Opportunity Analysis
 
 ## Overview
-This project supports an Expansion Director deciding which of Lisbon municipality's 24 civil parishes should advance to site-level due diligence for one new coworking location. It compares demand proxies, public-transport accessibility, observed coworking competition and commercial asking-rent value using public, legally accessible data.
+This project helps an Expansion Director narrow the search for one new coworking location from Lisbon municipality's 24 civil parishes to three areas for closer local analysis. It compares demand proxies, public-transport accessibility, observed coworking competition and commercial asking-rent value using public, legally accessible data.
 
 ## Problem statement
-A coworking company plans to open one new Lisbon location but lacks a consistent evidence base for selecting the parish in which to begin site-level due diligence. A poor choice could combine weak demand, strong competition, poor accessibility or unsustainable occupancy costs.
+A coworking company plans to open one new Lisbon location but lacks a consistent evidence base for narrowing its search. A poor search area could combine weak demand, strong competition, poor accessibility or unsustainable occupancy costs. The analysis identifies three parishes where the company can compare real property offers and local business conditions in parallel.
 
 ## Project goal
 Build a transparent and reproducible parish-level comparison and recommend a three-parish shortlist for further due diligence by August 2026.
@@ -53,7 +53,7 @@ Lisbon's coworking supply and market signals.
 - A cleaned, documented coworking-location dataset and a 24-row parish indicators table.
 - Reproducible collection, cleaning and EDA notebooks with reusable Python functions in `src/`.
 - Decision-facing visualisations and a transparent Opportunity Score with sensitivity analysis.
-- A concise recommendation supported by final decision-facing charts; a BI dashboard remains a final presentation deliverable.
+- A clear three-area shortlist supported by final decision-facing charts; a BI dashboard remains a final presentation deliverable.
 
 ## Setup
 Use Python 3.11 or 3.12 with the pinned project dependencies. Newer Python
@@ -139,9 +139,8 @@ with complete coordinates and official-parish assignments. Only Olivais has no
 verified active location under the current method; this means "none found",
 not proven absence.
 
-The updated provisional citywide model ranks Areeiro first, followed by
-Arroios and Avenidas Novas. Areeiro appears in the top three in 93.76% of the
-documented weight simulations. The expanded rent sample contains 191 unique listings, reduced to
+The provisional no-rent model is an intermediate screen used to select ten
+candidates for rent analysis. The expanded rent sample contains 191 unique listings, reduced to
 148 building observations; the minimum usable coverage is met for all ten
 provisional top-ten candidates.
 In the rent-inclusive shortlist, the candidate order is recalculated using the
@@ -156,14 +155,14 @@ and local due diligence are still incomplete.
 
 ## Business recommendations
 
-### 1. Validate the lower-cost Lumiar hypothesis
+### 1. Study the lower-cost Lumiar case
 
 **Situation:** Lumiar combines good transit access (67.50), one verified
 competitor and the strongest rent opportunity among the final three.
 **Complication:** Its demand score (43.33) is relatively weak and the area has
-a more residential profile. **Resolution:** Validate daytime worker and
-student catchments over two weeks, then inspect viable sites around Lumiar and
-Quinta das Conchas metro stations.
+a more residential profile. **Resolution:** Study daytime worker and student
+demand around Lumiar and Quinta das Conchas metro stations over two weeks, and
+use the findings when comparing suitable commercial spaces.
 Evidence:
 `reports/figures/09_recommendation_component_profiles.png` and
 `reports/tables/recommendation_evidence.csv`.
@@ -174,8 +173,8 @@ Evidence:
 signals among the final three, with a pilot median rent of EUR 17.50/m²/month.
 **Complication:** Eight verified active locations create substantial
 competition. **Resolution:** Map competitor capacity, prices and customer
-segments over two weeks and proceed only if the review finds a clear
-underserved segment.
+segments over two weeks, then use any clear market gap when comparing real
+property offers across the shortlist.
 Evidence:
 `reports/figures/10_rent_inclusive_shortlist.png` and
 `reports/tables/final_shortlist.csv`.
@@ -185,9 +184,9 @@ Evidence:
 **Situation:** Areeiro combines strong demand (85.42), good transit (73.33),
 two verified competitors and a pilot median rent of EUR 17.73/m²/month.
 **Complication:** It is neither the cheapest nor the lowest-competition option.
-**Resolution:** Run a four-week search for 300-800 m² sites and compare
-competitor positioning near Areeiro, Alameda and Roma-Areeiro before advancing
-a building. Evidence:
+**Resolution:** Run a four-week search for suitable commercial spaces near
+Areeiro, Alameda and Roma-Areeiro, and compare real offers, lease terms and
+competitor positioning with the other shortlisted areas. Evidence:
 `reports/figures/11_score_vs_asking_rent.png` and
 `reports/tables/recommendation_evidence.csv`.
 
@@ -200,7 +199,7 @@ has linked processed tables, raw source snapshots, reproducible collection
 scripts and automated quality reports. The parish table covers all 24
 freguesias and uses official census, higher-education and metro data alongside
 documented OSM proxies. Manual coworking candidate verification is complete.
-The initial EDA runs reproducibly and exports its chart and 14-row
+The initial EDA runs reproducibly and exports its frozen MVP chart and
 parish-level coworking summary table directly from the notebook.
 The cleaning, parish-level EDA and provisional deeper-analysis notebooks are
 now implemented and run from top to bottom. They generate a 24-row base

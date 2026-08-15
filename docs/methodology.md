@@ -93,6 +93,8 @@ rank and observed best/worst rank.
 - With only 24 parishes, correlations are descriptive and non-causal.
 - OSM POI counts are proxies and may reflect tagging intensity.
 - A zero coworking count is not, by itself, evidence of commercial demand.
-- Rent coverage must be extended, and unit economics, available floorplates
-  and lease conditions must be added before the final recommendation.
-- The provisional ranking must not be presented as the final site decision.
+- Citywide rent coverage is incomplete. Live availability, unit economics,
+  suitable space and lease conditions must be examined when comparing real
+  options inside the three shortlisted areas.
+- The score order must not be treated as a strict internal ranking or a lease
+  decision.

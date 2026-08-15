@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-13T18:43:18.561920+00:00",
+  "generated_at_utc": "2026-08-15T11:45:29.386734+00:00",
   "dataset": "data/processed/parish_indicators.csv",
   "row_count": 24,
   "column_count": 39,
@@ -103,6 +103,6 @@
     "higher_education": "official_municipal_points_complete",
     "hotels": "osm_current_proxy_cross_checked_against_stale_2015_municipal_reference",
     "coworking": "manual_candidate_review_complete; all verified locations have coordinates and parish assignments",
-    "rent": "not_collected"
+    "rent": "not_stored_in_base_table; separate top-ten pilot tables are available under data/processed"
   }
 }

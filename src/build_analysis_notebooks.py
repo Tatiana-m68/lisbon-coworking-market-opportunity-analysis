@@ -1107,10 +1107,10 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
             markdown(
                 """
                 The provisional shortlist is useful for directing the next
-                research effort, but it is not a final expansion decision.
+                research effort, but it is not the decision-focused shortlist.
                 Commercial asking rent covers the provisional top ten, but site
-                availability and local due diligence must be added before the
-                final recommendation.
+                availability and local evidence must be considered when the
+                final three-area search scope is defined.
                 """
             ),
         ]
@@ -1298,9 +1298,10 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                                 "market profile."
                             ),
                             "next_action": (
-                                "Validate daytime worker and student catchments, "
-                                "then inspect sites around Lumiar and Quinta "
-                                "das Conchas metro stations over two weeks."
+                                "Study daytime worker and student demand around "
+                                "Lumiar and Quinta das Conchas metro stations over "
+                                "two weeks, then use the findings when comparing "
+                                "suitable commercial spaces."
                             ),
                         },
                         {
@@ -1316,8 +1317,8 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                             ),
                             "next_action": (
                                 "Map competitor capacity, pricing and customer "
-                                "segments over two weeks before selecting a "
-                                "micro-location."
+                                "segments over two weeks, then use any clear market "
+                                "gap when comparing real offers across the shortlist."
                             ),
                         },
                         {
@@ -1332,9 +1333,10 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                                 "lowest-competition option."
                             ),
                             "next_action": (
-                                "Run a four-week search for 300-800 m² sites and "
-                                "compare competitor positioning near Areeiro, "
-                                "Alameda and Roma-Areeiro."
+                                "Run a four-week search for suitable commercial "
+                                "spaces near Areeiro, Alameda and Roma-Areeiro, "
+                                "then compare offers, lease terms and competitor "
+                                "positioning across the shortlist."
                             ),
                         },
                     ]
@@ -1400,13 +1402,12 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                 """
                 ## 7. Recommendation boundary
 
-                Advance Areeiro, Arroios and Lumiar as a close three-area
-                shortlist for focused local due diligence. Before any lease decision,
-                validate live availability, effective occupancy cost, usable
-                floorplate, footfall and catchment demand, competitor capacity,
-                planning constraints and unit economics. The parish score
-                prioritises where to investigate; it does not select a building
-                or forecast profitability.
+                Use Areeiro, Arroios and Lumiar as one close three-area search
+                scope. Compare suitable commercial spaces across all three in
+                parallel, using live availability, occupancy cost, lease terms,
+                footfall, local demand, competitor capacity, planning constraints
+                and unit economics. The parish score focuses the next stage of
+                work; it does not forecast profitability.
                 """
             ),
         ]
@@ -1559,18 +1560,18 @@ def build_final_charts_notebook() -> nbf.NotebookNode:
                 )
                 print("Close shortlist: Areeiro, Arroios and Lumiar")
                 print(
-                    "Recommendation status: advance to site-level due "
-                    "diligence; no lease decision implied."
+                    "Recommendation status: compare real opportunities across "
+                    "all three areas; no strict internal ranking."
                 )
                 """
             ),
             markdown(
                 """
-                The final visuals deliberately separate the parish screening
-                recommendation from building selection. Areeiro, Arroios and
-                Lumiar form a close shortlist because they offer different
-                rent, demand and competition trade-offs. Their internal score
-                order is not treated as a definitive business ranking.
+                Areeiro, Arroios and Lumiar form one close search scope because
+                they offer different rent, demand and competition trade-offs.
+                Their internal score order is not treated as a definitive
+                business ranking. The company can compare real opportunities
+                across all three areas in parallel.
                 """
             ),
         ]
