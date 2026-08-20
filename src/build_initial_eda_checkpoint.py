@@ -1,4 +1,4 @@
-"""Build the frozen MVP dataset and initial EDA notebook."""
+"""Validate the frozen MVP dataset and build the initial EDA notebook."""
 
 from __future__ import annotations
 
@@ -14,41 +14,41 @@ SOURCE_PATH = PROJECT_ROOT / "data" / "processed" / "coworking_locations.csv"
 MVP_FILENAME = "coworking_locations_mvp_2026-07-25.csv"
 MVP_PATH = PROJECT_ROOT / "data" / "raw" / MVP_FILENAME
 NOTEBOOK_PATH = PROJECT_ROOT / "notebooks" / "01_eda.ipynb"
+MVP_CUTOFF_DATE = "2026-07-25"
+EXPECTED_MVP_ROWS = 48
 
-MVP_FIELDS = [
-    "coworking_id",
-    "coworking_name",
-    "latitude",
-    "longitude",
-    "parish",
-    "active_status",
-    "source_url",
-    "collection_date",
-    "source_type",
-    "verification_status",
-]
-
-
-def build_mvp_dataset() -> int:
-    """Freeze the verified-active subset as the raw initial-analysis snapshot."""
+def validate_mvp_dataset() -> int:
+    """Validate the immutable initial-analysis snapshot against current data."""
     with SOURCE_PATH.open(encoding="utf-8-sig", newline="") as source_file:
-        rows = [
+        eligible_rows = [
             row
             for row in csv.DictReader(source_file)
             if row["active_status"] == "active"
             and row["verification_status"] == "verified_official_site"
+            and row["collection_date"] <= MVP_CUTOFF_DATE
         ]
 
-    if len(rows) != 48:
-        raise ValueError(f"Expected 67 verified active locations, found {len(rows)}")
+    if not MVP_PATH.exists():
+        raise FileNotFoundError(
+            f"Required immutable raw snapshot is missing: {MVP_PATH}"
+        )
+    with MVP_PATH.open(encoding="utf-8-sig", newline="") as snapshot_file:
+        rows = list(csv.DictReader(snapshot_file))
+
+    if len(rows) != EXPECTED_MVP_ROWS:
+        raise ValueError(
+            f"Expected {EXPECTED_MVP_ROWS} verified active locations in the "
+            f"snapshot, found {len(rows)}"
+        )
     if len({row["coworking_id"] for row in rows}) != len(rows):
         raise ValueError("coworking_id must be unique in the MVP dataset")
-
-    MVP_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with MVP_PATH.open("w", encoding="utf-8", newline="") as output_file:
-        writer = csv.DictWriter(output_file, fieldnames=MVP_FIELDS)
-        writer.writeheader()
-        writer.writerows({field: row[field] for field in MVP_FIELDS} for row in rows)
+    eligible_ids = {row["coworking_id"] for row in eligible_rows}
+    missing_ids = {row["coworking_id"] for row in rows} - eligible_ids
+    if missing_ids:
+        raise ValueError(
+            "Frozen MVP rows no longer reconcile with the dated verified "
+            f"inventory: {sorted(missing_ids)}"
+        )
     return len(rows)
 
 
@@ -226,7 +226,10 @@ def build_notebook() -> None:
                 color="#2A9D8F",
                 ax=ax,
             )
-            ax.set_title("Verified active coworking locations by Lisbon parish")
+            ax.set_title(
+                "The frozen MVP already showed coworking concentration "
+                "in a few parishes"
+            )
             ax.set_xlabel("Number of locations")
             ax.set_ylabel("Parish")
             fig.tight_layout()
@@ -302,7 +305,7 @@ def build_notebook() -> None:
 
 
 if __name__ == "__main__":
-    count = build_mvp_dataset()
+    count = validate_mvp_dataset()
     build_notebook()
-    print(f"Wrote {count} rows to {MVP_PATH}")
+    print(f"Validated {count} rows in {MVP_PATH}")
     print(f"Wrote notebook to {NOTEBOOK_PATH}")

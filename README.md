@@ -54,6 +54,7 @@ Lisbon's coworking supply and market signals.
 - Reproducible collection, cleaning and EDA notebooks with reusable Python functions in `src/`.
 - Decision-facing visualisations and a transparent Opportunity Score with sensitivity analysis.
 - A clear three-area shortlist supported by final decision-facing charts; a BI dashboard remains a final presentation deliverable.
+- An 8-slide project presentation in both PowerPoint and PDF formats.
 
 ## Setup
 Use Python 3.11 or 3.12 with the pinned project dependencies. Newer Python
@@ -84,7 +85,8 @@ coworking_lisbon_analysis/
 ├── reports/
 │   ├── figures/         # final numbered PNG/PDF/SVG exports
 │   ├── tables/          # notebook-generated summary CSV exports
-│   └── bi_exports/      # Tableau/Power BI working files, if used
+│   ├── bi_exports/      # Tableau/Power BI working files, if used
+│   └── presentation/    # final 8-slide PPTX and PDF deck
 ├── docs/
 │   ├── project_brief.md
 │   ├── source_plan.md
@@ -191,7 +193,19 @@ competitor positioning with the other shortlisted areas. Evidence:
 `reports/tables/recommendation_evidence.csv`.
 
 ## BI dashboard and final figures
-If Tableau or Power BI is used, working files will be stored in `reports/bi_exports/`. Final shareable charts and dashboard exports will be stored in `reports/figures/`. Relative data paths will point to `data/processed/`.
+The required Tableau or Power BI working file will be stored in
+`reports/bi_exports/`. Final shareable charts and dashboard exports will be
+stored in `reports/figures/`. Relative data paths will point to
+`data/processed/`.
+
+## Project presentation
+
+The final eight-slide deck is available as
+[`reports/presentation/Lisbon_Coworking_Presentation.pptx`](reports/presentation/Lisbon_Coworking_Presentation.pptx)
+and
+[`reports/presentation/Lisbon_Coworking_Presentation.pdf`](reports/presentation/Lisbon_Coworking_Presentation.pdf).
+It follows the problem-data-findings-recommendations-conclusion structure and
+uses the same final figures and shortlist as the repository.
 
 ## Current status
 The repository structure and core documentation are complete. The project now
@@ -208,9 +222,10 @@ reproducible 5,000-run weight sensitivity analyses. A terms-compliant
 commercial asking-rent sample is now integrated for the provisional top-ten
 candidates.
 The collection-orchestration, recommendation and final chart notebooks are
-implemented, and a clean local clone reproduces notebooks 01-06. Remaining
-work is the required one-page BI dashboard. The separate 8-slide presentation is
-maintained outside this public repository.
+implemented. A clean Python 3.12 environment created from the pinned
+`requirements.txt` reproduces the initial checkpoint and notebooks 01-06 with
+matching output tables. Remaining work is the required one-page BI dashboard.
+The final 8-slide presentation is included under `reports/presentation/`.
 
 ## Known blockers and risks
 - Public directories and map data can omit new locations or retain outdated ones.

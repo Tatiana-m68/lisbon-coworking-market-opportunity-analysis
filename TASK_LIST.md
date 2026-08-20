@@ -1,5 +1,9 @@
 # Task List
 
+This is the project delivery checklist created from the original capstone plan,
+the repository requirements and the final submission rubric. It tracks only
+the Lisbon coworking project; later module activities are outside its scope.
+
 ## Repository foundation
 - [x] Create standard folders for raw, processed and external data.
 - [x] Add numbered notebooks with purpose and output descriptions.
@@ -26,8 +30,8 @@
 ## Final delivery
 - [x] Write three data-backed recommendations in SCR format and link each to evidence.
 - [x] Convert `01_data_collection.ipynb` from a documented placeholder into an orchestration notebook.
-- [ ] Build one Tableau or Power BI dashboard page supporting the main recommendation.
-- [x] Create the required 8-slide deck with one exported chart on each finding slide (kept outside the public repository).
-- [x] Export the presentation as both PPTX and PDF (kept outside the public repository).
-- [ ] Rehearse the presentation in 10-12 minutes and prepare for Q&A.
+- [ ] Build one Tableau or Power BI dashboard page supporting the main recommendation. *(In progress.)*
+- [x] Create the required 8-slide deck with one exported chart on each finding slide.
+- [x] Export the presentation as both PPTX and PDF under `reports/presentation/`.
+- [x] Rehearse and present the project, including Q&A preparation.
 - [x] Run a fresh-clone/ZIP reproducibility audit using the README instructions.

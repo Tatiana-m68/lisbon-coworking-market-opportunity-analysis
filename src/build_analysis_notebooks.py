@@ -585,7 +585,10 @@ def build_eda_notebook() -> nbf.NotebookNode:
                     color="#2A9D8F",
                     ax=ax,
                 )
-                ax.set_title("Verified active coworking locations across Lisbon parishes")
+                ax.set_title(
+                    "Verified coworking supply is concentrated in a few "
+                    "Lisbon parishes"
+                )
                 ax.set_xlabel("Number of locations")
                 ax.set_ylabel("Parish")
                 ax.set_xlim(left=0)
@@ -643,7 +646,9 @@ def build_eda_notebook() -> nbf.NotebookNode:
                     color="grey",
                     ls="--",
                 )
-                ax.set_title("Demand proxy versus competition opportunity")
+                ax.set_title(
+                    "Low observed competition does not always mean strong demand"
+                )
                 ax.set_xlabel("Demand proxy score (0-100)")
                 ax.set_ylabel("Competition opportunity score (0-100)")
                 ax.legend(bbox_to_anchor=(1.02, 1), loc="upper left")
@@ -667,7 +672,9 @@ def build_eda_notebook() -> nbf.NotebookNode:
                     sizes=(70, 450),
                     ax=ax,
                 )
-                ax.set_title("Accessibility and demand across Lisbon parishes")
+                ax.set_title(
+                    "High-demand parishes generally have stronger transport access"
+                )
                 ax.set_xlabel("Transit access score (0-100)")
                 ax.set_ylabel("Demand proxy score (0-100)")
                 ax.legend(bbox_to_anchor=(1.02, 1), loc="upper left")
@@ -712,7 +719,9 @@ def build_eda_notebook() -> nbf.NotebookNode:
                     linewidths=0.5,
                     ax=ax,
                 )
-                ax.set_title("Correlation matrix of parish-level indicators")
+                ax.set_title(
+                    "Several demand and transport indicators move together"
+                )
                 fig.tight_layout()
                 correlation_path = FIGURES_DIR / "05_indicator_correlation_heatmap.png"
                 save_figure(fig, correlation_path)
@@ -744,7 +753,9 @@ def build_eda_notebook() -> nbf.NotebookNode:
                     color="#F4A261",
                     ax=ax,
                 )
-                ax.set_title("Pilot median office asking rent by parish")
+                ax.set_title(
+                    "Pilot median rents vary widely across the screened parishes"
+                )
                 ax.set_xlabel("Median asking rent (EUR/m²/month)")
                 ax.set_ylabel("Parish")
                 fig.tight_layout()
@@ -1051,7 +1062,9 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                     color="#E76F51",
                     ax=ax,
                 )
-                ax.set_title("Provisional parish opportunity ranking (rent excluded)")
+                ax.set_title(
+                    "Areeiro leads the provisional screening before rent is added"
+                )
                 ax.set_xlabel("Provisional opportunity score (0-100)")
                 ax.set_ylabel("Parish")
                 fig.tight_layout()
@@ -1072,7 +1085,7 @@ def build_deeper_analysis_notebook() -> nbf.NotebookNode:
                     ax=ax,
                 )
                 ax.set_title(
-                    "Top-three stability across provisional weight simulations"
+                    "Three parishes dominate the provisional top-three simulations"
                 )
                 ax.set_xlabel("Share of simulations in top three (%)")
                 ax.set_ylabel("Parish")
@@ -1369,7 +1382,9 @@ def build_recommendations_notebook() -> nbf.NotebookNode:
                     hue="parish",
                     ax=ax,
                 )
-                ax.set_title("Recommendation component profiles")
+                ax.set_title(
+                    "Each shortlisted parish offers a different business trade-off"
+                )
                 ax.set_xlabel("Component score (0-100)")
                 ax.set_ylabel("")
                 ax.set_xlim(0, 100)
@@ -1533,7 +1548,9 @@ def build_final_charts_notebook() -> nbf.NotebookNode:
                         textcoords="offset points",
                         fontsize=8,
                     )
-                ax.set_title("Opportunity score versus median asking rent")
+                ax.set_title(
+                    "Similar opportunity scores hide different asking-rent levels"
+                )
                 ax.set_xlabel("Median asking rent (EUR/m²/month)")
                 ax.set_ylabel("Opportunity score (0-100)")
                 fig.tight_layout()

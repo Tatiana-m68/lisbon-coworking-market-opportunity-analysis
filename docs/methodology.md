@@ -22,6 +22,27 @@ of occupancy, revenue or profitability.
 The table must contain 24 unique parishes and reconcile to the current
 verified-active coworking inventory.
 
+## Demand proxy
+
+`demand_proxy_score` is a transparent 0-100 screening index, not measured
+customer demand or a revenue forecast. Each parish is first ranked against the
+other 23 parishes for five density-based indicators. The percentile scores are
+then combined as follows:
+
+```text
+Demand Proxy Score =
+    0.40 × Working-age population density percentile
+  + 0.30 × Office density percentile
+  + 0.10 × Café density percentile
+  + 0.10 × Hotel density percentile
+  + 0.10 × Official higher-education density percentile
+```
+
+The score is therefore higher where there are stronger signals of residents
+of working age, business activity, mobile workers or visitors, and students.
+It supports relative comparison between Lisbon parishes but does not measure
+actual coworking enquiries, willingness to pay or future occupancy.
+
 ## Competition opportunity
 
 `competition_opportunity_score` is an inverse percentile score derived from
