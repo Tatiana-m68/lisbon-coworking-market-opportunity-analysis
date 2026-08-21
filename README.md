@@ -7,7 +7,7 @@ This project helps an Expansion Director narrow the search for one new coworking
 A coworking company plans to open one new Lisbon location but lacks a consistent evidence base for narrowing its search. A poor search area could combine weak demand, strong competition, poor accessibility or unsustainable occupancy costs. The analysis identifies three parishes where the company can compare real property offers and local business conditions in parallel.
 
 ## Project goal
-Build a transparent and reproducible parish-level comparison and recommend a three-parish shortlist for further due diligence.
+Build a transparent and reproducible parish-level comparison and recommend a three-parish shortlist for further due diligence by August 2026.
 
 ## Dataset
 The project uses two linked analysis tables:
@@ -83,9 +83,9 @@ coworking_lisbon_analysis/
 ├── notebooks/           # numbered execution sequence
 ├── src/                 # reusable functions, paths and constants
 ├── reports/
-│   ├── figures/         # final numbered PNG/PDF/SVG exports
+│   ├── figures/         # final numbered PNG/PDF/SVG exports, including the dashboard PDF
 │   ├── tables/          # notebook-generated summary CSV exports
-│   ├── bi_exports/      # final Power BI file, PDF export and dashboard source workbook
+│   ├── bi_exports/      # final Power BI file and dashboard source workbook
 │   └── presentation/    # final 8-slide PPTX and PDF deck
 ├── docs/
 │   ├── project_brief.md
@@ -196,11 +196,15 @@ competitor positioning with the other shortlisted areas. Evidence:
 The final one-page Power BI dashboard is available as
 [`reports/bi_exports/Lisbon_Coworking_Dashboard.pbix`](reports/bi_exports/Lisbon_Coworking_Dashboard.pbix),
 with a shareable
-[`PDF export`](reports/bi_exports/Lisbon_Coworking_Dashboard.pdf) and the
+[`PDF export`](reports/figures/12_lisbon_coworking_dashboard.pdf) and the
 [`dashboard source workbook`](reports/bi_exports/PowerBI_Dashboard_Data.xlsx).
 The page compares the ten rent-covered candidates, highlights the close
 three-parish shortlist and shows the different demand, transport, competition
 and rent trade-offs behind the recommendation.
+
+The Power BI model contains the imported data used for the submitted dashboard.
+To refresh it after cloning the repository, point the Power BI source to the
+included `reports/bi_exports/PowerBI_Dashboard_Data.xlsx` workbook.
 
 ## Project presentation
 
@@ -228,12 +232,19 @@ candidates.
 The collection-orchestration, recommendation and final chart notebooks are
 implemented. A clean Python 3.12 environment created from the pinned
 `requirements.txt` reproduces the initial checkpoint and notebooks 01-06 with
-matching output tables. The required one-page Power BI dashboard and its source
-workbook are included under `reports/bi_exports/`. The final 8-slide
-presentation is included under `reports/presentation/`. All required project
-deliverables are complete.
+matching output tables. The required one-page Power BI working file and source
+workbook are included under `reports/bi_exports/`, and its final PDF is included
+under `reports/figures/`. The final 8-slide presentation is included under
+`reports/presentation/`. All required project deliverables are complete.
 
-## Known limitations
+## Known blockers or risks
 - Public directories and map data can omit new locations or retain outdated ones.
 - Asking-rent coverage is sufficient for the top-ten candidates but may not represent all available properties.
 - The Opportunity Score can create false precision unless weights and data coverage are tested transparently.
+
+## Next steps
+The analytical project is complete. The business follow-up is to:
+
+1. Compare live commercial spaces and lease terms across Areeiro, Arroios and Lumiar.
+2. Study local demand, footfall and competitor offers in more detail within the three shortlisted parishes.
+3. Refresh competitor and asking-rent data before making a lease decision.
