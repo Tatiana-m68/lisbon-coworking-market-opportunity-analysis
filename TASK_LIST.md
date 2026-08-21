@@ -30,7 +30,7 @@ the Lisbon coworking project; later module activities are outside its scope.
 ## Final delivery
 - [x] Write three data-backed recommendations in SCR format and link each to evidence.
 - [x] Convert `01_data_collection.ipynb` from a documented placeholder into an orchestration notebook.
-- [ ] Build one Tableau or Power BI dashboard page supporting the main recommendation. *(In progress.)*
+- [x] Build one Power BI dashboard page supporting the main recommendation.
 - [x] Create the required 8-slide deck with one exported chart on each finding slide.
 - [x] Export the presentation as both PPTX and PDF under `reports/presentation/`.
 - [x] Rehearse and present the project, including Q&A preparation.

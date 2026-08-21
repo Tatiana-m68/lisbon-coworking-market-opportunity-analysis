@@ -7,7 +7,7 @@ This project helps an Expansion Director narrow the search for one new coworking
 A coworking company plans to open one new Lisbon location but lacks a consistent evidence base for narrowing its search. A poor search area could combine weak demand, strong competition, poor accessibility or unsustainable occupancy costs. The analysis identifies three parishes where the company can compare real property offers and local business conditions in parallel.
 
 ## Project goal
-Build a transparent and reproducible parish-level comparison and recommend a three-parish shortlist for further due diligence by August 2026.
+Build a transparent and reproducible parish-level comparison and recommend a three-parish shortlist for further due diligence.
 
 ## Dataset
 The project uses two linked analysis tables:
@@ -53,7 +53,7 @@ Lisbon's coworking supply and market signals.
 - A cleaned, documented coworking-location dataset and a 24-row parish indicators table.
 - Reproducible collection, cleaning and EDA notebooks with reusable Python functions in `src/`.
 - Decision-facing visualisations and a transparent Opportunity Score with sensitivity analysis.
-- A clear three-area shortlist supported by final decision-facing charts; a BI dashboard remains a final presentation deliverable.
+- A clear three-area shortlist supported by final decision-facing charts and a one-page Power BI dashboard.
 - An 8-slide project presentation in both PowerPoint and PDF formats.
 
 ## Setup
@@ -85,7 +85,7 @@ coworking_lisbon_analysis/
 ├── reports/
 │   ├── figures/         # final numbered PNG/PDF/SVG exports
 │   ├── tables/          # notebook-generated summary CSV exports
-│   ├── bi_exports/      # Tableau/Power BI working files, if used
+│   ├── bi_exports/      # final Power BI file, PDF export and dashboard source workbook
 │   └── presentation/    # final 8-slide PPTX and PDF deck
 ├── docs/
 │   ├── project_brief.md
@@ -193,10 +193,14 @@ competitor positioning with the other shortlisted areas. Evidence:
 `reports/tables/recommendation_evidence.csv`.
 
 ## BI dashboard and final figures
-The required Tableau or Power BI working file will be stored in
-`reports/bi_exports/`. Final shareable charts and dashboard exports will be
-stored in `reports/figures/`. Relative data paths will point to
-`data/processed/`.
+The final one-page Power BI dashboard is available as
+[`reports/bi_exports/Lisbon_Coworking_Dashboard.pbix`](reports/bi_exports/Lisbon_Coworking_Dashboard.pbix),
+with a shareable
+[`PDF export`](reports/bi_exports/Lisbon_Coworking_Dashboard.pdf) and the
+[`dashboard source workbook`](reports/bi_exports/PowerBI_Dashboard_Data.xlsx).
+The page compares the ten rent-covered candidates, highlights the close
+three-parish shortlist and shows the different demand, transport, competition
+and rent trade-offs behind the recommendation.
 
 ## Project presentation
 
@@ -224,14 +228,12 @@ candidates.
 The collection-orchestration, recommendation and final chart notebooks are
 implemented. A clean Python 3.12 environment created from the pinned
 `requirements.txt` reproduces the initial checkpoint and notebooks 01-06 with
-matching output tables. Remaining work is the required one-page BI dashboard.
-The final 8-slide presentation is included under `reports/presentation/`.
+matching output tables. The required one-page Power BI dashboard and its source
+workbook are included under `reports/bi_exports/`. The final 8-slide
+presentation is included under `reports/presentation/`. All required project
+deliverables are complete.
 
-## Known blockers and risks
+## Known limitations
 - Public directories and map data can omit new locations or retain outdated ones.
 - Asking-rent coverage is sufficient for the top-ten candidates but may not represent all available properties.
 - The Opportunity Score can create false precision unless weights and data coverage are tested transparently.
-
-## Next steps
-1. Build the required one-page Tableau/Power BI dashboard from the exported CSV files.
-2. Complete the final handoff after the dashboard is ready.
